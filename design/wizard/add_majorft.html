@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+<head>
+<title> البيانات </title>
+<meta charset="utf-8">
+    <link rel="stylesheet" href="wizardstyle.css">
+    
+</head>
+<body style="text-align: right;padding-right: 20px">
+    <!-- sending data to /backend/file as name=value-->
+
+<form action="/backend/file" method="POST">
+<div id="name"> <label dir="rtl">
+<strong style="font-family: arabic"> الاسم :</strong> 
+    <input class ="myinput" type="text" style="margin-right: 85px">
+</label>
+
+</div>
+<br>
+<hr>
+<br>
+<div id="number">
+<label dir="rtl"><strong style="font-family: arabic"> مجموع الدرجات :</strong> 
+    <input class ="myinput" type="text" style="margin-right: 19px">
+</label>
+
+</div>
+
+
+<br>
+
+    <hr>
+<br>
+<div id="number">
+<label dir="rtl"><strong style="font-family: arabic"> المواد المطلوبة :</strong> 
+    <form action="/backend/file" method="get" style="margin-right: 135px ">
+        <div style="padding-right: 127px;font-family: arabic">
+            
+        <br><input type="checkbox" name="subject1" value="subject1">مادة 1<br>
+            
+        
+        <input type="checkbox" name="subject2" value="subject2">مادة 2<br>
+        
+        
+        <input type="checkbox" name="subject3" value="subject3">مادة 3<br>
+        
+        
+        <input type="checkbox" name="subject4" value="subject4">مادة 4<br>
+        
+            </div>   
+      
+    </form>
+</label>
+
+</div>
+
+
+<br>
+
+
+<hr><br>
+
+
+</form>
+</body>
+</html>
+
