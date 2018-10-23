@@ -1,0 +1,29 @@
+/* 
+sidebar colors pallet
+
+ #372549 --> main color
+--Accents--
+#1A1423
+#774C60
+#B75D69 -->sign out accent
+#EACDC2 
+*/
+@font-face{
+    font-family: "arabic";
+    src:url(/fonts/arabic.otf);
+}
+.myinput{
+    background-color: #1A1423;
+    border: 2px solid #774C60;
+    padding: 5px;
+    color: #EACDC2 ;
+    
+}
+
+.submitbutton{
+    background-color: #1A1423;
+    border: 2px solid #774C60;
+    padding: 10px;
+    color: #EACDC2 ;
+    
+}
