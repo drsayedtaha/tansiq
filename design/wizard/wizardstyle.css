@@ -8,6 +8,7 @@ sidebar colors pallet
 #B75D69 -->sign out accent
 #EACDC2 
 */
+@charset "utf-8";
 @font-face{
     font-family: "arabic";
     src:url(/fonts/arabic.otf);
