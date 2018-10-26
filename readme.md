@@ -1,3 +1,2 @@
-#tansik project
-tansik project for managing student request for Department after first year using online server
-
+# tansik 
+a web based app for general Department Coordinatation in defernet facultys 
