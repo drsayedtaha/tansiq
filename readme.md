@@ -1,2 +1,2 @@
 # tansik 
-a web based app for general Department Coordinatation in defernet facultys 
+a web based app for general Department Coordination in different faculties  
