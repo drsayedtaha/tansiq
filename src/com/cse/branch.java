@@ -1,4 +1,4 @@
-package tansik;
+package com.cse.tansik;
 
 public abstract class branch {
 	 subject [] subjects;
