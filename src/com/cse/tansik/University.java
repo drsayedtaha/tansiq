@@ -1,5 +1,4 @@
-package tansik;
-
+ package com.cse.tansik; 
 public abstract class University {
         private String name;
 	private faculty [] faculties;

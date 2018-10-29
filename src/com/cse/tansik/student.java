@@ -1,5 +1,4 @@
-package tansik;
-
+ package com.cse.tansik; 
 public abstract class student extends user {
         private subject[] subjects;
 	private branch[] branches;
