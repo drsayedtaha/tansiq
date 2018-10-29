@@ -1,0 +1,9 @@
+package tansik;
+
+public abstract class faculty 
+{
+	 String name;
+	 branch[]branches;
+	 int isBranchesSet;
+	public abstract void setFaculty(String name ) ;
+}
