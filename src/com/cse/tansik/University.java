@@ -1,7 +1,8 @@
-package com.cse.tansik;
-
+ package com.cse.tansik; 
 public abstract class University {
-	  String name;
-	 faculty [] faculties;
+        private String name;
+	private faculty [] faculties;
+    public abstract boolean setUniversity(String name);
 
+    public abstract String getUniversityName();
 }

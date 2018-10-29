@@ -1,7 +1,10 @@
-package com.cse.tansik;
-
+ package com.cse.tansik; 
 public abstract class subject {
-  String name;
-  float Degree ;
-public abstract void setSubject(String name, float requiredDegree);
+ private String name;
+ private float Degree ;
+public abstract boolean setSubject(String name, float requiredDegree);
+
+    public abstract String getSubjectName();
+    public abstract float getSubjectdegree();
+
 }

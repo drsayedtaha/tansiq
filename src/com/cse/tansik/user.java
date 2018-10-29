@@ -1,30 +1,18 @@
-package com.cse.tansik;
-
+ package com.cse.tansik; 
 abstract class user 
 {
 	 String name;
 	 String password;
 	 University University;
-	public faculty faculty;
+         public faculty faculty;
 	 int id;
-public boolean logIn(String table) 
-	{
-	/*
-	table assiocted with data base
-	in case of student table= student
-	in case of admin table=admin*/
-	 return true;
-	
-	}
-public boolean logOut() 
-	{
-	 return true;
-	
-	}
+         String Password;
 
-public boolean setUniversity(University university) 
-{
- return true;
+public  abstract boolean logIn(String table) ;
+public abstract  boolean logOut() ;
+public abstract boolean setUniversity(University university) ;
+public abstract boolean setFaculty(University faculty); 
+public abstract boolean getUniversity() ;
+public abstract boolean getFaculty(); 
 
-}
 }

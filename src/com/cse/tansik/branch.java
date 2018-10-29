@@ -1,13 +1,13 @@
-package com.cse.tansik;
-
+ package com.cse.tansik; 
 public abstract class branch {
 	 subject [] subjects;
-	public abstract boolean setBranch(String Fname,String name) ;
-        int maxCapcity;
-        int minCapcity;
-	public branch () 
-	{
-		
-	}
+    int maxCapcity;
+    int minCapcity;
+    
+	public abstract boolean setBranch(String Fname,String name ,int maxCapcity, int minCapcity) ;
+    public abstract int getBranchCapcityMax ( );
+    public abstract int getBranchCapcityMIN ( );
+    public abstract String getBranchname ( );
+       
 
 }
