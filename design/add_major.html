@@ -3,72 +3,97 @@
 
 
 <html lang="ar">
+
 <head>
-<title> البيانات </title>
-<meta charset="utf-8">
-    <link rel="stylesheet" href="wizardstyle.css">
+    <title> البيانات </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="wizard/wizardstyle.css">
 </head>
+
 <body style="text-align: right;padding-right: 20px">
     <!-- sending data to /backend/file as name=value-->
 
-<form action="/backend/file" method="POST">
-<div id="name"> <label dir="rtl">
-<strong style="font-family: arabic"> الاسم :</strong> 
-    <input class ="myinput" type="text" style="margin-right: 85px">
-</label>
+    <form action="/backend/file" method="POST">
+        <div id="year_choose">
+            <label dir="rtl">
+                <strong style="font-family: arabic"> سنه:</strong>
 
-</div>
-<br>
-<hr>
-<br>
-<div id="number">
-<label dir="rtl"><strong style="font-family: arabic"> مجموع الدرجات :</strong> 
-    <input class ="myinput" type="text" style="margin-right: 19px">
-</label>
+                <select class="myinput" name="سنه" id="year">
+                    <option value=" "></option>
 
-</div>
+                    <option value="اعدادي">اعدادي</option>
+                    <option value="ثالثه هندسه كهربيه"> ثالثه هندسه كهربيه</option>
 
+                </select>
 
-<br>
-
-    <hr>
-<br>
-<div id="number">
-<label dir="rtl"><strong style="font-family: arabic"> المواد المطلوبة :</strong> 
-    <form action="/backend/file" method="get" style="margin-right: 135px ">
-        <div style="padding-right: 127px">
-            
-        <br><input type="checkbox" name="subject1" value="subject1">مادة 1<br>
-            
-        
-        <input type="checkbox" name="subject2" value="subject2">مادة 2<br>
-        
-        
-        <input type="checkbox" name="subject3" value="subject3">مادة 3<br>
-        
-        
-        <input type="checkbox" name="subject4" value="subject4">مادة 4<br>
-        
-            </div>   
-      
-    </form>
-</label>
-
-</div>
+            </label>
+            <br>
+            <hr>
+            <br>
+        </div>
 
 
-<br>
 
+        <div class="box">
+            <div id="name"> <label dir="rtl">
+                    <strong style="font-family: arabic"> اسم القسم:</strong>
+                    <input class="myinput" type="text" style="margin-right: 85px">
+                </label>
 
-<hr><br>
+            </div>
 
-<input style="    background-color: #1A1423;
+            <br>
+            <div id="number">
+                <label dir="rtl"><strong style="font-family: arabic; margin-left: 40px"> عدد طلاب :</strong>
+                    
+                    <span>من</span>
+                    <input class ="myinput" type="text" style="margin-right: 19px; width:20px">
+                    <span>الي</span>
+                    <input class="myinput" type="text" style="margin-right: 19px;width:20px">
+
+                </label>
+
+            </div>
+            <br>
+            <div id="number">
+                <label dir="rtl"><strong style="font-family: arabic"> المواد المطلوبة :</strong>
+                    <form action="/backend/file" method="get" style="margin-right: 135px ">
+                        <div style="padding-right: 127px">
+
+                            <br><input type="checkbox" name="subject1" value="subject1">
+                            مادة 1 
+                            <input class="myinput" type="text" style="margin-right: 19px"><br>
+                            <br>
+
+                            <input type="checkbox" name="subject2" value="subject2">مادة 2
+                            <input class="myinput" type="text" style="margin-right: 19px"><br>
+                            <br>
+
+                            <input type="checkbox" name="subject3" value="subject3">مادة 3
+                            <input class="myinput" type="text" style="margin-right: 19px"><br>
+                            <br>
+
+                            <input type="checkbox" name="subject4" value="subject4">مادة 4
+                            <input class="myinput" type="text" style="margin-right: 19px"><br>
+                            <br>
+
+                        </div>
+
+                    </form>
+                </label>
+
+            </div>
+            <br>
+            <hr> <br>
+        </div>
+        <input style="    background-color: #1A1423;
     border: 2px solid #774C60;
     padding: 10px;
-    color: #EACDC2 ;font-family: arabic;" type="submit" value="تم">
+    color: #EACDC2 ;font-family: arabic;"
+            type="submit" value="تم">
 
 
-</form>
+    </form>
 </body>
-</html>
 
+</html>
