@@ -24,17 +24,19 @@ text-align: right;
 }
 
 input{
-	    background-color: #1A1423;
-    border: 2px solid #774C60;
-    padding: 5px;
-    color: #EACDC2 ;
+	    background-color: #EFF7FA;
+    border: 2px solid #6e7d8c;
+    color: black ;
+	padding: 5px;
+    
     text-align: right;
 }
 
 .submitbutton{
-    background-color: #1A1423;
-    border: 2px solid #774C60;
-    padding: 10px;
-    color: #EACDC2 ;
+    background-color: #3B94D9;
+    border: 2px solid #EFF7FA;
+    color: white ;
+	padding: 10px;
+	float:left;
     margin-top: 20px
 }
