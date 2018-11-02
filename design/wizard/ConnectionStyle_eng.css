@@ -1,0 +1,34 @@
+
+/*Created By AbdAlla-AboElMagd*/
+@charset "utf-8";
+@font-face
+{
+font-family:tahoma;
+}
+
+header, main, footer {
+display: block;
+}
+
+html , body , main , button {
+padding: 5px
+}
+
+
+body{
+font-family:tahoma;
+margin-left:auto;
+margin-right:auto;
+
+text-align: left;
+
+}
+
+.submitbutton{
+    background-color: #3B94D9;
+    border: 2px solid #EFF7FA;
+    color: white ;
+    padding: 10px;
+    float:right;
+}
+
