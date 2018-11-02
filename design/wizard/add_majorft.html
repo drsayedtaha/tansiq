@@ -1,70 +1,95 @@
 <!DOCTYPE html>
-
-<html lang="ar">
-
+<html>
 <head>
-    <title> البيانات </title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="wizardstyle.css">
-
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
 </head>
+<body>
+    
+</body>
+</html>
 
-<body style="text-align: right;padding-right: 20px">
+
+<body style="text-align: right;padding-right: 20px; direction: rtl;">
     <!-- sending data to /backend/file as name=value-->
 
-    <form action="/backend/file" method="POST">
+    <form id="dep_form" class="container">
+        <!-- <div id="year_choose">
+                <label dir="rtl">
+                    <strong style="font-family: arabic"> سنه:</strong>
+
+                    <select class="myinput" name="سنه" id="year">
+                        <option value=" "></option>
+
+                        <option value="اعدادي">اعدادي</option>
+                        <option value="ثالثه هندسه كهربيه"> ثالثه هندسه كهربيه</option>
+
+                    </select>
+
+                </label>
+                <br>
+                <hr>
+                <br>
+            </div> -->
+
         <div id="name"> <label dir="rtl">
-                <strong style="font-family: arabic"> الاسم :</strong>
-                <input class="myinput" type="text" style="margin-right: 85px">
+                <strong style="font-family: arabic"> اسم القسم:</strong>
+                <input class="myinput" id="name_box" type="text" style="margin-right: 85px">
             </label>
 
         </div>
-        <br>
-        <hr>
+
         <br>
         <div id="number">
-            <label dir="rtl"><strong style="font-family: arabic"> مجموع الدرجات :</strong>
-                <input class="myinput" type="text" style="margin-right: 19px">
-            </label>
+            <label dir="rtl"><strong style="font-family: arabic; margin-left: 40px"> عدد طلاب :</strong>
 
+                <span>من</span>
+                <input id="from_num" class="myinput" type="number" style="margin-right: 19px; width: 80px">
+                <span>الي</span>
+                <input id="to_num" class="myinput" type="number" style="margin-right: 19px; width: 80px">
+
+            </label>
         </div>
 
-
         <br>
+        <div id="materials">
+            <strong style="font-family: arabic"> المواد المطلوبة :</strong>
+            <!-- <form action="/backend/file" method="get" style="margin-right: 135px "> -->
+            <div id="materials" style="padding-right: 127px; display: flex;flex-wrap: wrap;">
 
-        <hr>
-        <br>
-        <div id="number">
-            <label dir="rtl"><strong style="font-family: arabic"> المواد المطلوبة :</strong>
-                <form action="/backend/file" method="get" style="margin-right: 135px ">
-                    <div style="padding-right: 127px;font-family: arabic">
+                <div>
+                    <input type="checkbox" name="subject1" value="subject1">
+                    <span>
+                        مادة 1
+                    </span>
+                    <input class="myinput" type="number" style=" margin:0 20px 20px 50px; width: 80px ">
+                </div>
 
-                        <br><input type="checkbox" name="subject1" value="subject1">مادة 1<br>
+                <div>
+                    <input type="checkbox" name="subject1" value="subject1">
+                    <span>
+                        مادة 2
+                    </span>
+                    <input class="myinput" type="number" style="margin:0 20px 20px 50px;width: 80px ">
+                </div>
 
-
-                        <input type="checkbox" name="subject2" value="subject2">مادة 2<br>
-
-
-                        <input type="checkbox" name="subject3" value="subject3">مادة 3<br>
-
-
-                        <input type="checkbox" name="subject4" value="subject4">مادة 4<br>
-
-                    </div>
-
-                </form>
-            </label>
-
+                <div>
+                    <input type="checkbox" name="subject1" value="subject1">
+                    <span>
+                        مادة 3
+                    </span>
+                    <input class="myinput" type="number" style="margin:0 20px 20px 50px;width: 80px ">
+                </div>
+            </div>
         </div>
-
-
         <br>
+        <hr> <br>
 
-
-        <hr><br>
-
-
+        <input class="submitbutton" style="float:left;" type="submit" value="add">
     </form>
-</body>
 
-</html>
+    <div id="dep_review" class="container">
+
+    </div>
+    <script src="add_major.js"></script>
+</body>
