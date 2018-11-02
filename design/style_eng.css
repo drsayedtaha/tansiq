@@ -1,0 +1,72 @@
+/* 
+sidebar colors pallet
+
+ #372549 --> main color,,#8C0066,,rgb(55,37,73),,rgb(55,37,73), #96317b,,#6e7d8c ,,#3169a0,#3B94D9
+--Accents--
+#1A1423
+#774C60
+#B75D69 -->sign out accent
+#EACDC2 
+#F76175
+*/
+@charset "utf-8";
+@font-face{
+    font-family: "tahoma";
+    
+}
+.sitebar{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+
+
+.navbar{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    text-align:center;
+    width: 70px;
+    background-color: #3B94D9;
+    z-index: 10;
+}
+
+.fab{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color:#3B94D9;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+body{
+    font-family: tahoma;
+}
+
+.tddata{
+    margin-right: 50px;
+}
+
+.myinput{
+        background-color: #EFF7FA;
+    border: 2px solid #6e7d8c;
+    color: black ;
+    padding: 5px;
+    
+}
+.submitbutton{
+    background-color: #3B94D9;
+    border: 2px solid #EFF7FA;
+    color: white ;
+    padding-top: 7px;
+        padding-bottom: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+
+    
+}
+ 
