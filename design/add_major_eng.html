@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+
+
+<html lang="eng">
+<html dir="rtl">
+<head>
+    <title> data</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="wizard/wizardstyle_eng.css">
+    <br>
+    <a href="add_major.html">Arabic</a>
+    <br><br>
+</head>
+
+<body style="text-align: left;padding-right :  20px">
+    <!-- sending data to /backend/file as name=value-->
+
+    <form action="/backend/file" method="POST">
+        <div id="year_choose">
+           
+               
+                <label dir="ltr"> <strong style="font-family: tahoma"> year:</strong>
+                <select class="myinput" name="year" id="year">
+                    <option value=" "></option>
+
+                    <option value="preparatory">preparatory</option>
+                    <option value="Third Electric Engineering">Third Electric Engineering</option>
+
+                </select>
+                
+            </label>
+            <br>
+            <hr>
+            <br>
+        </div>
+
+
+
+        <div class="box">
+            <div id="name"> 
+                    <label dir="ltr">
+                    <strong style="font-family: tahoma"> Department Name:</strong>
+                    <input class="myinput" type="text" style="margin-left:  85px">
+                </label>
+
+            </div>
+
+            <br>
+            <div id="number">
+               <label dir="ltr">
+                     <strong style="font-family:tahoma; margin-right:  40px"> Number of students:</strong>
+                    <input class ="myinput" type="text" style="margin-left:  19px; width:20px">
+                    <span>From</span>
+                    <input class="myinput" type="text" style="margin-left:  19px;width:20px">
+                    <span>to</span>
+                </label>
+
+            </div>
+            <br>
+            <div id="number">
+               <label dir="rtl">
+                 <strong style="font-family: tahoma">: the required subject</strong>
+                    <form action="/backend/file" method="get" style="margin-left: 135px ">
+                        <div style="padding-left: 127px">
+                            <br> 
+                            <input class="myinput" type="text" style="margin-left:   19px"> subject 1
+                            <input type="checkbox" name="subject1" value="subject1">
+                             
+                            <br>
+                            <br>
+                            
+                            <input class="myinput" type="text" style="margin-left:   19px"> subject 2
+                            <input type="checkbox" name="subject2" value="subject2">
+                            <br><br>
+                            
+
+                            <input class="myinput" type="text" style="margin-left:   19px"> subject 3
+                            <input type="checkbox" name="subject3" value="subject3">
+                            
+                            <br><br>
+
+                            <input class="myinput" type="text" style="margin-left:  19px"> subject 4
+                            <input type="checkbox" name="subject4" value="subject4">
+                            <br>
+
+                        </div>
+
+                    </form>
+                </label>
+
+            </div>
+            <br>
+            <hr> <br>
+        </div>
+        <input style="    background-color: #3B94D9;
+    border: 2px solid #EFF7FA;
+    color: white ;
+    padding: 10px;font-family: tahoma;"
+            type="submit" value="done">
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <title> data</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="wizardstyle_eng.css">
+
+</head>
+
+<body style="text-align: left;padding-right: 20px">
+    <!-- sending data to /backend/file as name=value-->
+
+    <form action="/backend/file" method="POST"><div id="name">
+      <strong style="font-family: tahoma"> name:</strong> <label dir="rtl">
+                <input class="myinput" type="text" style="margin-right: 85px">
+            </label>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="number"><strong style="font-family: tahoma"> Total scores:</strong>
+            <label dir="rtl">
+                <input class="myinput" type="text" style="margin-right: 19px">
+            </label>
+
+        </div>
+
+
+        <br>
+
+        <hr>
+        <br>
+        <div id="number"><strong style="font-family: tahoma"> the required subject:</strong>
+            <label dir="rtl">
+                <form action="/backend/file" method="get" style="margin-left: 135px ">
+                    <div style="padding-left: 127px;font-family:tahoma ">
+
+                        <br>subject 1 <input type="checkbox" name="subject1" value="subject1"><br>
+
+
+                        subject 2 <input type="checkbox" name="subject2" value="subject2"><br>
+
+
+                       subject 3 <input type="checkbox" name="subject3" value="subject3"><br>
+
+
+                       subject 4 <input type="checkbox" name="subject4" value="subject4"><br>
+
+                    </div>
+
+                </form>
+            </label>
+
+        </div>
+
+
+        <br>
+
+
+        <hr><br>
+
+
+    </form>
+</body>
+
+</html>
