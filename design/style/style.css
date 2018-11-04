@@ -45,6 +45,7 @@ sidebar colors pallet
 
 body{
     font-family: arabic;
+    direction: rtl;
 }
 
 .myinput{
