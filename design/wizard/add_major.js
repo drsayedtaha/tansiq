@@ -2,8 +2,8 @@ var form = document.getElementById("dep_form")
 form.addEventListener("submit",add_data)
 
 
-
 function add_data(params) {
+    // this function get the data from wishes form and add div containing this data 
 
     var dep_name = document.getElementById("name_box").value
     var from_num = document.getElementById("from_num").value
@@ -61,3 +61,4 @@ function add_data(params) {
     event.preventDefault();
 
 }
+
