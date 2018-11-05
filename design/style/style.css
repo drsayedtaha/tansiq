@@ -73,3 +73,30 @@ body{
     text-align: right;
     padding: 40px 50px 50px 50px;    
 }
+
+.top_side{    
+    position: absolute;
+    top:0px;
+    left:0px;
+    margin: 5px 0 0 5px;
+        
+}
+
+.msg_line{
+    position: relative;
+    border:2px inset #88eeff;
+    border-radius: 20px;
+    
+    background: #EEEEEE;
+    
+    border-left:0px ;
+    border-right:0px;
+    
+    padding: 10px 5px 5px 0;
+    margin: 10px 0 0 10px;
+}
+
+.msg_txt{
+    background: #DEE;
+    font-size: 15px;
+}
