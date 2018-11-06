@@ -80,8 +80,15 @@ body{
     top:0px;
     left:0px;
     margin: 5px 0 0 5px;
-        
 }
+
+.bottom_side{    
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    margin: 5px 0 0 5px;
+}
+
 
 .msg_line{
     position: relative;
