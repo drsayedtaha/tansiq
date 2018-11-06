@@ -1,40 +1,38 @@
-var form = document.getElementById("dep_form")
-form.addEventListener("submit",add_data)
-
-
 function add_data(params) {
     // this function get the data from wishes form and add div containing this data 
 
-    var dep_name = document.getElementById("name_box").value
-    var from_num = document.getElementById("from_num").value
-    var to_num = document.getElementById("to_num").value
+    var dep_name = document.getElementById("name_box").value;
+    var from_num = document.getElementById("from_num").value;
+    var to_num = document.getElementById("to_num").value;
 
-    var materials =document.getElementById("materials").getElementsByTagName("div")
-    var i = 1
+    var materials = document.getElementById("materials").getElementsByTagName("div");
+    var i = 1;
     
-    var selected_materials=[]
+    var selected_materials=[];
     for (let i = 1; i < materials.length; i++) {
         material = materials[i].querySelectorAll("*");
-        var mat_box = material[0]
+        var mat_box = material[0];
         if (mat_box.checked) {
-            var name = material[1].innerText
-            var mat_deg = material[2].value
-            selected_materials.push([name , mat_deg])
+            var name = material[1].innerText;
+            var mat_deg = material[2].value;
+            selected_materials.push([name , mat_deg]);
             
         }
         
 
     }
 
-    var matelials_html="" 
+    var matelials_html="" ;
     for (let i = 0; i < selected_materials.length; i++) {
         matelials_html = matelials_html.concat(`<div>
                 <span>`+ selected_materials[i][0] + `</span>
                 <span type="text" style="margin:0 20px 20px 50px ">`+ selected_materials[i][1] + `</span>
-            </div>`)
+            </div>`);
     }
 
-    var new_dep = `<div> 
+    var new_dep = `<div style="position:relative">
+                    <button class="submitbutton top_side" style="background: #E00">del</button>
+                    <button class="submitbutton top_side" style="background: #0A0; left:70px">edit</button>
                     <strong style="font-family: arabic"> قسم</strong>
                     <span style="margin-right: 85px">`+dep_name+
                     `</span>
@@ -59,6 +57,7 @@ function add_data(params) {
     var dep_review = document.getElementById("dep_review");
     dep_review.innerHTML+=new_dep;
     event.preventDefault();
-
 }
 
+var form = document.getElementById("dep_form");
+form.addEventListener("submit",add_data);
