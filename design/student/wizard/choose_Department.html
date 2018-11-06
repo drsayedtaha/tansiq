@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<!-- id الرغبة الأولى = name1 -->
+
+<!-- id الرغبة الثانية = name2 -->
+
+<!-- id الرغبة الثالثة = name3 -->
+
+<!-- id الرغبة الرابعة = name4 -->
+
+<!-- id الرغبة الخامسة = name5 -->
+
+<!-- id الرغبة السادسة = name6 -->
+
+<head>
+
+    <title>ترتيب الرغبات</title>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../../style/style.css" />
+
+</head>
+<!--table>th*2+td*6>(div>button+button)+div>(div>span)-->
+<body>
+
+    <form class="container">
+      <div>
+       <label dir="rtl" style="font-size:100%; background-color:white; padding:5px; color:black; border:none;"
+                        id="name1"> الاقسام </label> 
+
+       <select name="القسم" class="submitbutton" style="background: white ;color:#000">
+
+                        <option value=" "></option>
+
+                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الحاسبات والنظم</option>
+
+                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة القوي والآلات الكهربية</option>
+
+                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الإلكترونيات والإتصالات الكهربية</option>
+
+                        <option value="الهندسة المدنية">الهندسة المدنية</option>
+
+                        <option value="الهندسة المعمارية">الهندسة المعمارية</option>
+
+                        <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
+
+                    </select>
+        <br>
+        <button class="submitbutton" style="margin: 10 50% " >اضافه</button>
+        </div>
+      <table>
+          <th>ترتيب</th>
+          <th>رغبات</th>
+          <tr>
+          <td class="msg_line">
+              <div style="display: inline-block"><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div  style="display: inline-block"><span>قسم كذا كذا</span></div>
+              </div>
+          </td>
+          </tr>
+<tr>
+          <td class="msg_line">
+                            <div><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div><span>قسم كذا كذا</span></div>
+              </div>
+          </td>
+		</tr>
+		<tr>
+          <td class="msg_line">
+                            <div><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div><span>قسم كذا كذا</span></div>
+              </div>
+          </td>
+			</tr>
+			<tr>
+          <td class="msg_line">
+                            <div><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div><span>قسم كذا كذا</span></div>
+              </div>
+               </td>
+               </tr>
+         
+      </table>
+        </form>
+    </body>
+</html>
