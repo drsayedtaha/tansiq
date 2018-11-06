@@ -1,230 +1,157 @@
 <!DOCTYPE html>
 
-<!-- ID الاسم : name -->
-<!-- ID رقم الجلوس : number -->
-
-
 <html lang="ar">
 
+<!-- id الرغبة الأولى = name1 -->
+
+<!-- id الرغبة الثانية = name2 -->
+
+<!-- id الرغبة الثالثة = name3 -->
+
+<!-- id الرغبة الرابعة = name4 -->
+
+<!-- id الرغبة الخامسة = name5 -->
+
+<!-- id الرغبة السادسة = name6 -->
+
 <head>
-    <meta charset="utf-8">
-    <title> اضافة طالب </title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="wizardstyle.css">
 
-    <style>
-
-        @font-face
-{
-font-family:arabicimport;
-src:url("arabic.otf");
-}
-header, main, footer {
-display: block;
-}
-#name1{
-font-size:100%;font-family:arabicimport; texr-align:right; float:right; background-color: #EFF7FA;border: 2px solid #6e7d8c;color: black ; padding:5px; }
-
-#name2{font-size:100%;font-family:arabicimport; texr-align:right; float:right; background-color: #EFF7FA;border: 2px solid #6e7d8c;color: black ; padding:5px;}
-
-#name3{font-size:100%;font-family:arabicimport;texr-align:right; float:right; background-color: #EFF7FA;border: 2px solid #6e7d8c;color: black ; padding:5px;}
-
-#name4{font-size:100%;texr-align:right;font-family:arabicimport; float:right; background-color: #EFF7FA;border: 2px solid #6e7d8c;color: black ; padding:5px;}
-
-#name5{font-size:100%;texr-align:right;font-family:arabicimport; float:right; background-color: #EFF7FA;border: 2px solid #6e7d8c;color: black ; padding:5px;}
-
-#name6{font-size:100%;texr-align:right; font-family:arabicimport;float:right; background-color: #EFF7FA;border: 2px solid #6e7d8c;color: black ; padding:5px;}
-
-#button{texr-align:right; float:left;font-family:arabicimport; background-color: #3B94D9;border: 2px solid #6e7d8c;color: white ;padding: 10px;margin-top: 20px;}
-
-</style>
-
+    <title>ترتيب الرغبات</title>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../../style/style.css" />
 
 </head>
+<!--table>th*2+td*6>(div>button+button)+div>(div>span)-->
+<body>
 
-
-
-<body style="text-align: right;padding-right: 20px">
-
-    <form action="process.php" method="POST">
-        <div id="name"> <label dir="rtl">
-                <strong style="font-family: arabic"> الاسم :</strong>
-                <input class="myinput" type="text" style="margin-right: 85px">
-            </label>
-
+   <div class="container">
+          <div style="margin: 20px">
+          <h style="margin: 20px">اسم</h>
+          <input type="text" class="myinput">
         </div>
-        <br>
-        <hr>
-        <br>
-        <div id="number">
-            <label dir="rtl"><strong style="font-family: arabic"> رقم الجلوس :</strong>
-                <input class="myinput" type="text" style="margin-right: 36px">
-            </label>
-
-        </div>
-
-
-        <br>
-
-
-        <hr><br>
-
-        <table style="width:100%">
-
+         <div style="margin: 20px">
+          <h>رقم جلوس</h>
+          <input type="text" class="myinput">
+          </div>
+      </div>
+    
+    <form class="container">
+        
+      
+      <div class="container" style=" text-align: right">
+        <table style="font-size:20px ">
+            <th style="margin: 10px"></th>
+            <th style="margin: 10px"></th>
             <tr>
-                <td>
-                    <select name="القسم" id="name1">
-
-                        <option value=" "></option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الحاسبات والنظم</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة القوي والآلات الكهربية</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الإلكترونيات والإتصالات الكهربية</option>
-
-                        <option value="الهندسة المدنية">الهندسة المدنية</option>
-
-                        <option value="الهندسة المعمارية">الهندسة المعمارية</option>
-
-                        <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
-
-                    </select>
-
-                </td>
-
-                <td>
-                    <label dir="rtl" style="font-size:100%; background-color:white; padding:5px; color:black; border:none;"
-                        id="name1"> الرغبة الأولى </label> </td>
+                <td id="studname">اسم الطالب</td>
             </tr>
 
-
             <tr>
-                <td>
-                    <select name="القسم" id="name2">
-
-                        <option value=" "></option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الحاسبات والنظم</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة القوي والآلات الكهربية</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الإلكترونيات والإتصالات الكهربية</option>
-
-                        <option value="الهندسة المدنية">الهندسة المدنية</option>
-
-                        <option value="الهندسة المعمارية">الهندسة المعمارية</option>
-
-                        <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
-
-                    </select>
-                </td>
-
-                <td><label dir="rtl" style="font-size:100%; background-color:white; padding:5px; color:black; border:none;"
-                        id="name2">الرغبة الثانية</label></td>
+                <td id="studbnumber">رقم الجلوس</td><br>
             </tr>
-
-
-            <tr>
-                <td>
-                    <select name="القسم" id="name3">
-                        <option value=" "></option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الحاسبات والنظم</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة القوي والآلات الكهربية</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الإلكترونيات والإتصالات الكهربية</option>
-
-                        <option value="الهندسة المدنية">الهندسة المدنية</option>
-                        <option value="الهندسة المعمارية">الهندسة المعمارية</option>
-
-                        <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
-
-                    </select>
-                </td>
-
-                <td> <label dir="rtl" style="font-size:100%; background-color:white; padding:5px; color:black; border:none;"
-                        id="name3"> الرغبة الثالثة</label> </td>
+		<tr>
+                <td id="studpid"> الرقم القومي</td>
             </tr>
-
-
-            <tr>
-                <td>
-                    <select name="القسم" id="name4">
-                        <option value=" "></option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الحاسبات والنظم</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة القوي والآلات الكهربية</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الإلكترونيات والإتصالات الكهربية</option>
-
-                        <option value="الهندسة المدنية">الهندسة المدنية</option>
-                        <option value="الهندسة المعمارية">الهندسة المعمارية</option>
-
-                        <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
-                    </select>
-                </td>
-                <td>
-                    <label dir="rtl" style="font-size:100%; background-color:white; padding:5px; color:black; border:none;"
-                        id="name4"> الرغبة الرابعة</label> </td>
+		<tr>
+                <td id="studcol">الكلية</td>
             </tr>
-
-
-            <tr>
-                <td>
-                    <select name="القسم" id="name5">
-                        <option value=" "></option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الحاسبات والنظم</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة القوي والآلات الكهربية</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الإلكترونيات والإتصالات الكهربية</option>
-
-                        <option value="الهندسة المدنية">الهندسة المدنية</option>
-
-                        <option value="الهندسة المعمارية">الهندسة المعمارية</option>
-
-                        <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
-                    </select>
-                </td>
-                <td>
-                    <label dir="rtl" style="font-size:100%; background-color:white; padding:5px; color:black; border:none;"
-                        id="name5"> الرغبة الخامسة</label> </td>
+		<tr>
+                <td id="studyear">السنة الدراسية</td>
             </tr>
-
-
-            <tr>
-                <td>
-                    <select name="القسم" id="name6">
-                        <option value=" "></option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الحاسبات والنظم</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة القوي والآلات الكهربية</option>
-
-                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الإلكترونيات والإتصالات الكهربية</option>
-
-                        <option value="الهندسة المدنية">الهندسة المدنية</option>
-
-                        <option value="الهندسة المعمارية">الهندسة المعمارية</option>
-
-                        <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
-                    </select>
-                </td>
-                <td>
-                    <label dir="rtl" style="font-size:100%; background-color:white; padding:5px; color:black; border:none;"
-                        id="name6">الرغبة السادسة</label>
-                </td>
+           
+        </table>
+	<table>
+	<tr>        
+        	<th>النتيجة</th>
             </tr>
+		<table>	
+		<tr><td>
+		<div>
+                <span id="m1">ماده</span>
+                <span id="md1" type="text"style="margin:0 20px 20px 50px ">65</span>
+            </div></td>
+	<td>
+		<div>
+                <span id="m2">ماده</span>
+                <span id="md2" type="text"style="margin:0 20px 20px 50px ">65</span>
+            </div></td>
+	<td>
+		<div>
+                <span id="m3">ماده</span>
+                <span id="md3" type="text"style="margin:0 20px 20px 50px ">65</span>
+            </div></td>
+	</tr>
+
         </table>
 
-        <a href="calender.html"><button class="submitbutton">تم</button></a>
+    </div>
 
+      <div class="container">
+      
+      <div >
+       <label dir="rtl" style="font-size:100%; background-color:white; padding:5px; color:black; border:none;"
+                        id="name1"> الاقسام </label> 
 
-    </form>
-</body>
+       <select name="القسم" class="submitbutton" style="background: white ;color:#000">
 
+                        <option value=" "></option>
+
+                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الحاسبات والنظم</option>
+
+                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة القوي والآلات الكهربية</option>
+
+                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الإلكترونيات والإتصالات الكهربية</option>
+
+                        <option value="الهندسة المدنية">الهندسة المدنية</option>
+
+                        <option value="الهندسة المعمارية">الهندسة المعمارية</option>
+
+                        <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
+
+                    </select>
+        <br>
+        <button class="submitbutton" style="margin: 10 50% " >اضافه</button>
+        </div>
+      <table>
+          <th>ترتيب</th>
+          <th>رغبات</th>
+          <tr>
+          <td class="msg_line">
+              <div style="display: inline-block"><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div  style="display: inline-block"><span>قسم كذا كذا</span></div>
+              </div>
+          </td>
+          </tr>
+<tr>
+          <td class="msg_line">
+                            <div><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div><span>قسم كذا كذا</span></div>
+              </div>
+          </td>
+		</tr>
+		<tr>
+          <td class="msg_line">
+                            <div><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div><span>قسم كذا كذا</span></div>
+              </div>
+          </td>
+			</tr>
+			<tr>
+          <td class="msg_line">
+                            <div><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div><span>قسم كذا كذا</span></div>
+              </div>
+               </td>
+               </tr>
+         
+      </table>
+        </div>
+        </div>
+        </form>
+    </body>
 </html>

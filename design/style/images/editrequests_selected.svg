@@ -14,7 +14,7 @@
    viewBox="0 0 26.458333 26.458334"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (unknown)"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="editrequests_selected.svg">
   <defs
      id="defs2" />
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,111 +57,89 @@
     <g
        id="g891"
        transform="matrix(0.04919333,0,0,0.04919333,1.2174191,271.15119)"
-       style="fill:#eacdc2;fill-opacity:1">
+       style="fill:#f2f2f2;fill-opacity:1">
       <g
          id="g829"
-         style="fill:#eacdc2;fill-opacity:1">
-	<g
-   id="g827"
-   style="fill:#eacdc2;fill-opacity:1">
-		<g
-   id="g825"
-   style="fill:#eacdc2;fill-opacity:1">
-			<path
-   id="path815"
-   d="m 352.459,220 c 0,-11.046 -8.954,-20 -20,-20 h -206 c -11.046,0 -20,8.954 -20,20 0,11.046 8.954,20 20,20 h 206 c 11.046,0 20,-8.954 20,-20 z"
-   inkscape:connector-curvature="0"
-   style="fill:#eacdc2;fill-opacity:1" />
-
-			<path
-   id="path817"
-   d="m 126.459,280 c -11.046,0 -20,8.954 -20,20 0,11.046 8.954,20 20,20 H 251.57 c 11.046,0 20,-8.954 20,-20 0,-11.046 -8.954,-20 -20,-20 z"
-   inkscape:connector-curvature="0"
-   style="fill:#eacdc2;fill-opacity:1" />
-
-			<path
-   id="path819"
-   d="M 173.459,472 H 106.57 c -22.056,0 -40,-17.944 -40,-40 V 80 c 0,-22.056 17.944,-40 40,-40 h 245.889 c 22.056,0 40,17.944 40,40 v 123 c 0,11.046 8.954,20 20,20 11.046,0 20,-8.954 20,-20 V 80 c 0,-44.112 -35.888,-80 -80,-80 H 106.57 c -44.112,0 -80,35.888 -80,80 v 352 c 0,44.112 35.888,80 80,80 h 66.889 c 11.046,0 20,-8.954 20,-20 0,-11.046 -8.954,-20 -20,-20 z"
-   inkscape:connector-curvature="0"
-   style="fill:#eacdc2;fill-opacity:1" />
-
-			<path
-   id="path821"
-   d="m 467.884,289.572 c -23.394,-23.394 -61.458,-23.395 -84.837,-0.016 l -109.803,109.56 c -2.332,2.327 -4.052,5.193 -5.01,8.345 l -23.913,78.725 c -2.12,6.98 -0.273,14.559 4.821,19.78 3.816,3.911 9,6.034 14.317,6.034 1.779,0 3.575,-0.238 5.338,-0.727 l 80.725,-22.361 c 3.322,-0.92 6.35,-2.683 8.79,-5.119 L 467.885,374.426 c 23.394,-23.394 23.394,-61.458 -10e-4,-84.854 z m -134.108,162.196 -40.612,11.25 11.885,-39.129 74.089,-73.925 28.29,28.29 z m 105.839,-105.638 -3.875,3.867 -28.285,-28.285 3.862,-3.854 c 7.798,-7.798 20.486,-7.798 28.284,0 7.798,7.798 7.798,20.486 0.014,28.272 z"
-   inkscape:connector-curvature="0"
-   style="fill:#eacdc2;fill-opacity:1" />
-
-			<path
-   id="path823"
-   d="m 332.459,120 h -206 c -11.046,0 -20,8.954 -20,20 0,11.046 8.954,20 20,20 h 206 c 11.046,0 20,-8.954 20,-20 0,-11.046 -8.954,-20 -20,-20 z"
-   inkscape:connector-curvature="0"
-   style="fill:#eacdc2;fill-opacity:1" />
-
-		</g>
-
-	</g>
-
-</g>
+         style="fill:#f2f2f2;fill-opacity:1">
+        <g
+           id="g827"
+           style="fill:#f2f2f2;fill-opacity:1">
+          <g
+             id="g825"
+             style="fill:#f2f2f2;fill-opacity:1">
+            <path
+               id="path815"
+               d="m 352.459,220 c 0,-11.046 -8.954,-20 -20,-20 h -206 c -11.046,0 -20,8.954 -20,20 0,11.046 8.954,20 20,20 h 206 c 11.046,0 20,-8.954 20,-20 z"
+               inkscape:connector-curvature="0"
+               style="fill:#f2f2f2;fill-opacity:1" />
+            <path
+               id="path817"
+               d="m 126.459,280 c -11.046,0 -20,8.954 -20,20 0,11.046 8.954,20 20,20 H 251.57 c 11.046,0 20,-8.954 20,-20 0,-11.046 -8.954,-20 -20,-20 z"
+               inkscape:connector-curvature="0"
+               style="fill:#f2f2f2;fill-opacity:1" />
+            <path
+               id="path819"
+               d="M 173.459,472 H 106.57 c -22.056,0 -40,-17.944 -40,-40 V 80 c 0,-22.056 17.944,-40 40,-40 h 245.889 c 22.056,0 40,17.944 40,40 v 123 c 0,11.046 8.954,20 20,20 11.046,0 20,-8.954 20,-20 V 80 c 0,-44.112 -35.888,-80 -80,-80 H 106.57 c -44.112,0 -80,35.888 -80,80 v 352 c 0,44.112 35.888,80 80,80 h 66.889 c 11.046,0 20,-8.954 20,-20 0,-11.046 -8.954,-20 -20,-20 z"
+               inkscape:connector-curvature="0"
+               style="fill:#f2f2f2;fill-opacity:1" />
+            <path
+               id="path821"
+               d="m 467.884,289.572 c -23.394,-23.394 -61.458,-23.395 -84.837,-0.016 l -109.803,109.56 c -2.332,2.327 -4.052,5.193 -5.01,8.345 l -23.913,78.725 c -2.12,6.98 -0.273,14.559 4.821,19.78 3.816,3.911 9,6.034 14.317,6.034 1.779,0 3.575,-0.238 5.338,-0.727 l 80.725,-22.361 c 3.322,-0.92 6.35,-2.683 8.79,-5.119 L 467.885,374.426 c 23.394,-23.394 23.394,-61.458 -10e-4,-84.854 z m -134.108,162.196 -40.612,11.25 11.885,-39.129 74.089,-73.925 28.29,28.29 z m 105.839,-105.638 -3.875,3.867 -28.285,-28.285 3.862,-3.854 c 7.798,-7.798 20.486,-7.798 28.284,0 7.798,7.798 7.798,20.486 0.014,28.272 z"
+               inkscape:connector-curvature="0"
+               style="fill:#f2f2f2;fill-opacity:1" />
+            <path
+               id="path823"
+               d="m 332.459,120 h -206 c -11.046,0 -20,8.954 -20,20 0,11.046 8.954,20 20,20 h 206 c 11.046,0 20,-8.954 20,-20 0,-11.046 -8.954,-20 -20,-20 z"
+               inkscape:connector-curvature="0"
+               style="fill:#f2f2f2;fill-opacity:1" />
+          </g>
+        </g>
+      </g>
       <g
          id="g831"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g833"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g835"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g837"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g839"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g841"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g843"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g845"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g847"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g849"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g851"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g853"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g855"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g857"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
       <g
          id="g859"
-         style="fill:#eacdc2;fill-opacity:1">
-</g>
+         style="fill:#f2f2f2;fill-opacity:1" />
     </g>
   </g>
 </svg>
