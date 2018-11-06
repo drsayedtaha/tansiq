@@ -64,6 +64,7 @@ body{
 }
 
 .container{
+    position: relative;
     margin: 20px;
     width: auto;
     height: auto;
