@@ -1,11 +1,14 @@
- package com.cse.tansik; 
-abstract class user 
-{
+package com.cse.tansik;
+
+abstract class User 
+{	
 	 String name;
 	 String password;
 	 University University;
-         public faculty faculty;
-	 int id;
+         public Faculty faculty;
+	 private int id;
+    	public abstract int getId();
+    	
          String Password;
 
 public  abstract boolean logIn(String table) ;

@@ -1,8 +1,9 @@
- package com.cse.tansik; 
-public abstract class admin extends user 
+package com.cse.tansik;
+
+public abstract class Admin extends User 
 {
 	
-	private branch[] branches;
+	private Branch[] branches;
 
     public boolean addSubject(String name,float Degree) 
 	{
@@ -14,9 +15,11 @@ public abstract class admin extends user
 	{}
 	public void AddStudent (student Student) 
 	{}
+    public void RemoveStudent (student Student) 
+    {}
 	public abstract boolean setSubject(subject subject, float degree) 
 	;
-	public abstract boolean setBranches(branch[]branches) 
+	public abstract boolean setBranches(Branch[]branches) 
 	;
     public abstract boolean saveData ();
 
