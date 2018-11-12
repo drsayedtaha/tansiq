@@ -5,6 +5,8 @@ public abstract class Department {
     private int id;
     private EduYear eduYear ;
     private Prequistes preq;
+    private  int maxCapcity;
+    private int minCapcity;
     @Override;
     public boolean equals(Object o)
     {
@@ -40,5 +42,29 @@ public abstract class Department {
 
     public Prequistes getPreq() {
         return preq;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setMaxCapcity(int maxCapcity) {
+        this.maxCapcity = maxCapcity;
+    }
+
+    public int getMaxCapcity() {
+        return maxCapcity;
+    }
+
+    public void setMinCapcity(int minCapcity) {
+        this.minCapcity = minCapcity;
+    }
+
+    public int getMinCapcity() {
+        return minCapcity;
     }
 }
