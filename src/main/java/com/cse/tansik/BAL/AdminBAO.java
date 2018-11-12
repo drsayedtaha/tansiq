@@ -10,8 +10,8 @@ import java.util.Arrays;
 public interface AdminBAO extends UserBAO
 {
     Student getData(User user);
-    boolean setRequsets (List<Request> requests);
-    boolean sendMessage();
+    boolean setRequsetsForStudent (List<Request> requests,Student student);
+    boolean sendMessage(String text, Student student);
     Message getMessage();
     boolean setDate(Date start ,Date end);
     Student getStudent(String userName ,String Password);
@@ -21,6 +21,7 @@ public interface AdminBAO extends UserBAO
     List<Prequistes>  getPrequsites(Department dep); 
     Department getDep(EduYear year ,String name);
    List<Department> getDeps (EduYear year);
-    
+    Admin getData();
+    boolean setData();
     
 }
