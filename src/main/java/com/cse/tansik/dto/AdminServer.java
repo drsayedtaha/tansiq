@@ -1,10 +1,9 @@
 package com.cse.tansik.dto;
 
-public  class AdminServer extends User {
-	
-Admin admins[];
-University university;
+public class AdminServer extends User {
 
+    Admin admins[];
+    University university;
 
     public void setAdmins(Admin[] admins) {
         this.admins = admins;

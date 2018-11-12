@@ -5,13 +5,13 @@ public class University {
     private int id;
     private EduYear[] eduYears;
 
-    public boolean equals(Object o)
-    {
-        University u=(University)(o);
-        
-        return (this.name==u.name&&this.id==u.id);
-        
-        }
+    public boolean equals(Object o) {
+        University u = (University) (o);
+
+        return (this.name == u.name && this.id == u.id);
+
+    }
+
     public void setName(String name) {
         this.name = name;
     }

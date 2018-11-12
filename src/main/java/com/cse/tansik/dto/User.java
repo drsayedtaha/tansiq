@@ -1,9 +1,9 @@
 package com.cse.tansik.dto;
 
-  class User {
-    int role; 
+public class User {
+
     private String userName;
-    private String firstName,secondName,lastName;
+    private String firstName, secondName, lastName;
     private String password;
     private String email;
     private University University;
@@ -11,8 +11,7 @@ package com.cse.tansik.dto;
     private int role;
     private int id;
 
-   private String Password;
-
+    private String Password;
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -79,19 +78,17 @@ package com.cse.tansik.dto;
     }
 
     @Override
-    public boolean equals(Object o)
-    {
-        User user2=(User)o;
-        if(this.id==user2.id&&this.userName.equals(user2.userName))
-        return true; 
+    public boolean equals(Object o) {
+        User user2 = (User) o;
+        if (this.id == user2.id && this.userName.equals(user2.userName))
+            return true;
         return false;
-        }
- 
-        @Override
-        public String toString()
-        {
-            return (this.id+" "+" "+this.userName+" "+this.email) ;
-        }
+    }
+
+    @Override
+    public String toString() {
+        return (this.id + " " + " " + this.userName + " " + this.email);
+    }
 
     public void setEmail(String email) {
         this.email = email;
@@ -117,5 +114,3 @@ package com.cse.tansik.dto;
         return Password;
     }
 }
-   
-    

@@ -1,9 +1,11 @@
 package com.cse.tansik.dto;
+
 import java.util.Date;
+
 public class Prequistes {
     private Subject[] subjects;
     private int id;
-    private Date start ,end;
+    private Date start, end;
 
     public void setSubjects(Subject[] subjects) {
         this.subjects = subjects;
@@ -13,7 +15,6 @@ public class Prequistes {
         return subjects;
     }
 
-    
     public void setId(int id) {
         this.id = id;
     }
@@ -22,10 +23,9 @@ public class Prequistes {
         return id;
     }
 
-
     public void setStart(Date start) {
-        
-        this.start =(Date) start.clone();
+
+        this.start = (Date) start.clone();
     }
 
     public Date getStart() {

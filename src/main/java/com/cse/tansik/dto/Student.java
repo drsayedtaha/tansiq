@@ -1,17 +1,16 @@
 package com.cse.tansik.dto;
 
-public  class Student extends User {
-	private Subject[] subjects;
-	private Department Department;
-        private Request[] requests;
-	private String nationalID;
-	private float degree;
-	private  int year;
-
+public class Student extends User {
+    private Subject[] subjects;
+    private Department Department;
+    private Request[] requests;
+    private String nationalID;
+    private float degree;
+    private int year;
 
     public void setSubjects(Subject[] subjects) {
-        //copying info
-        //this.subjects = subjects;
+        // copying info
+        // this.subjects = subjects;
     }
 
     public Subject[] getSubjects() {
@@ -19,8 +18,8 @@ public  class Student extends User {
     }
 
     public void setDepartment(Department Department) {
-        //copying info
-        //this.Department = Department;
+        // copying info
+        // this.Department = Department;
     }
 
     public Department getDepartment() {

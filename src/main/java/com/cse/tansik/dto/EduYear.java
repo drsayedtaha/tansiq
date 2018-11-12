@@ -1,7 +1,6 @@
 package com.cse.tansik.dto;
 
-public abstract class EduYear 
-{
+public abstract class EduYear {
     int id;
     int year;
 
@@ -13,7 +12,6 @@ public abstract class EduYear
         return id;
     }
 
-    
     public void setYear(int year) {
         this.year = year;
     }
@@ -21,20 +19,20 @@ public abstract class EduYear
     public int getYear() {
         return year;
     }
+
     @Override
-    public boolean equals(Object o)
-    {
-        EduYear EduYear=(EduYear)(o);
-        
-        if (this.id==EduYear.id&&this.year==EduYear.getYear())
+    public boolean equals(Object o) {
+        EduYear EduYear = (EduYear) (o);
+
+        if (this.id == EduYear.id && this.year == EduYear.getYear())
             return true;
-        
+
         return false;
-        }
+    }
+
     @Override
-    public String toString()
-    {
-        return this.id+" "+this.getYear();
-        }
+    public String toString() {
+        return this.id + " " + this.getYear();
+    }
 
 }

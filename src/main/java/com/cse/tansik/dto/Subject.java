@@ -1,9 +1,9 @@
 package com.cse.tansik.dto;
 
 public abstract class Subject {
- private String name;
- private float Degree ;
- private int id;
+    private String name;
+    private float Degree;
+    private int id;
 
     public void setName(String name) {
         this.name = name;
@@ -28,12 +28,13 @@ public abstract class Subject {
     public int getId() {
         return id;
     }
+
     @Override
-    public boolean equals(Object o)
-    {
-        Subject subject2=(Subject)(o);
-        
-        if (this.id==subject2.id&&this.name==subject2.name&&this.Degree==subject2.Degree)
-        return false;
-        }
+    public boolean equals(Object o) {
+        Subject subject2 = (Subject) (o);
+
+        if (this.id == subject2.id && this.name == subject2.name && this.Degree == subject2.Degree)
+            return false;
+        return true;
+    }
 }
