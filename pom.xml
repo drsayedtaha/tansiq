@@ -4,5 +4,12 @@
   <artifactId>tansiq</artifactId>
   <version>1</version>
   
-
+   <build>
+    <resources>
+      <resource>
+        <directory>src/com/cse/tansik</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
 </project>
