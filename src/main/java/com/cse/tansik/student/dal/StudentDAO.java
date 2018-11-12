@@ -1,6 +1,7 @@
 package com.cse.tansik.student.dal;
 
 import com.cse.tansik.dto.*;
+import java.util.List;
 
 public interface StudentDAO {
 
@@ -10,7 +11,7 @@ public interface StudentDAO {
 
     boolean addRequest(Request request);
     boolean deletRequest(Request request);
-    list<Request> getRequests(User user);
+    List<Request> getRequests(User user);
 
     /*
     *   get student department after 

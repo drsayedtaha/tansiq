@@ -2,10 +2,13 @@ com/cse/tansik/dto/Admin.class
 com/cse/tansik/dto/EduYear.class
 com/cse/tansik/dto/Student.class
 com/cse/tansik/dto/Department.class
+com/cse/tansik/user/dal/UserDAO.class
+com/cse/tansik/dto/University.class
+com/cse/tansik/admin/dal/AdminDAO.class
+com/cse/tansik/dto/Message.class
 com/cse/tansik/dto/Prequistes.class
+com/cse/tansik/student/dal/StudentDAO.class
 com/cse/tansik/dto/Subject.class
 com/cse/tansik/dto/Request.class
-com/cse/tansik/user/dal/UserDAO.class
 com/cse/tansik/dto/AdminServer.class
-com/cse/tansik/dto/University.class
 com/cse/tansik/dto/User.class
