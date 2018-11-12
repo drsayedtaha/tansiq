@@ -1,5 +1,7 @@
 package com.cse.tansik.user.dal;
 
+import java.util.List;
+
 import com.cse.tansik.dto.*;
 
 public interface UserDAO {
@@ -8,6 +10,6 @@ public interface UserDAO {
 
     boolean addMessage(Message message);
     boolean deletMessage(Message message);
-    list<Message> getMessages(User user);
+    List<Message> getMessages(User user);
 
 }
