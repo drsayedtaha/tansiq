@@ -2,8 +2,6 @@ package com.cse.tansik.dto;
 import java.util.Date;
 public class Prequistes {
     private Subject[] subjects;
-    private  int maxCapcity;
-    private int minCapcity;
     private int id;
     private Date start ,end;
 
@@ -15,22 +13,7 @@ public class Prequistes {
         return subjects;
     }
 
-    public void setMaxCapcity(int maxCapcity) {
-        this.maxCapcity = maxCapcity;
-    }
-
-    public int getMaxCapcity() {
-        return maxCapcity;
-    }
-
-    public void setMinCapcity(int minCapcity) {
-        this.minCapcity = minCapcity;
-    }
-
-    public int getMinCapcity() {
-        return minCapcity;
-    }
-
+    
     public void setId(int id) {
         this.id = id;
     }
