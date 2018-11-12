@@ -1,0 +1,10 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.fym.cse.tansiq</groupId>
+  <artifactId>tansiq</artifactId>
+  <version>1</version>
+  
+  <build>
+    <sourceDirectory>${project.basedir}/src/com/fym/cse</sourceDirectory>
+  <build>	
+</project>
