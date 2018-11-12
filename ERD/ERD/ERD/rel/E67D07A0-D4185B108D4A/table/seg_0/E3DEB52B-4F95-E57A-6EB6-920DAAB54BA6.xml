@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3DEB52B-4F95-E57A-6EB6-920DAAB54BA6" schemaObject="0BF375C6-A386-2D37-9E82-AE647B707DF2" name="REPORTS">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REPORTS</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-13 04:48:29 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STUDENT_ID" id="58D4E5D8-1E4E-2017-C1B2-20DDA0AF21EC">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>REPORTS</sourceObjSchema>
+<sourceObjName>STUDENT_ID</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-13 04:48:29 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="690C868A-4E02-B841-E844-64C83C81DFDD" referredColumn="253B2738-A73E-0FBA-F037-A0A1A061E902"/>
+</associations>
+</Column>
+<Column name="REPORT" id="A3E2A4D3-6DF5-4BC6-AA4B-A99C56B2846F">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>REPORTS</sourceObjSchema>
+<sourceObjName>REPORT</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-13 04:48:29 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C4024E0-F6EB-C303-0225-E1C6DB30325A" name="REPORTS_FK1">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-13 04:48:30 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58D4E5D8-1E4E-2017-C1B2-20DDA0AF21EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
