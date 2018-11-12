@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SUBJECT" directorySegmentName="seg_0" id="97F5D2AA-7FB0-2743-0025-DAC9B736C2F1">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:52 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>05963493-E4D1-4FE2-58D7-06D2A83E110A</segment>
+<tableSpace>F990FE49-2186-CE84-4E7D-8E4E14AC9614</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="6B100481-80BF-DD18-3DB1-6CDDFC2B19C6">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:52 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="C0A7BBC9-A7E3-F508-1749-680279FBD3F4">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:52 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SUBJECT_PK" id="A3089CFC-A15E-26B1-3F5C-F70C11A95674">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:52 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
+<segment>039C608A-6B54-B8D8-D3B0-202DEAE581F1</segment>
+<tableSpace>F990FE49-2186-CE84-4E7D-8E4E14AC9614</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SUBJECT_PK" id="9F597C9C-A10A-91C5-100B-91C76C229A11">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:52 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<segment>039C608A-6B54-B8D8-D3B0-202DEAE581F1</segment>
+<tableSpace>F990FE49-2186-CE84-4E7D-8E4E14AC9614</tableSpace>
+<existingIndex>A3089CFC-A15E-26B1-3F5C-F70C11A95674</existingIndex>
+<indexSegment>039C608A-6B54-B8D8-D3B0-202DEAE581F1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
