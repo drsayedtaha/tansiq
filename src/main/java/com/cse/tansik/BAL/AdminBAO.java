@@ -1,12 +1,10 @@
 package com.cse.tansik.BAL;
 
-import com.cse.tansik.dto.Student;
-import com.cse.tansik.dto.User;
-import com.cse.tansik.dto.*;
+
+import com.cse.tansik.DTO.*;
 import java.util.*;
 import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
+
 public interface AdminBAO extends UserBAO
 {
     Student getData(User user);

@@ -1,7 +1,5 @@
 package com.cse.tansik.DTO;
 
-import com.cse.tansik.dto.User;
-
 /**
  * Message info
  */
