@@ -1,10 +1,10 @@
-package com.cse.tansik.admin.dal;
+package com.cse.tansik.DAL;
 
 import java.sql.Date;
 import java.util.List;
 import com.cse.tansik.dto.*;
 
-public interface AdminDAO {
+public interface AdminDAO extends UserDAO  { 
 
     boolean addStudent(Student student);
     boolean deleteStudent(Student student);

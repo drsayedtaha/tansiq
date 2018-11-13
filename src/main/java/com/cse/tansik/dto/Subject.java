@@ -1,4 +1,4 @@
-package com.cse.tansik.dto;
+package com.cse.tansik.DTO;
 
 public abstract class Subject {
     private String name;

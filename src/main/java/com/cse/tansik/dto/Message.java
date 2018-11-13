@@ -1,4 +1,4 @@
-package com.cse.tansik.dto;
+package com.cse.tansik.DTO;
 
 import com.cse.tansik.dto.User;
 

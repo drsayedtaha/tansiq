@@ -1,9 +1,9 @@
-package com.cse.tansik.student.dal;
+package com.cse.tansik.DAL;
 
 import com.cse.tansik.dto.*;
 import java.util.List;
 
-public interface StudentDAO {
+public interface StudentDAO extends UserDAO{
 
     /*
     *get/set student requests
@@ -11,12 +11,10 @@ public interface StudentDAO {
 
     boolean addRequest(Request request);
     boolean deletRequest(Request request);
-    List<Request> getRequests(User user);
 
     /*
-    *   get student department after 
+    *   get student department after
     *   coordination finshes
     */
-    Department getDepartment(Student student);
 
 }

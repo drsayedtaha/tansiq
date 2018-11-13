@@ -1,4 +1,4 @@
-package com.cse.tansik.dto;
+package com.cse.tansik.DTO;
 
 public class Student extends User {
     private Subject[] subjects;
