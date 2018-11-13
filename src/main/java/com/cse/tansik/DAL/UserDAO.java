@@ -11,6 +11,7 @@ public interface UserDAO {
     boolean deletMessage(Message message);
     List<Message> getMessages(User user);
 
+    //student request for department
     boolean addRequest(Request request, Student student);
     boolean deletRequest(Request request, Student student);
     List<Request> getAllRequests(Student student);
