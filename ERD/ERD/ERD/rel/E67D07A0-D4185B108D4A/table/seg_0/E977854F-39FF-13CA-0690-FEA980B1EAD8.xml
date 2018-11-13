@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E977854F-39FF-13CA-0690-FEA980B1EAD8" schemaObject="0BF375C6-A386-2D37-9E82-AE647B707DF2" name="TIMELINE">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>TIMELINE</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-14 01:12:28 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPARTMENT" id="FDD6585B-71A2-AE35-1ACC-82E7E5FF565B">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>TIMELINE</sourceObjSchema>
+<sourceObjName>DEPARTMENT</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-14 01:12:28 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="161EBF4A-1219-EB89-A23D-98974E237510">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>TIMELINE</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-14 01:12:28 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="AB217C14-4F2F-E10E-383D-B4690536BF21">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>TIMELINE</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-14 01:12:28 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>
