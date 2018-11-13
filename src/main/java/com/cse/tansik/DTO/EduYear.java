@@ -1,8 +1,14 @@
 package com.cse.tansik.DTO;
 
+import java.util.Date;
+import java.util.List;
+
 public abstract class EduYear {
     int id;
     int year;
+    Date startDate;
+    Date endDate;
+    
 
     public void setId(int id) {
         this.id = id;
