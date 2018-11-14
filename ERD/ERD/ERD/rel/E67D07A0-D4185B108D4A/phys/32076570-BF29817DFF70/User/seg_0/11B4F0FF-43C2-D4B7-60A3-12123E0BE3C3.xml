@@ -5,7 +5,6 @@
 <createdBy>Abdullah</createdBy>
 <createdTime>2018-11-07 22:51:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
-<schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
 <defTableSpace>57FF722C-9028-3B2B-35A4-089727D56AF0</defTableSpace>
 <privileges>CREATE VIEW, UNLIMITED TABLESPACE, CREATE DATABASE LINK, CREATE SEQUENCE, CREATE SESSION, ALTER SESSION, CREATE SYNONYM</privileges>
 </UserOraclev10g>

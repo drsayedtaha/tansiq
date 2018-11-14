@@ -28,11 +28,4 @@
 <ownerDesignName>ERD</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
-<foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TIMELINE_FK1" id="1CCF8E6F-09C8-A4DD-3325-2C341ADC0ACD">
-<createdBy>Abdullah</createdBy>
-<createdTime>2018-11-14 01:12:28 UTC</createdTime>
-<ownerDesignName>ERD</ownerDesignName>
-</ForeignKey>
-</foreignKeys>
 </TableProxyOraclev11g>
