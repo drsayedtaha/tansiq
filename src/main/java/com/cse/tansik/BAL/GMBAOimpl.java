@@ -37,6 +37,7 @@ public class GMBAOimpl implements GMBAO {
     }
 
     @Override
+    //
     public Student getData(User user) {
         // TODO Implement this method
         return null;

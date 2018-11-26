@@ -23,7 +23,7 @@ private userDAL userdal;
 
     @Override
     /*
-    *  //add getstudent to admen dal
+    *  //add getstudent to admin dal
     *
     * get student data by user id 
     *
@@ -45,41 +45,110 @@ private userDAL userdal;
     }
 
     @Override
-    public boolean setRequsetsForStudent(List<Request> requests, Student student) {
+    /*
+    *
+    * set student requests when the admin need if some problems done 
+    *
+    * parameters requests and student_id
+    *
+    *
+    *  return request
+    */
+    public request setRequsetsForStudent(List<Request> requests, Student student) {
         // TODO Implement this method
-        return false;
+        return request ;
     }
 
     @Override
-    public boolean sendMessage(String text, Student student) {
-        // TODO Implement this method
-        return false;
-    }
-
-    @Override
-    public Message getMessage() {
+     /*
+    *
+    * send message to student when the want to contact with student 
+    *
+    * parameters message
+    *
+    *
+    *  return null
+    */
+    public void sendMessage(String text) {
         // TODO Implement this method
         return null;
     }
 
     @Override
-    public boolean setDate(Date start, Date end) {
-        // TODO Implement this method
-        return false;
-    }
-
-    @Override
-    public Student getStudent(String userName, String Password) {
+     /*
+    *
+    * send message to student when the want to contact with student 
+    *
+    * parameters message
+    *
+    *
+    *  return null
+    */
+    public Message getMessage(message message) {
         // TODO Implement this method
         return null;
     }
 
     @Override
-    public boolean editStudent(Student student) {
+     /*
+    *
+    * set The beginning of the period of receiving the wishes of the students and the deadline
+    *
+    * parameters date of start ,date of the end
+    *
+    *
+    *  return null
+    */
+    public void setDate(Date start, Date end) {
         // TODO Implement this method
-        return false;
+        return null;
     }
 
+    @Override
+   /*
+    *
+    * get student information 
+    *
+    * parameters student   
+    *
+    *
+    *  return student
+    */
+    public Student getStudent(int student ) {
+        // TODO Implement this method
+        return student;
+    }
+
+    @Override
+    /*
+    *
+    * edit student information 
+    *
+    * parameters student   
+    *
+    *
+    *  return student
+    */
+   
+    public student editStudent(Student student) {
+        // TODO Implement this method
+        return student;
+    }
+     @Override
+    /*
+    *
+    * get Message from student if the student send message
+    *
+    * parameters student   
+    *
+    *
+    *  return student
+    */
+   
+   public void getMessage(message message){
+        
+      // TODO Implement this method
+    }
     @Override
     public List<Student> getAllStudents() {
         // TODO Implement this method
