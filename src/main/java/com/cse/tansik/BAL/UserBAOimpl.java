@@ -33,7 +33,7 @@ public class UserBAOimpl implements UserBAO {
     }
 
     @Override
-    public boolean addRequest(List<Request> requests) {
+    public boolean addRequest(List<Request>requests) {
         // TODO Implement this method
         return false;
     }
