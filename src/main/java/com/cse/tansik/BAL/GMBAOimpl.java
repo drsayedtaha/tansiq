@@ -8,10 +8,58 @@ import java.util.Date;
 import java.util.List;
 
 public class GMBAOimpl implements GMBAO {
-    public GMBAOimpl() {
-        super();
-    }
+   
+    @Override
+    /**
+    * check if the user is found in database and if no errors or the user not exist returns true 
+    * @param  user DTO object represnts data required to be saved
+    * @return true when succeeded in saving data
+    */
+   
+    public boolean editUser(User user) 
+    
+    {
+    if (gmDAO.isExist(user)) 
+          try
+          {  gmDAO.editUser(user);
+         return true;
+        } 
+         catch (Exception e)
+         {
+        //handle excepetion
+            return false;
+         
+        }
 
+}
+    /**
+     * adds new admin to database
+     * @param Admin data of admin will be added
+     */
+    public boolean addAdmin(Admin admin) {
+    try {
+        //adding admin
+        }
+        catch(Exception e)
+        {//handle exception
+            return false;}
+    }
+    /**
+     * remove admin to database
+     * @param Admin data of admin will be removed
+     */
+    public boolean removeAdmin(Admin admin) {
+        try {if(!gmDAO.isExist(admin))
+            return false;
+            
+            //remove admin 
+            return true;
+            }
+            catch(Exception e)
+            {//handle exception
+                return false;}
+        }
+    
     @Override
 //returns a list of all admins in the DB if the DataBase is found and the view will update its pages (the page that will have the result) according to that list  
     public List<Admin> getAllAdmins() {
@@ -19,7 +67,7 @@ public class GMBAOimpl implements GMBAO {
             
                 
         // if (no exception arises )       
-                return gmDAO.getAllAdmins();;
+                return gmDAO.getAllAdmins();
         //else 
         /*
         {
@@ -50,29 +98,7 @@ public class GMBAOimpl implements GMBAO {
     
  }
 
-    @Override
-    /**
-    * check if the user is found in database and if no errors or the user not exist returns true 
-    * @param  user DTO object represnts data required to be saved
-    * @return true when succeeded in saving data
-    */
    
-    public boolean editUser(User user) 
-    
-    {
-    if (!gmDAO.isExist(user)) 
-          try
-          {  gmDAO.editUser(user);
-         return user;
-        } 
-         catch (Exception e)
-         {
-        //handle excepetion
-            return false;
-         
-        }
-return true;
-}
 
  
     @Override
