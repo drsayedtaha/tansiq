@@ -8,6 +8,7 @@ public interface AdminDAO extends UserDAO  {
     boolean isExist (Student student);
     boolean addStudent(Student student);
     boolean deleteStudent(Student student);
+    student getStudent(String id);
     List<Student> getAllStudents (EduYear eduYear);
 
     

@@ -18,10 +18,30 @@ public class AdminBAOimpl implements AdminBAO {
         super();
     }
 
+private userDAL userdal;
+
+
     @Override
+    /*
+    *  //add getstudent to admen dal
+    *
+    * get student data by user id 
+    *
+    * parameters user
+    * return student object with all data
+    * 
+    */
+    
     public Student getData(User user) {
-        // TODO Implement this method
-        return null;
+       //check if ssn is valid
+       if (len(user.id) != 14){
+           //throw error
+       }
+
+       //get student by id
+        Student student = new Student();
+        student = userdal.getStudent(user.id);  
+        return student;
     }
 
     @Override
