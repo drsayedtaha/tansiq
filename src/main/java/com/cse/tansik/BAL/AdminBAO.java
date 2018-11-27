@@ -15,16 +15,17 @@ public interface AdminBAO extends UserBAO {
     // remove beacause of dublication in getstudent
     // Student getStudentData(User user);
     //
+    boolean setRequsetsForStudent(List<Request> requests, Student student);
+
     boolean sendMessage(String text, Student student);
     Message getMessage();
 
     boolean setDate(Date start, Date end);
 
-    Student getStudent(String id); // implement
+    Student getStudent((User user); // implement
     boolean editStudent(Student student);
     List<Student> getAllStudents();
 
-    boolean setRequsetsForStudent(List<Request> requests, Student student);
 
 
     boolean editPrequistes(Prequistes preq, Department dep);

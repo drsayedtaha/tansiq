@@ -14,27 +14,6 @@ public class AdminBAOimpl implements AdminBAO {
 
     private userDAL userdal;
 
-    @Override
-    /*
-     * //add getstudent to admin dal
-     *
-     * get student data by user id
-     *
-     * parameters user return student object with all data
-     * 
-     */
-
-    public Student getData(User user) {
-        // check if ssn is valid
-        if (len(user.id) != 14) {
-            // throw error
-        }
-
-        // get student by id
-        Student student = new Student();
-        student = userdal.getStudent(user.id);
-        return student;
-    }
 
     @Override
     /*
@@ -97,20 +76,29 @@ public class AdminBAOimpl implements AdminBAO {
         return null;
     }
 
+
     @Override
     /*
+     * //add getstudent to admin dal
      *
-     * get student information
+     * get student data by user id
      *
-     * parameters student
-     *
-     *
-     * return student
+     * parameters user return student object with all data
+     * 
      */
-    public Student getStudent(int student) {
-        // TODO Implement this method
+
+    public Student getStudent(User user) {
+        // check if ssn is valid
+        if (len(user.id) != 14) {
+            // throw error
+        }
+
+        // get student by id
+        Student student = new Student();
+        student = userdal.getStudent(user.id);
         return student;
     }
+
 
     @Override
     /*
@@ -128,21 +116,7 @@ public class AdminBAOimpl implements AdminBAO {
         return student;
     }
 
-    @Override
-    /*
-     *
-     * get Message from student if the student send message
-     *
-     * parameters student
-     *
-     *
-     * return student
-     */
 
-    public void getMessage(message message) {
-
-        // TODO Implement this method
-    }
 
     @Override
     public List<Student> getAllStudents() {
@@ -152,18 +126,20 @@ public class AdminBAOimpl implements AdminBAO {
 
     @Override
     public boolean editPrequistes(Prequistes preq, Department dep) {
-        // TODO Implement this method
+        //check if existance of prerequests 
+        //if i does delete it then add new prequiste
+        //if not just add it
         return false;
     }
 
     @Override
     public List<Prequistes> getPrequsites(Department dep) {
-        // TODO Implement this method
-        return Collections.emptyList();
+        List<Prequistes> Prequistes=AdminDAO.getPrequsites(dep);
+        return Prequistes;
     }
 
     @Override
-    public Department getDep(EduYear year, String name) {
+    public Department getDepartment(EduYear year, String name) {
         /*
          * if the department (isExist()) //AdminDAO { update department ; } else if new
          * department { addDepartment() //AdminDAO }
@@ -174,11 +150,13 @@ public class AdminBAOimpl implements AdminBAO {
     @Override
     public List<Department> getDeps(EduYear year) {
         /*
-         * view the list of dapartments which saved in the database return
-         * List<Department> getAllDepartments(); //AdminDAO
+         * get the list of dapartments which saved in the database return
+         * 
          * 
          */
-        return Collections.emptyList();
+        List<Department> departments= getAllDepartments(EduYear eduYear); //AdminDAO
+        
+        return departments;
     }
 
     @Override
