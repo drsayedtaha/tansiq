@@ -15,14 +15,6 @@ public class UserBAOimpl implements UserBAO {
     private UserDAO UserDAO;
 
     
-    /**
-     * check if username and password is exist in database and return homepage for
-     * user
-     * 
-     * @param userName student or admin user name
-     * @param password
-     * @return string of home page to be redirected to based in authontication
-     */
     @Override
     public String login(String username, String password) {
         if (UserDAO.isExist(username, password)){
@@ -41,7 +33,7 @@ public class UserBAOimpl implements UserBAO {
     }
 
     @Override
-    public boolean addRequest(List<Request> requests) {
+    public boolean addRequest(List<Request>requests) {
         // TODO Implement this method
         return false;
     }
