@@ -1,13 +1,7 @@
 package com.cse.tansik.BAL;
 
-import com.cse.tansik.DTO.Admin;
-import com.cse.tansik.DTO.Department;
-import com.cse.tansik.DTO.EduYear;
-import com.cse.tansik.DTO.Message;
-import com.cse.tansik.DTO.Prequistes;
-import com.cse.tansik.DTO.Request;
-import com.cse.tansik.DTO.Student;
-import com.cse.tansik.DTO.User;
+import com.cse.tansik.DTO.*;
+import com.cse.tansik.DAL.*;
 
 import java.util.Collections;
 import java.util.Date;
@@ -18,137 +12,138 @@ public class AdminBAOimpl implements AdminBAO {
         super();
     }
 
-private userDAL userdal;
-
+    private userDAL userdal;
 
     @Override
     /*
-    *  //add getstudent to admin dal
-    *
-    * get student data by user id 
-    *
-    * parameters user
-    * return student object with all data
-    * 
-    */
-    
-    public Student getData(User user) {
-       //check if ssn is valid
-       if (len(user.id) != 14){
-           //throw error
-       }
+     * //add getstudent to admin dal
+     *
+     * get student data by user id
+     *
+     * parameters user return student object with all data
+     * 
+     */
 
-       //get student by id
+    public Student getData(User user) {
+        // check if ssn is valid
+        if (len(user.id) != 14) {
+            // throw error
+        }
+
+        // get student by id
         Student student = new Student();
-        student = userdal.getStudent(user.id);  
+        student = userdal.getStudent(user.id);
         return student;
     }
 
     @Override
     /*
-    *
-    * set student requests when the admin need if some problems done 
-    *
-    * parameters requests and student_id
-    *
-    *
-    *  return request
-    */
+     *
+     * set student requests when the admin need if some problems done
+     *
+     * parameters requests and student_id
+     *
+     *
+     * return request
+     */
     public request setRequsetsForStudent(List<Request> requests, Student student) {
         // TODO Implement this method
-        return request ;
+        return request;
     }
 
     @Override
-     /*
-    *
-    * send message to student when the want to contact with student 
-    *
-    * parameters message
-    *
-    *
-    *  return null
-    */
+    /*
+     *
+     * send message to student when the want to contact with student
+     *
+     * parameters message
+     *
+     *
+     * return null
+     */
     public void sendMessage(String text) {
         // TODO Implement this method
         return null;
     }
 
     @Override
-     /*
-    *
-    * send message to student when the want to contact with student 
-    *
-    * parameters message
-    *
-    *
-    *  return null
-    */
+    /*
+     *
+     * send message to student when the want to contact with student
+     *
+     * parameters message
+     *
+     *
+     * return null
+     */
     public Message getMessage(message message) {
         // TODO Implement this method
         return null;
     }
 
     @Override
-     /*
-    *
-    * set The beginning of the period of receiving the wishes of the students and the deadline
-    *
-    * parameters date of start ,date of the end
-    *
-    *
-    *  return null
-    */
+    /*
+     *
+     * set The beginning of the period of receiving the wishes of the students and
+     * the deadline
+     *
+     * parameters date of start ,date of the end
+     *
+     *
+     * return null
+     */
     public void setDate(Date start, Date end) {
         // TODO Implement this method
         return null;
     }
 
     @Override
-   /*
-    *
-    * get student information 
-    *
-    * parameters student   
-    *
-    *
-    *  return student
-    */
-    public Student getStudent(int student ) {
+    /*
+     *
+     * get student information
+     *
+     * parameters student
+     *
+     *
+     * return student
+     */
+    public Student getStudent(int student) {
         // TODO Implement this method
         return student;
     }
 
     @Override
     /*
-    *
-    * edit student information 
-    *
-    * parameters student   
-    *
-    *
-    *  return student
-    */
-   
+     *
+     * edit student information
+     *
+     * parameters student
+     *
+     *
+     * return student
+     */
+
     public student editStudent(Student student) {
         // TODO Implement this method
         return student;
     }
-     @Override
+
+    @Override
     /*
-    *
-    * get Message from student if the student send message
-    *
-    * parameters student   
-    *
-    *
-    *  return student
-    */
-   
-   public void getMessage(message message){
-        
-      // TODO Implement this method
+     *
+     * get Message from student if the student send message
+     *
+     * parameters student
+     *
+     *
+     * return student
+     */
+
+    public void getMessage(message message) {
+
+        // TODO Implement this method
     }
+
     @Override
     public List<Student> getAllStudents() {
         // TODO Implement this method
@@ -169,26 +164,35 @@ private userDAL userdal;
 
     @Override
     public Department getDep(EduYear year, String name) {
-        // TODO Implement this method
+        /*
+         * if the department (isExist()) //AdminDAO { update department ; } else if new
+         * department { addDepartment() //AdminDAO }
+         */
         return null;
     }
 
     @Override
     public List<Department> getDeps(EduYear year) {
-        // TODO Implement this method
+        /*
+         * view the list of dapartments which saved in the database return
+         * List<Department> getAllDepartments(); //AdminDAO
+         * 
+         */
         return Collections.emptyList();
     }
 
     @Override
     public Admin getData() {
-        // TODO Implement this method
+        // It takes the list of students info to save it in the database
         return null;
     }
 
     @Override
     public boolean setData() {
-        // TODO Implement this method
-        return false;
+        /*
+         * if the student exist in the database { update data; return true; } else if
+         * new student { save new student; return true; } else return false;
+         */
     }
 
     @Override
