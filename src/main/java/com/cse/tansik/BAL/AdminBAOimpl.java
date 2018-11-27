@@ -112,7 +112,9 @@ public class AdminBAOimpl implements AdminBAO {
      */
 
     public student editStudent(Student student) {
-        // TODO Implement this method
+        //check if studet is exist 
+        //if true delete it and and new data
+        //if not throw exeption
         return student;
     }
 
@@ -120,8 +122,8 @@ public class AdminBAOimpl implements AdminBAO {
 
     @Override
     public List<Student> getAllStudents() {
-        // TODO Implement this method
-        return Collections.emptyList();
+        
+        return AdminDAO.getAllStudents();;
     }
 
     @Override
