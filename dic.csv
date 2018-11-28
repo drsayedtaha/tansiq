@@ -2,3 +2,5 @@ DAL	,data access layer
 BAL	,bussniss access layer
 DTO	,data transfer object
 ERD	,entity relation data
+API ,Application Program Interface
+DML ,data manipulation language

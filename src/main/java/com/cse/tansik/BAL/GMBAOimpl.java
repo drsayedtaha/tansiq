@@ -7,7 +7,14 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
-public class GMBAOimpl implements GMBAO {
+
+
+public class GMBAOImpl implements GMBAO {
+   
+    private GMDAO = DAOfactory();   
+   
+   
+   
    
     @Override
     /**

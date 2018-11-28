@@ -6,7 +6,7 @@ import com.cse.tansik.DTO.User;
 
 import java.util.List;
 
-public class UserBAOimpl implements UserBAO {
+public class UserBAOImpl implements UserBAO {
     public UserBAOimpl() {
         super();
     }

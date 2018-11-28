@@ -7,7 +7,7 @@ import com.cse.tansik.DTO.User;
 
 import java.util.List;
 
-public class StudentBAOimpl implements StudentBAO {
+public class StudentBAOImpl implements StudentBAO {
     public StudentBAOimpl() {
         super();
     }
