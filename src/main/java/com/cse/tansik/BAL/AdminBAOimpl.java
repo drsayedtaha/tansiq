@@ -1,21 +1,25 @@
 package com.cse.tansik.BAL;
 
+
+//        HashMap<String,List<Student>> Student = new HashMap<String,List<Student>>();
+
 import com.cse.tansik.DTO.*;
 import com.cse.tansik.DAL.*;
 
 import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
-public class AdminBAOimpl implements AdminBAO {
-    public AdminBAOimpl() {
+public class AdminBAOImpl implements AdminBAO {
+    public AdminBAOImpl() {
         super();
     }
 
     private userDAL userdal;
+    private AdminDAO 
 
-
-    @Override
+    
     /*
      *
      * set student requests when the admin need if some problems done
@@ -25,8 +29,10 @@ public class AdminBAOimpl implements AdminBAO {
      *
      * return request
      */
+    @Override
     public request setRequsetsForStudent(List<Request> requests, Student student) {
         // TODO Implement this method
+
         return request;
     }
 
@@ -131,6 +137,9 @@ public class AdminBAOimpl implements AdminBAO {
         //check if existance of prerequests 
         //if i does delete it then add new prequiste
         //if not just add it
+        HashMap<Student,Integer> CSE_REQUESTS =new HashMap<Student,Integer>;
+        
+
         return false;
     }
 

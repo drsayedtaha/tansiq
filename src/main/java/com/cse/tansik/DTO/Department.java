@@ -1,5 +1,8 @@
 package com.cse.tansik.DTO;
 
+import java.util.HashMap;
+import java.util.List;
+
 public abstract class Department {
     private String name;
     private int id;

@@ -10,8 +10,6 @@ public interface GMBAO extends  AdminBAO    {
   boolean editUser(User user);
   boolean addAdmin(Admin admin);
   boolean removeAdmin(Admin admin);
-   GMDAO gmDAO =new GMDAO();
-
-
+  
 
 }

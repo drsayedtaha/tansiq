@@ -2,9 +2,20 @@ package com.cse.tansik.DTO;
 
 public class Student extends User {
     private Subject[] subjects;
-    private Department Department;
+
+
+/**
+ * replace by a hash map in calculation admin methode
+*/
+//    private Department Department;
+
+
+
+
     private Request[] requests;
+    
     private String nationalID;
+    
     private float degree;
     private int year;
 
