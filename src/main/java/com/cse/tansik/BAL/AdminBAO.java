@@ -4,6 +4,9 @@ import com.cse.tansik.DTO.Department;
 import com.cse.tansik.DTO.EduYear;
 import com.cse.tansik.DTO.Prequistes;
 import com.cse.tansik.DTO.Student;
+import com.cse.tansik.DTO.Request;
+import com.cse.tansik.DTO.Message;
+
 
 import com.cse.tansik.DTO.User;
 
@@ -27,8 +30,8 @@ public interface AdminBAO extends UserBAO {
      * @return
      * 
      */
-    //boolean sendMessage(String text, Student student);
-    //Message getMessage();
+    boolean sendMessage(Message message);
+    Message getMessage(Message message);
     /**
      *note by AbdAlla AboElmagd && Mostafa Gamal
      * this method create the start&end Date of tansiq
@@ -47,15 +50,15 @@ public interface AdminBAO extends UserBAO {
 
 
 
-    boolean editPrequistes(Prequistes preq, Department dep);
-    List<Prequistes> getPrequsites(Department dep);
+    public boolean editPrequistes(Prequistes preq, Department dep);
+    public List<Prequistes> getPrequsites(Department dep);
 
     // add addDespartments
-    boolean addDepartments(List<Department> Department);
+    public boolean addDepartments(List<Department> Department);
 
     // remove gitdepartment cause it is not useful
     // Department getDespartment(EduYear year ,String name);
-    List<Department> getDespartments(EduYear year);
+    public List<Department> getDespartments(EduYear year);
     
     
     /**
@@ -63,6 +66,6 @@ public interface AdminBAO extends UserBAO {
      * @param
      * @return
      */
-    HashMap<Student,String>  solveWishes(EduYear eduyear);
+    public HashMap<Student,String>  solveWishes(EduYear eduyear);
     
 }

@@ -8,7 +8,7 @@ public interface AdminDAO extends UserDAO  {
     boolean isExist (Student student);
     boolean addStudent(Student student);
     boolean deleteStudent(Student student);
-    student getStudent(String id);    //added for admin if he need one student by id
+    Student getStudent(String id);    //added for admin if he need one student by id
     List<Student> getAllStudents (EduYear eduYear);
 
     
@@ -20,7 +20,7 @@ public interface AdminDAO extends UserDAO  {
     boolean setDateEduYear(EduYear eduYear);  
     EduYear getDateEduYear(EduYear eduYear);
     
-    list<Prequistes> getPrequiste(Department department)
-    list<Prequistes> addPrequiste(Department department)
+    List<Prequistes> getPrequiste(Department department);
+    List<Prequistes> addPrequiste(Department department);
 
 } 

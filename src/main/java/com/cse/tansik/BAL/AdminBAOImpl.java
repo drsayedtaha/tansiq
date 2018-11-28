@@ -12,12 +12,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class AdminBAOImpl implements AdminBAO {
-    public AdminBAOImpl() {
-        super();
-    }
-
-    private userDAL userdal;
-    private AdminDAO 
+    
+    private UserDAO userdal;
+    private AdminDAO admindao; 
 
     
     /*
@@ -30,14 +27,14 @@ public class AdminBAOImpl implements AdminBAO {
      * return request
      */
     @Override
-    public request setRequsetsForStudent(List<Request> requests, Student student) {
+    public boolean setRequsetsForStudent(List<Request> requests, Student student) {
         // TODO Implement this method
 
-        return request;
+        return false;
     }
 
     @Override
-    /*
+    /** 
      *
      * send message to student when the want to contact with student
      *
@@ -46,13 +43,13 @@ public class AdminBAOImpl implements AdminBAO {
      *
      * return null
      */
-    public void sendMessage(String text) {
+    public boolean sendMessage(Message message) {
         // TODO Implement this method
-        return null;
+        return false;
     }
 
     @Override
-    /*
+    /**
      *
      * send message to student when the want to contact with student
      *
@@ -61,7 +58,7 @@ public class AdminBAOImpl implements AdminBAO {
      *
      * return null
      */
-    public Message getMessage(message message) {
+    public Message getMessage(Message message) {
         // TODO Implement this method
         return null;
     }
@@ -77,9 +74,9 @@ public class AdminBAOImpl implements AdminBAO {
      *
      * return null
      */
-    public void setDate(Date start, Date end) {
+    public boolean setDate(Date start, Date end) {
         // TODO Implement this method
-        return null;
+        return false;
     }
 
 
@@ -95,13 +92,13 @@ public class AdminBAOImpl implements AdminBAO {
 
     public Student getStudent(User user) {
         // check if ssn is valid
-        if (len(user.id) != 14) {
+        if (len(user.getId()) != 14) {
             // throw error
         }
 
         // get student by id
         Student student = new Student();
-        student = userdal.getStudent(user.id);
+        student = userdal.getStudent(user.getId());
         return student;
     }
 

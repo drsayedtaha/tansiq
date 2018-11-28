@@ -12,11 +12,6 @@ import java.util.List;
  */
 public class AdminDAOImpl implements AdminDAO {
    
-    public AdminDAOimp() {
-        super();
-    }
-
-
     /**
      *This method ....................
      * @param student
