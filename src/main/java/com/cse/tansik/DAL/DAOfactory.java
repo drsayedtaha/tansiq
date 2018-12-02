@@ -21,18 +21,18 @@ public class DAOfactory {
     }
     
     public AdminDAO createAdminDAO(){
-        return new AdminDAOimp();
+        return new AdminDAOImpl();
     }
     
     public GMDAO createGMDAO(){
-        return new GMDAOimp();
+        return new GMDAOImpl();
     }
     
     public StudentDAO createStudentDAO(){
-        return new StudentDAOimp();
+        return new StudentDAOImpl();
     }
     
     public UserDAO createUserDAO(){
-        return new UserDAOimp();
+        return new UserDAOImpl();
     }
 }

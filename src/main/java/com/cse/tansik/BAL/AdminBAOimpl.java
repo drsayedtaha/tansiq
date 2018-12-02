@@ -11,6 +11,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
+ 
+
 public class AdminBAOImpl implements AdminBAO {
     
     private UserDAO userdal;
@@ -92,13 +94,13 @@ public class AdminBAOImpl implements AdminBAO {
 
     public Student getStudent(User user) {
         // check if ssn is valid
-        if (len(user.getId()) != 14) {
+        if ((user.getUserName().length()) != 14) {
             // throw error
         }
 
         // get student by id
         Student student = new Student();
-        student = userdal.getStudent(user.getId());
+      //  student = userdal.getStudent(user.getId());
         return student;
     }
 
@@ -114,19 +116,13 @@ public class AdminBAOImpl implements AdminBAO {
      * return student
      */
 
-    public student editStudent(Student student) {
-        //check if studet is exist 
-        //if true delete it and and new data
-        //if not throw exeption
-        return student;
-    }
+   
 
 
-
-    @Override
+    
     public List<Student> getAllStudents() {
         
-        return AdminDAO.getAllStudents();;
+        return null;
     }
 
     @Override
@@ -134,7 +130,7 @@ public class AdminBAOImpl implements AdminBAO {
         //check if existance of prerequests 
         //if i does delete it then add new prequiste
         //if not just add it
-        HashMap<Student,Integer> CSE_REQUESTS =new HashMap<Student,Integer>;
+        HashMap<Student,Integer> CSE_REQUESTS =new HashMap<Student,Integer>();
         
 
         return false;
@@ -162,7 +158,7 @@ public class AdminBAOImpl implements AdminBAO {
          * 
          * 
          */
-        List<Department> departments= getAllDepartments(EduYear eduYear); //AdminDAO
+        List<Department> departments= getAllDepartments( eduYear); //AdminDAO
         
         return departments;
     }
@@ -182,9 +178,9 @@ public class AdminBAOImpl implements AdminBAO {
     }
 
     @Override
-    public User login(String name, String password) {
+    public boolean login(String name, String password) {
         // TODO Implement this method
-        return null;
+        return false;
     }
 
     @Override
@@ -192,4 +188,24 @@ public class AdminBAOImpl implements AdminBAO {
         // TODO Implement this method
         return false;
     }
+
+    public Request getRequsetsForStudent(Student student) {
+        return null;
+    }
+
+    public boolean addDepartments(List<Department> Department) {
+        return false;
+    }
+
+    public List<Department> getDespartments(EduYear year) {
+        return Collections.emptyList();
+    }
+
+    public HashMap<Student, String> solveWishes(EduYear eduyear) {
+        return null;
+    }
+
+    public Student editStudent(Student student)
+    {return null;
+        }
 }

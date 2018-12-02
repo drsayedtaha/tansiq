@@ -1,5 +1,5 @@
 package com.cse.tansik.DTO;
-
+import  java.util.*;
 public class Student extends User {
     private Subject[] subjects;
 
@@ -12,7 +12,7 @@ public class Student extends User {
 
 
 
-    private Request[] requests;
+    private ArrayList< Request> requests=new ArrayList();
     
     private String nationalID;
     
@@ -34,16 +34,10 @@ public class Student extends User {
     }
 
     public Department getDepartment() {
-        return Department;
+        return null;
     }
 
-    public void setRequests(Request[] requests) {
-        this.requests = requests;
-    }
-
-    public Request[] getRequests() {
-        return requests;
-    }
+  
 
     public void setNationalID(String nationalID) {
         this.nationalID = nationalID;
@@ -67,5 +61,13 @@ public class Student extends User {
 
     public int getYear() {
         return year;
+    }
+
+    public void setRequests(ArrayList<Request> requests) {
+        this.requests = requests;
+    }
+
+    public ArrayList<Request> getRequests() {
+        return requests;
     }
 }

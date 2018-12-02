@@ -1,14 +1,12 @@
 package com.cse.tansik.DAL;
 
-import com.cse.tansik.DTO.User;
+import com.cse.tansik.DTO.*;
 
 import java.util.Collections;
 import java.util.List;
 
 public class GMDAOImpl implements GMDAO {
-    public GMDAOimp() {
-        super();
-    }
+  
 
     @Override
     public List getAllAdmins() {
@@ -71,7 +69,7 @@ public class GMDAOImpl implements GMDAO {
     }
 
     @Override
-    public student getStudent(String string) {
+    public Student getStudent(String string) {
         // TODO Implement this method
         return null;
     }
@@ -113,13 +111,13 @@ public class GMDAOImpl implements GMDAO {
     }
 
     @Override
-    public list getPrequiste(Department department) {
+    public List getPrequiste(Department department) {
         // TODO Implement this method
         return null;
     }
 
     @Override
-    public list addPrequiste(Department department) {
+    public List addPrequiste(Department department) {
         // TODO Implement this method
         return null;
     }
