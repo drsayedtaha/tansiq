@@ -42,7 +42,7 @@ public class AdminDAOImpl implements AdminDAO {
     }
 
     @Override
-    public student getStudent(String string) {
+    public Student getStudent(String string) {
         // TODO Implement this method
         return null;
     }

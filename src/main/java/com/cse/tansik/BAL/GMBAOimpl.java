@@ -5,13 +5,16 @@ import com.cse.tansik.DAL.*;
 
 import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 
 
 public class GMBAOImpl implements GMBAO {
    
-    private GMDAO = DAOfactory();   
+        private GMDAO gmDAO = (GMDAO)new GMBAOImpl();
+        private DAOfactotry DAOfact = new DAOfactory();
+        
    
    
    
@@ -28,7 +31,7 @@ public class GMBAOImpl implements GMBAO {
     {
     if (gmDAO.isExist(user)) 
           try
-          {  gmDAO.editUser(user);
+          {  //gmDAO.editUser(user);
          return true;
         } 
          catch (Exception e)
@@ -96,7 +99,7 @@ public class GMBAOImpl implements GMBAO {
  *        
  *  */  
         // if (no exception arises )       
-                return gmDAO.getAllStudent();
+                return gmDAO.getAllStudents();
         //else 
                 //handle the exception that arises if DataBase not found
         // return empty list if exception happens (no data base)                
@@ -116,12 +119,17 @@ public class GMBAOImpl implements GMBAO {
     */
  
     public boolean setRequsetsForStudent(List<Request> requests, Student student) {
-        Student s = student.clone(); 
-        s.requests=requests;
+        Student s;
+        try {
+            s = (Student)student.clone();
+          //  s.setRequests(requests);
+
+        } catch (CloneNotSupportedException e) {
+        }
         if (gmDAO.isExist(student))//if the student exists
         {   try
             {
-            AdminBAO.editUser(s);//save edited data 
+            //AdminBAO.editUser(s);//save edited data 
             return true;
             }
             catch(Exception e )
@@ -132,7 +140,6 @@ public class GMBAOImpl implements GMBAO {
         
         return false;
     }
-    @Override
     /** 
      * sends message to student in order to reply to their questions 
      * sends message to admins  in order to send orders
@@ -141,14 +148,13 @@ public class GMBAOImpl implements GMBAO {
     */ 
 
     public boolean sendMessage(String text, User user) {
-        if(!G.isExist(user))
+        if(!gmDAO.isExist(user))
         //exception will be handeled  and returm false in case of unsucess
         return false;
-        G.sendMessage(text,student);
+        //gmDAO.sendMessage(text,user);
         return true ;
     }
 
-    @Override
     public Message getMessage() {
         // TODO Implement this method
         return null;
@@ -167,7 +173,6 @@ public class GMBAOImpl implements GMBAO {
         return false;
     }
 
-    @Override
     public Student getStudent(String userName, String Password) {
         if(!gmDAO.isExist(userName))
         return null;
@@ -185,7 +190,70 @@ public class GMBAOImpl implements GMBAO {
         }
     }
 
-   
 
-   
+    public Request getRequsetsForStudent(Student student) {
+        return null;
+    }
+
+    public boolean sendMessage(Message message) {
+        return false;
+    }
+
+    public Message getMessage(Message message) {
+        return null;
+    }
+
+    public Student getStudent(User user) {
+        return null;
+    }
+
+    public boolean editStudent(Student student) {
+        return false;
+    }
+
+    public List<Student> getAllStudents() {
+        return Collections.emptyList();
+    }
+
+    public boolean editPrequistes(Prequistes preq, Department dep) {
+        return false;
+    }
+
+    public List<Prequistes> getPrequsites(Department dep) {
+        return Collections.emptyList();
+    }
+
+    public boolean addDepartments(List<Department> Department) {
+        return false;
+    }
+
+    public List<Department> getDespartments(EduYear year) {
+        return Collections.emptyList();
+    }
+
+    public HashMap<Student, String> solveWishes(EduYear eduyear) {
+        return null;
+    }
+
+    public String login(String name, String password) {
+        if (gmDAO.isExist(name, password)){
+      User user=  DAOfact.createUserDAO();
+            switch (user.getRole()){
+            case 0 : return "student_home";
+            case 1 : return "admin_home";
+            case 2 : return "gm_home";
+                }
+        }
+        else{
+            //throw exeption of user not found
+        }
+        
+        return null;
+        }
+
+    public boolean addRequest(List<Request> requests) {
+        return false;
+    }
 }
+
+
