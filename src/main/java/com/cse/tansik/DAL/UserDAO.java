@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.cse.tansik.DTO.*;
 
+import java.sql.ResultSet;
+
 public interface UserDAO {
     public boolean isExist(String username, String password);
     public User getUser(String username, String password);

@@ -16,9 +16,7 @@
 package com.cse.tansik.DAL;
 
 public class DAOfactory {
-    public DAOfactory() {
-        super();
-    }
+    
     
     public AdminDAO createAdminDAO(){
         return new AdminDAOImpl();
