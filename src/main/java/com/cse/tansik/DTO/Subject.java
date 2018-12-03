@@ -1,8 +1,8 @@
 package com.cse.tansik.DTO;
 
-public abstract class Subject {
+public class Subject {
     private String name;
-    private float Degree;
+    private int degree;
     private int id;
 
     public void setName(String name) {
@@ -13,12 +13,12 @@ public abstract class Subject {
         return name;
     }
 
-    public void setDegree(float Degree) {
-        this.Degree = Degree;
+    public void setdegree(int degree) {
+        this.degree = degree;
     }
 
-    public float getDegree() {
-        return Degree;
+    public int getdegree() {
+        return degree;
     }
 
     public void setId(int id) {
@@ -33,7 +33,7 @@ public abstract class Subject {
     public boolean equals(Object o) {
         Subject subject2 = (Subject) (o);
 
-        if (this.id == subject2.id && this.name == subject2.name && this.Degree == subject2.Degree)
+        if (this.id == subject2.id && this.name == subject2.name && this.degree == subject2.degree)
             return false;
         return true;
     }
