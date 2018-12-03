@@ -23,6 +23,7 @@
       <string v="oracle.jdeveloper.model.PathsConfiguration/ResourceBundlesContentSet"/>
    </list>
    <list n="listOfChildren">
+      <hash><url n="URL" path="ConnectionTest/ConnectionTest.jpr"/></hash>
       <hash><url n="URL" path="tansiq/tansiq.jpr"/></hash>
    </list>
 </jws:workspace>
