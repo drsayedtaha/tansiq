@@ -73,7 +73,7 @@ public class User {
         this.id = id;
     }
 
-    public int getId1() {
+    public int getId() {
         return id;
     }
 

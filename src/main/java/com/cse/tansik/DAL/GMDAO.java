@@ -13,4 +13,5 @@ public interface GMDAO extends AdminDAO {
   boolean deleteUser(User user);
   List<User> getAlUsers();
 
+    public void addAmin(Admin admin);
 }

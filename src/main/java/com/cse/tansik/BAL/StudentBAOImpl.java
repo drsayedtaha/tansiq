@@ -8,7 +8,7 @@ import com.cse.tansik.DTO.User;
 import java.util.List;
 
 public class StudentBAOImpl implements StudentBAO {
-    public StudentBAOImpl() {
+    public StudentBAOimpl() {
         super();
     }
 
@@ -31,7 +31,7 @@ public class StudentBAOImpl implements StudentBAO {
     }
 
     @Override
-    public String login(String name, String password) {
+    public User login(String name, String password) {
         // TODO Implement this method
         return null;
     }

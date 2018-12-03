@@ -20,7 +20,7 @@ public interface AdminDAO extends UserDAO  {
     boolean setDateEduYear(EduYear eduYear);  
     EduYear getDateEduYear(EduYear eduYear);
     
-    list<Prequistes> getPrequiste(Department department)
-    list<Prequistes> addPrequiste(Department department)
+    List<Prequistes> getPrequiste(Department department);
+    List<Prequistes> addPrequiste(Department department);
 
 } 
