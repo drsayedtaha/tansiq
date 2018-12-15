@@ -2,7 +2,7 @@ package com.cse.tansik.DAL;
 
 import com.cse.tansik.DTO.*;
 
-public interface StudentDAO extends UserDAO{
+public interface StudentDAO {
 
     
     /*

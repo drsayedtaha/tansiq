@@ -1,8 +1,10 @@
 package com.cse.tansik.DTO;
-import  java.util.*;
-public class Student extends User {
-    private static ArrayList<Subject> subjects = new ArrayList<>();
 
+import java.util.ArrayList;
+
+public class Student extends User {
+    private ArrayList<Subject> subjects = new ArrayList();
+    private Department dep;
 /**
  * replace by a hash map in calculation admin methode
 */
@@ -30,9 +32,11 @@ public class Student extends User {
 
 
  
-    public void setDepartment(Department Department) {
-        // copying info
-        // this.Department = Department;
+    public void setDepartment(Department dep) {
+        try {
+            this.dep = (Department)dep.clone();
+        } catch (CloneNotSupportedException e) {
+        }
     }
 
     public Department getDepartment() {
@@ -82,7 +86,7 @@ public class Student extends User {
     }
     
     //getTotalMark By abdullah khaled
-    public static int getTotalMark(){
+    public  int getTotalMark(){
       int t_m =0;
       for(int i =0 ;i<subjects.size();i++){
           t_m+=subjects.get(i).getdegree();

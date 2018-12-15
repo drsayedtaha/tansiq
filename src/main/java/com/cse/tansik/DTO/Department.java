@@ -1,16 +1,18 @@
 package com.cse.tansik.DTO;
 
-import java.util.HashMap;
-import java.util.List;
 
-public class Department {
+public class Department implements Cloneable {
     private String name;
     private int id;
-    private EduYear eduYear;
     private Prequistes preq;
     private int maxCapcity;
     private int minCapcity;
-
+    private int size;
+    public Department()
+    {size=0;
+     maxCapcity=0;
+     minCapcity=0;
+        }
     @Override
     public boolean equals(Object o) {
         Department dep2 = (Department) (o);
@@ -21,7 +23,7 @@ public class Department {
     }
 
     public String toString() {
-        return name + " " + id + " " + eduYear.toString();
+        return name + " " + id ;
     }
 
     public void setName(String name) {
@@ -37,9 +39,6 @@ public class Department {
         // this.eduYear = eduYear;
     }
 
-    public EduYear getEduYear() {
-        return eduYear;
-    }
 
     public void setPreq(Prequistes preq) {
         this.preq = preq;
@@ -71,5 +70,18 @@ public class Department {
 
     public int getMinCapcity() {
         return minCapcity;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public int getSize() {
+        return size;
     }
 }

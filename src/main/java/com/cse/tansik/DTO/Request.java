@@ -32,7 +32,13 @@ public class Request {
     }
 
     public void setDep(Department dep) {
-        // copying info
+        this.dep=null;
+        
+        try {
+            this.dep = (Department)(((Department)dep).clone());
+        } catch (CloneNotSupportedException e) {
+        }
+        
     }
 
     public Department getDep() {

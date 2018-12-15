@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public interface AdminBAO extends UserBAO {
+public interface AdminBAO extends  {
     // remove beacause of dublication in getstudent
     // Student getStudentData(User user);
     //
@@ -42,8 +42,8 @@ public interface AdminBAO extends UserBAO {
 
     public boolean setDate(Date start, Date end);
 
-    public Student getStudent(User user); // implement
-    
+    public Student getStudent(User user); 
+
     public boolean editStudent(Student student);
     
     public List<Student> getAllStudents();
@@ -53,11 +53,8 @@ public interface AdminBAO extends UserBAO {
     public boolean editPrequistes(Prequistes preq, Department dep);
     public List<Prequistes> getPrequsites(Department dep);
 
-    // add addDespartments
     public boolean addDepartments(List<Department> Department);
 
-    // remove gitdepartment cause it is not useful
-    // Department getDespartment(EduYear year ,String name);
     public List<Department> getDespartments(EduYear year);
     
     

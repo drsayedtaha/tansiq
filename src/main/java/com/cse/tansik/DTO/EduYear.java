@@ -1,11 +1,13 @@
 package com.cse.tansik.DTO;
 
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
-public abstract class EduYear {
+
+public  class EduYear {
     int id;
     int year;
+    ArrayList<Department>  Dep=new ArrayList();
     Date startDate;
     Date endDate;
     
@@ -41,4 +43,14 @@ public abstract class EduYear {
         return this.id + " " + this.getYear();
     }
 
+    public void setDep(ArrayList<Department> Dep) {
+        this.Dep = (ArrayList<Department>)Dep.clone();
+    }
+
+    public ArrayList<Department> getDep() {
+        try{
+        return (ArrayList<Department>)Dep.clone();
+        }
+        catch(Exception e){return null;}
+    }
 }
