@@ -51,6 +51,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C7F7A4CF-ACE0-6EE9-A0FC-5D597BA3F87E" referredColumn="C865C651-13E0-D05D-B88A-C4026A835903"/>
+</associations>
 </Column>
 <Column name="FACULTY" id="FC9B26A9-4D37-2A80-BB6D-705CBAC2AB91">
 <sourceConnName>Tansiq</sourceConnName>
@@ -93,6 +96,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="25093BFB-4128-053E-7517-A0373986FB4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEE1BF58-70EE-B2FB-110A-F0AC9F7D4369" name="EDU_LEVEL_FK1">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-12 22:19:00 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CBAB73B-4795-18B5-D918-6360564474BB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

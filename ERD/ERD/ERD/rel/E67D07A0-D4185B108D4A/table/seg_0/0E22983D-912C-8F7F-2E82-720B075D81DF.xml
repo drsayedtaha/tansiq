@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E22983D-912C-8F7F-2E82-720B075D81DF" schemaObject="0BF375C6-A386-2D37-9E82-AE647B707DF2" name="DEPARTMENT">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPARTMENT</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:56:38 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C865C651-13E0-D05D-B88A-C4026A835903">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>DEPARTMENT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:56:38 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="89AA4E09-5350-5183-71EA-5C13EAD07C31">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>DEPARTMENT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:56:38 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21B7C363-9D00-F0BF-1C61-76D3D2F31B28" name="DEPARTMENT_PK">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPARTMENT_PK</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:56:39 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C865C651-13E0-D05D-B88A-C4026A835903"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="746A34D9-5A4D-F4EA-7320-73244BE690B8" schemaObject="0BF375C6-A386-2D37-9E82-AE647B707DF2" name="DEPARTMENT_PK">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPARTMENT_PK</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:56:38 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C865C651-13E0-D05D-B88A-C4026A835903"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
