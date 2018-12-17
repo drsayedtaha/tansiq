@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A275F27-535C-78EE-1BE3-FEB77CCF9003" schemaObject="0BF375C6-A386-2D37-9E82-AE647B707DF2" name="STUDENTS_REQUESTS">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>STUDENTS_REQUESTS</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:33 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEP_ID" id="94D358F2-CC28-C886-4862-409764AFA42E">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>STUDENTS_REQUESTS</sourceObjSchema>
+<sourceObjName>DEP_ID</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:33 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2834E3F-2F1F-5068-8BC0-4A14D784847A" referredColumn="C865C651-13E0-D05D-B88A-C4026A835903"/>
+</associations>
+</Column>
+<Column name="STUDENT_ID" id="55657FD3-2C81-FF7F-266B-2C9F0E4F314A">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>STUDENTS_REQUESTS</sourceObjSchema>
+<sourceObjName>STUDENT_ID</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:33 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="874D703B-4269-D008-A79C-3C8F479ED02F" referredColumn="B190158B-F997-0D32-93D8-3702E63B5C6F"/>
+</associations>
+</Column>
+<Column name="ORDER" id="D91B2DB0-699C-2C8B-5283-6901E5F9C82E">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>STUDENTS_REQUESTS</sourceObjSchema>
+<sourceObjName>ORDER</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:33 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4903B0D0-7734-1AE0-419B-9F86B61D02AF" name="REQUESTS_FK1">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:33 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55657FD3-2C81-FF7F-266B-2C9F0E4F314A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A6CE896-58C7-F2DC-2E74-FE973E4432AB" name="REQUESTS_FK2">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-07 17:57:33 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94D358F2-CC28-C886-4862-409764AFA42E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

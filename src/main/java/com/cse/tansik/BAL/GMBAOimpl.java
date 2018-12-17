@@ -3,18 +3,38 @@ package com.cse.tansik.BAL;
 import com.cse.tansik.DTO.*;
 import com.cse.tansik.DAL.*;
 
+import com.cse.tansik.DAL.GMDAO;
+
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
-
-
 public class GMBAOImpl implements GMBAO {
    
-    private GMDAO = DAOfactory();   
+    private DAOfactory facto = new DAOfactory();
+    private GMDAO gmDAO = facto.createGMDAO();
+        
+    @Override
+    public ArrayList<com.cse.tansik.DTO.User> getALLUsers() {
+        return gmDAO.getUsers();
+    }
    
+    @Override
+    public ArrayList<Page> get_all_pages() {
+        return gmDAO.get_all_Pages();
+    }
    
+    @Override
+    public ArrayList<Page> get_all_admin_pages() {
+        return gmDAO.get_all_Pages(1);
+    }
    
+    @Override
+    public ArrayList<Page> get_all_student_pages() {
+        return gmDAO.get_all_Pages(0);
+   
+    }
    
     @Override
     /**
@@ -68,41 +88,28 @@ public class GMBAOImpl implements GMBAO {
         }
     
     @Override
-//returns a list of all admins in the DB if the DataBase is found and the view will update its pages (the page that will have the result) according to that list  
-    public List<Admin> getAllAdmins() {
                 
-            
-                
+    public ArrayList<User> getAllAdmins() {
         // if (no exception arises )       
-                return gmDAO.getAllAdmins();
-        //else 
+        return gmDAO.getUsers(1);
+        // else
         /*
-        {
-            //handle the exception that arises if DataBase not found
-            return empty list if exception happens (no data base)                
-           return Collections.emptyList();
-
-        }
+         * { //handle the exception that arises if DataBase not found return empty list
+         * if exception happens (no data base) return Collections.emptyList();
+         * 
+         * }
         */
     }
 
     @Override
-    public List<Student> getAllStudent() {
-/**
- * returns a list of all students in the DB if the DataBase is found and the view will update its pages (the page that will have the result) according to that list  
- *
- * @param void no need for params
- * @return List<Student> 
- *        
- *  */  
+    public ArrayList<User> getAllStudent() {
+
         // if (no exception arises )       
-                return gmDAO.getAllStudent();
-        //else 
-                //handle the exception that arises if DataBase not found
+        return gmDAO.getUsers(0);
+        // else
+        // handle the exception that arises if DataBase not found
         // return empty list if exception happens (no data base)                
         
-        return Collections.emptyList();
-    
  }
 
    
