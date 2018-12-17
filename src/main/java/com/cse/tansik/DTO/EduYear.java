@@ -3,9 +3,21 @@ package com.cse.tansik.DTO;
 import java.util.Date;
 import java.util.List;
 
-public abstract class EduYear {
+public class EduYear {
     int id;
     int year;
+    // abdo ragab 4/12
+    // neded to save data from database and re print it
+    String faculty;
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
+
     Date startDate;
     Date endDate;
     

@@ -6,8 +6,28 @@ public class User {
     private String firstName, secondName, lastName;
     private String password;
     private String email;
-    private University University;
-    private EduYear faculty;
+
+    /*
+     * university now included in edu year no need for it
+     */
+
+    /**
+     * private University University; removed as this info already included in
+     * edu_year
+     */
+
+    // abdelrahman ragab 4/12
+    // eduyear name to eduyear more logical name was faculty
+    private EduYear eduyear;
+
+    public void setEduyear(EduYear eduyear) {
+        this.eduyear = eduyear;
+    }
+
+    public EduYear getEduyear() {
+        return eduyear;
+    }
+
     private int role;
     private int id;
 
@@ -45,21 +65,8 @@ public class User {
         return password;
     }
 
-    public void setUniversity(University University) {
-        this.University = University;
-    }
 
-    public University getUniversity() {
-        return University;
-    }
-
-    public void setFaculty(EduYear faculty) {
-        this.faculty = faculty;
-    }
-
-    public EduYear getFaculty() {
-        return faculty;
-    }
+   
 
     public void setRole(int role) {
         this.role = role;
@@ -87,7 +94,10 @@ public class User {
 
     @Override
     public String toString() {
-        return (this.id + " " + " " + this.userName + " " + this.email);
+        //updeted to fit all data
+        return id + "   -- " + firstName + " " + secondName + " " + lastName + "--/" + eduyear.getFaculty() + "--/"
+                + eduyear.getYear() + "---/ " + email;
+        // return (this.id + " " + " " + this.userName + " " + this.email);
     }
 
     public void setEmail(String email) {

@@ -56,3 +56,5 @@ javadoc/
 cwallet.sso.lck
 
 # End of https://www.gitignore.io/api/java,java-web,jdeveloper
+
+ERD/ERD/ERD/dmd_open.local
