@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="USER_WEBSITE" directorySegmentName="seg_0" id="CF8390EC-7391-5FC3-4AA8-6E21F937C657">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ROLE" id="3D924FF5-B08C-A058-806B-CC75EF2FAE20">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WEBSITE" id="40A0831A-D42E-8267-1621-C89DD3C7B0F9">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USER_WEBSITE_FK1" id="441A6D16-EC30-2F3A-3875-909FCDCEFED8">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

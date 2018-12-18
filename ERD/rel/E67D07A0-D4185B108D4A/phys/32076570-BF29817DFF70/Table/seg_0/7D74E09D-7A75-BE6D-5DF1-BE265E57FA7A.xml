@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DATES" directorySegmentName="seg_0" id="7D74E09D-7A75-BE6D-5DF1-BE265E57FA7A">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:00 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>257FD3FD-A50A-AF3C-DC11-B2BEDCA7B5B9</segment>
+<tableSpace>E765510D-CEF9-A465-357E-B229C882D111</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EDU_LEVEL" id="9C2D4396-2CA8-8DD6-F682-5838626301F2">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:00 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_DATE" id="AE6AFB1B-A230-87F5-9AFA-C9A0AD43A768">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:00 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="START_DATE" id="B04CDD0A-7D96-1CBF-75A8-6AFEE123041F">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:00 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DATES_FK1" id="F6944A6C-34FB-50E0-BEF4-D562ACA137CC">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:01 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

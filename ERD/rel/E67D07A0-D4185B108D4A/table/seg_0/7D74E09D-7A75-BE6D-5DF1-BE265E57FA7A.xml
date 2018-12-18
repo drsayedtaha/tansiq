@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D74E09D-7A75-BE6D-5DF1-BE265E57FA7A" schemaObject="0BF375C6-A386-2D37-9E82-AE647B707DF2" name="DATES">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DATES</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:00 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="START_DATE" id="B04CDD0A-7D96-1CBF-75A8-6AFEE123041F">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>DATES</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:00 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="AE6AFB1B-A230-87F5-9AFA-C9A0AD43A768">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>DATES</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:00 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDU_LEVEL" id="9C2D4396-2CA8-8DD6-F682-5838626301F2">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>DATES</sourceObjSchema>
+<sourceObjName>EDU_LEVEL</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:00 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD4BAE0B-C942-580A-3476-91D5A1D8E41A" referredColumn="25093BFB-4128-053E-7517-A0373986FB4E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6944A6C-34FB-50E0-BEF4-D562ACA137CC" name="DATES_FK1">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 21:27:01 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C2D4396-2CA8-8DD6-F682-5838626301F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

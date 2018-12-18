@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EDU_LEVEL" directorySegmentName="seg_0" id="56B14519-E58B-3C02-56E1-13634BB7989C">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="25093BFB-4128-053E-7517-A0373986FB4E">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="8CBAB73B-4795-18B5-D918-6360564474BB">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="YEAR" id="E72FBD37-409D-FC58-FD52-9B9F704EF11C">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="FACULTY" id="FC9B26A9-4D37-2A80-BB6D-705CBAC2AB91">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EDU_LEVEL_PK" id="B860FDFB-07BD-DD20-8D9F-EB27F93CE19C">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EDU_LEVEL_FK1" id="DEE1BF58-70EE-B2FB-110A-F0AC9F7D4369">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EDU_LEVEL_PK" id="A530BBD2-4593-D410-2359-7EB4F9FD038F">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

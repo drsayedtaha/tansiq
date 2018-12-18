@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF8390EC-7391-5FC3-4AA8-6E21F937C657" schemaObject="0BF375C6-A386-2D37-9E82-AE647B707DF2" name="USER_WEBSITE">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>USER_WEBSITE</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-13 04:53:47 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ROLE" id="3D924FF5-B08C-A058-806B-CC75EF2FAE20">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>USER_WEBSITE</sourceObjSchema>
+<sourceObjName>ROLE</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-13 04:53:47 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8881F40B-F31F-CB9E-451C-8BD46E0EAB4A" referredColumn="30FA2799-8C2F-FC9E-412F-2E737EDA692D"/>
+</associations>
+</Column>
+<Column name="WEBSITE" id="40A0831A-D42E-8267-1621-C89DD3C7B0F9">
+<sourceConnName>Tansiq</sourceConnName>
+<sourceObjSchema>USER_WEBSITE</sourceObjSchema>
+<sourceObjName>WEBSITE</sourceObjName>
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-13 04:53:47 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="441A6D16-EC30-2F3A-3875-909FCDCEFED8" name="USER_WEBSITE_FK1">
+<createdBy>Abdullah</createdBy>
+<createdTime>2018-11-13 04:53:47 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D924FF5-B08C-A058-806B-CC75EF2FAE20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
