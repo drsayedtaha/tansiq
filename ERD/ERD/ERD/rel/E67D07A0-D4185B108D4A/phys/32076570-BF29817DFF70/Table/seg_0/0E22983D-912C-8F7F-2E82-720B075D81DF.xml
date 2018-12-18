@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="STUDENT" directorySegmentName="seg_0" id="D0416F0D-54FE-B2A2-3D9F-3E63BACE5A36">
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DEPARTMENT" directorySegmentName="seg_0" id="0E22983D-912C-8F7F-2E82-720B075D81DF">
 <createdBy>Abdullah</createdBy>
 <createdTime>2018-12-18 03:38:57 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
@@ -10,34 +10,27 @@
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
-<ColumnProxy name="USER_ID" id="B190158B-F997-0D32-93D8-3702E63B5C6F">
+<ColumnProxy name="NAME" id="89AA4E09-5350-5183-71EA-5C13EAD07C31">
 <createdBy>Abdullah</createdBy>
 <createdTime>2018-12-18 03:38:57 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="EDU_LEVEL" id="DE6F6259-8A99-61AB-891E-C71F562D72F7">
+<ColumnProxy name="ID" id="C865C651-13E0-D05D-B88A-C4026A835903">
 <createdBy>Abdullah</createdBy>
 <createdTime>2018-12-18 03:38:57 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
 <indexProxies>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="STUDENT_PK" id="141BFA5F-D8E8-2DF3-981D-22F58AC29219">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPARTMENT_PK" id="746A34D9-5A4D-F4EA-7320-73244BE690B8">
 <createdBy>Abdullah</createdBy>
 <createdTime>2018-12-18 03:38:57 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
 </IndexProxy>
 </indexProxies>
-<foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STUDENT_FK1" id="7EDE0BE5-ACC8-713A-DCFF-2BE8B99FCC16">
-<createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
-<ownerDesignName>ERD</ownerDesignName>
-</ForeignKey>
-</foreignKeys>
 <primaryKeys>
-<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="STUDENT_PK" id="9C49049A-7D0C-928E-71F3-2FBDD53839C9">
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPARTMENT_PK" id="21B7C363-9D00-F0BF-1C61-76D3D2F31B28">
 <createdBy>Abdullah</createdBy>
 <createdTime>2018-12-18 03:38:57 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
