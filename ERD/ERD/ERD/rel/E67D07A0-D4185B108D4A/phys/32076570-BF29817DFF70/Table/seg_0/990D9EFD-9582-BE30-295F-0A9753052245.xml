@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MESSAGES" directorySegmentName="seg_0" id="990D9EFD-9582-BE30-295F-0A9753052245">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-20 13:04:34 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nameChanged>true</nameChanged>
+<schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>F4EDFD96-C5B5-0296-93E1-7127E1A3F64E</segment>
+<tableSpace>376AABA6-BD27-51C3-19B5-CC34A01E061D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FROM_USER_ID" id="A6D61DEB-1716-13F4-BDDC-67E2583C54B2">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-20 13:04:34 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REPORT" id="C59BB0C1-4603-EA4C-00E8-7F06BA1D266D">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-20 13:04:34 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TO_USER_ID" id="CBACE48F-7D19-3C4B-1B3E-DD58DE8F2292">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-20 13:04:34 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MESSAGES_FK1v1" id="9EFBB8C0-06FC-5F98-8D2C-C8A5DBBDE3FA">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-20 13:04:35 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="REPORTS_FK1V1v1" id="BCF104CB-F892-2ADF-D07E-9BB1A9C66200">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-20 13:04:35 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>
