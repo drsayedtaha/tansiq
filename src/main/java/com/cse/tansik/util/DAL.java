@@ -27,7 +27,7 @@ public class DAL {
                 this.USER_NAME =USER_NAME;
                 this.password = password;
                 //creating students list
-               String query = "SELECT DISTINCT STUDENT_ID FROM STUDENT_SUBJECT";
+               String query = "SELECT DISTINCT STUDENT_SUBJECT.STUDENT_ID, STUDENT.TOTAL_MARK FROM STUDENT_SUBJECT FULL OUTER JOIN STUDENT ON STUDENT.USER_ID = STUDENT_SUBJECT.STUDENT_ID ORDER BY TOTAL_MARK Desc;";
                try(Connection con = DriverManager.getConnection(URL, USER_NAME,password);
                   Statement stmnt = con.createStatement();
                   ResultSet res = stmnt.executeQuery(query);){
