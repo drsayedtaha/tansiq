@@ -1,67 +1,76 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="PREREQUISITE" directorySegmentName="seg_0" id="38636C28-F686-B31C-EB64-98A54C9051B9">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>05963493-E4D1-4FE2-58D7-06D2A83E110A</segment>
+<tableSpace>57FF722C-9028-3B2B-35A4-089727D56AF0</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
 <ColumnProxy name="CURRENT_EDU_LEVEL_ID" id="6A1C4028-A8C7-2A9B-B370-8F59DF675639">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="SUBJECT" id="D1CD8235-FDFF-2C37-60A3-5FD3F1005612">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="MIN_MARK_DEP" id="D7DC638C-C907-D792-4335-9981F7991071">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="MIN_MARK_SUBJECT" id="DC4A5CA4-DB82-4F54-B147-68F747F64E7D">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="ID" id="E33699F1-A27D-630A-804A-B27538E87F82">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
 <indexProxies>
 <IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PREREQUISITE_PK1" id="284DEFC6-C04C-D593-1A5F-E84A68850200">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
+<segment>039C608A-6B54-B8D8-D3B0-202DEAE581F1</segment>
+<tableSpace>57FF722C-9028-3B2B-35A4-089727D56AF0</tableSpace>
 </IndexProxy>
 </indexProxies>
 <foreignKeys>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PREREQUISITE_FK1" id="39582420-01C2-1DA0-8FE0-CEB5F3315131">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 </ForeignKey>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PREREQUISITE_FK2" id="63219DC3-C201-B6C1-D3AE-F22FE7A36101">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 </ForeignKey>
 </foreignKeys>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PREREQUISITE_PK" id="F1A8604F-4AB8-7745-95FC-9F0E7376D8AD">
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-12-18 03:38:57 UTC</createdTime>
+<createdTime>2018-11-12 22:19:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
+<segment>039C608A-6B54-B8D8-D3B0-202DEAE581F1</segment>
+<tableSpace>57FF722C-9028-3B2B-35A4-089727D56AF0</tableSpace>
+<existingIndex>284DEFC6-C04C-D593-1A5F-E84A68850200</existingIndex>
+<indexSegment>039C608A-6B54-B8D8-D3B0-202DEAE581F1</indexSegment>
 <indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
 </PrimaryKey>
 </primaryKeys>
 </TableProxyOraclev11g>

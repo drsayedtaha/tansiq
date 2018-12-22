@@ -39,7 +39,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="157DF6FE-C909-3A65-BB09-5AAE87F843A6" referredColumn="B190158B-F997-0D32-93D8-3702E63B5C6F"/>
+<colAssociation fkAssociation="157DF6FE-C909-3A65-BB09-5AAE87F843A6" referredColumn="6C4B49AA-B7A0-0745-8C3C-C7A94B3CF370"/>
 </associations>
 </Column>
 <Column name="ORDER" id="A2058807-53A9-7921-F44A-EAB3301D9474">

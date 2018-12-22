@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7367E2F8-D281-AFFD-2990-0FCB76778BA5" containerWithKeyObject="D0416F0D-54FE-B2A2-3D9F-3E63BACE5A36" localFKIndex="7EDE0BE5-ACC8-713A-DCFF-2BE8B99FCC16" name="STUDENT_FK1">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="62405744-1CF7-91AA-586F-C4CB69A42361" containerWithKeyObject="F217FDC0-B8EC-B32D-AB15-F4B85F5D4C9B" localFKIndex="09F0F38C-F90E-601B-AC78-01C1D8F628D8" name="STUDENT_FK1">
 <sourceConnName>Tansiq</sourceConnName>
 <sourceObjSchema>HR</sourceObjSchema>
 <sourceObjName>STUDENT_FK1</sourceObjName>
 <createdBy>Abdullah</createdBy>
-<createdTime>2018-11-07 17:57:26 UTC</createdTime>
+<createdTime>2018-12-22 01:16:53 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <referredTableLongName>HR.USERS</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>D8CD6075-0F74-AA9A-D76B-39994C3A90C6</referredTableID>
-<keyObject>93DFE6AB-C448-C454-CD3E-8E052BAC3769</keyObject>
-<referredKeyID>93DFE6AB-C448-C454-CD3E-8E052BAC3769</referredKeyID>
+<keyObject>656A6BC5-7B17-9546-9489-415BB89D0335</keyObject>
+<referredKeyID>656A6BC5-7B17-9546-9489-415BB89D0335</referredKeyID>
 <mandatory>true</mandatory>
 <refColNames>ID</refColNames>
 <transferable>true</transferable>

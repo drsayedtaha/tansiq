@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="HR" directorySegmentName="seg_0" id="11B4F0FF-43C2-D4B7-60A3-12123E0BE3C3">
-<sourceConnName>hr_01</sourceConnName>
+<sourceConnName>Tansiq</sourceConnName>
 <sourceObjName>HR</sourceObjName>
 <createdBy>Abdullah</createdBy>
 <createdTime>2018-11-07 22:51:07 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <schemaObject>0BF375C6-A386-2D37-9E82-AE647B707DF2</schemaObject>
-<defTableSpace>376AABA6-BD27-51C3-19B5-CC34A01E061D</defTableSpace>
+<defTableSpace>57FF722C-9028-3B2B-35A4-089727D56AF0</defTableSpace>
 <privileges>CREATE VIEW, UNLIMITED TABLESPACE, CREATE DATABASE LINK, CREATE SEQUENCE, CREATE SESSION, ALTER SESSION, CREATE SYNONYM</privileges>
 </UserOraclev10g>

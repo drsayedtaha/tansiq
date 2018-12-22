@@ -8,9 +8,9 @@
 <ownerDesignName>ERD</ownerDesignName>
 <referredTableLongName>HR.STUDENT</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
-<referredTableID>D0416F0D-54FE-B2A2-3D9F-3E63BACE5A36</referredTableID>
-<keyObject>141BFA5F-D8E8-2DF3-981D-22F58AC29219</keyObject>
-<referredKeyID>141BFA5F-D8E8-2DF3-981D-22F58AC29219</referredKeyID>
+<referredTableID>F217FDC0-B8EC-B32D-AB15-F4B85F5D4C9B</referredTableID>
+<keyObject>1DDBD342-9E93-02CC-CC37-ACBE536F06DF</keyObject>
+<referredKeyID>1DDBD342-9E93-02CC-CC37-ACBE536F06DF</referredKeyID>
 <mandatory>true</mandatory>
 <refColNames>USER_ID</refColNames>
 <transferable>true</transferable>
