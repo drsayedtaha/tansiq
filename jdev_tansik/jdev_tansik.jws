@@ -27,7 +27,5 @@
    </list>
    <list n="listOfChildren">
       <hash><url n="URL" path="tansiq/tansiq.jpr"/></hash>
-      <hash><url n="URL" path="../../Testing/Client.jpr"/></hash>
-      <hash><url n="URL" path="../../../test_area/con_db/Client.jpr"/></hash>
    </list>
 </jws:workspace>
