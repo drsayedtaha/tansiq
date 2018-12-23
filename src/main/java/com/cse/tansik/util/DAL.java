@@ -20,14 +20,14 @@ public class DAL {
        private  String USER_NAME ;
        private  String password ;
        private List<Student> students = new ArrayList<Student>();
-       public static final int SUBJECTS =0;
-       public static final int REQUESTS =0;
-       DAL(String URL ,String USER_NAME ,String password){
+       //public static final int SUBJECTS =0;
+       //public static final int REQUESTS =0;
+       DAL(String URL ,String USER_NAME ,String password,Integer edu_level ){
                 this.URL = URL;
                 this.USER_NAME =USER_NAME;
                 this.password = password;
                 //creating students list
-               String query = "SELECT DISTINCT STUDENT_ID FROM STUDENT_SUBJECT";
+               String query = "SELECT DISTINCT * FROM STUDENT_SUBJECT FULL OUTER JOIN STUDENT ON STUDENT.EDU_LEVEL="+edu_level.toString();
                try(Connection con = DriverManager.getConnection(URL, USER_NAME,password);
                   Statement stmnt = con.createStatement();
                   ResultSet res = stmnt.executeQuery(query);){
