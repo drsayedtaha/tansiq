@@ -9,7 +9,9 @@ public class EduYear {
     // abdo ragab 4/12
     // neded to save data from database and re print it
     String faculty;
-
+    
+    String Department;
+    
     public void setFaculty(String faculty) {
         this.faculty = faculty;
     }
