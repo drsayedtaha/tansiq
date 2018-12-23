@@ -7,9 +7,8 @@ import com.cse.tansik.DTO.Admin;
 import com.cse.tansik.DTO.Student;
 
 public class UserGeneric <T>{
-    DAOfactory DAOfact = new DAOfactory();
-    private GMDAO gmDAO = DAOfact.createGMDAO();
-    private AdminDAO admindao = DAOfact.createAdminDAO();
+    private GMDAO gmDAO = DAOfactory.createGMDAO();
+    private AdminDAO admindao = DAOfactory.createAdminDAO();
     
     private T t;
     

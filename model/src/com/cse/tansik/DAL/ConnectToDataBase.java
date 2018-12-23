@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ConnectToDataBase {
@@ -25,5 +26,11 @@ public class ConnectToDataBase {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+            
+            //abdo ragab  //24-12 remove this after finish
+            //TODO fix return
+            //this two lines added just to compile
+            List<E> list = new ArrayList<>();
+            return list;
         }
 }
