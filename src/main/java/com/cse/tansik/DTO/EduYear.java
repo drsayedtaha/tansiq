@@ -6,6 +6,30 @@ import java.util.List;
 public class EduYear {
     int id;
     int year;
+
+    public void setDepartment(String Department) {
+        this.Department = Department;
+    }
+
+    public String getDepartment() {
+        return Department;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
     // abdo ragab 4/12
     // neded to save data from database and re print it
     String faculty;
