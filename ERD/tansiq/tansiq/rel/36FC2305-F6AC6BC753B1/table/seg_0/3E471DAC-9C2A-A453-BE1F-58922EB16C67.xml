@@ -23,7 +23,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="75213055-A73D-58B2-8B75-E516A6606E84" referredColumn="B0E31B5F-0B99-9D65-5D0B-158580D857E3"/>
+<colAssociation fkAssociation="75213055-A73D-58B2-8B75-E516A6606E84" referredColumn="7C2A1265-B758-7A9A-6055-ABA1041D3887"/>
 </associations>
 </Column>
 <Column name="START_DATE" id="4852306B-BA0F-BCF2-418F-FED1F4DA571C">

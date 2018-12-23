@@ -1,37 +1,37 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TIMELINE" directorySegmentName="seg_0" id="3E471DAC-9C2A-A453-BE1F-58922EB16C67">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:42:47 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 <schemaObject>EC692DA2-F555-B93C-37C6-999D4AF7016E</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
-<segment>D2E7AA58-90C2-2DB0-C203-FE7060258D1C</segment>
-<tableSpace>13AD68C2-E636-B5E8-3825-23AEA6D1EEEB</tableSpace>
+<segment>498D8997-3A1C-D6FB-3ECF-780BEE1E9C67</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
 <ColumnProxy name="START_DATE" id="4852306B-BA0F-BCF2-418F-FED1F4DA571C">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:42:47 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="END_DATE" id="D539A1C6-0FB0-71EE-30D5-CEF2751CA964">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:42:47 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="EDU_LEVEL_ID" id="F2426251-E627-40E7-5E56-167A4C2759F8">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:42:47 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
 <foreignKeys>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TIMELINE_FK1" id="B71B9B2E-85A9-557D-A878-31F05E1B5FE2">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:42:47 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ForeignKey>
 </foreignKeys>

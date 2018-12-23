@@ -3,7 +3,7 @@
 <createdBy>abdullah</createdBy>
 <createdTime>2018-12-23 12:39:09 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
+<shouldBeOpen>true</shouldBeOpen>
 <selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
 <importConnectionStamps>
 <importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">

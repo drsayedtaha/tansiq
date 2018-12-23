@@ -1,86 +1,86 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="USERS" directorySegmentName="seg_0" id="0450D65E-B135-E158-BB74-0794C4685998">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 <schemaObject>EC692DA2-F555-B93C-37C6-999D4AF7016E</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
-<segment>D2E7AA58-90C2-2DB0-C203-FE7060258D1C</segment>
-<tableSpace>13AD68C2-E636-B5E8-3825-23AEA6D1EEEB</tableSpace>
+<segment>498D8997-3A1C-D6FB-3ECF-780BEE1E9C67</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
 <ColumnProxy name="MIDDLE_NAME" id="08ECFEDA-0027-3158-878C-A578E80D4652">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="PASSWORD" id="358B6959-361A-614C-1EA9-B36616055E55">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="ID" id="3F3A2313-0229-2A5D-A93B-50534AD05C31">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="EMAIL" id="5F374A72-C947-A20A-8C4B-C0747FB43085">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="LAST_NAME" id="5FE8C32C-3B22-9C8B-7317-CDED8859A9AE">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="USER_NAME" id="A5F8098F-8BEE-7F99-AAF7-288B8D63FD13">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="ROLE" id="BBB33005-1C9E-B6A3-9953-B943F59E097D">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 <defaultValue>0</defaultValue>
 </ColumnProxy>
 <ColumnProxy name="FIRST_NAME" id="D7652475-BD1E-08DB-5C95-DBC3463230CD">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
 <indexProxies>
 <IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TABLE1_UK1" id="EC122CA6-DD28-9A6C-1A9C-C43C639119E5">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 <schemaObject>EC692DA2-F555-B93C-37C6-999D4AF7016E</schemaObject>
-<segment>6F801E23-031C-D4F9-0F73-2DFAB7AB8151</segment>
-<tableSpace>13AD68C2-E636-B5E8-3825-23AEA6D1EEEB</tableSpace>
+<segment>CA1B6EDE-57BB-7C47-FD58-843FC356BFFF</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
 </IndexProxy>
 <IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TABLE1_PK" id="FC5E75B8-3859-78AF-D852-6CE02CDCEB7B">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 <schemaObject>EC692DA2-F555-B93C-37C6-999D4AF7016E</schemaObject>
-<segment>6F801E23-031C-D4F9-0F73-2DFAB7AB8151</segment>
-<tableSpace>13AD68C2-E636-B5E8-3825-23AEA6D1EEEB</tableSpace>
+<segment>CA1B6EDE-57BB-7C47-FD58-843FC356BFFF</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
 </IndexProxy>
 </indexProxies>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TABLE1_PK" id="1C499B2A-6DAA-E89F-6526-62080F478432">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
-<segment>6F801E23-031C-D4F9-0F73-2DFAB7AB8151</segment>
-<tableSpace>13AD68C2-E636-B5E8-3825-23AEA6D1EEEB</tableSpace>
+<segment>CA1B6EDE-57BB-7C47-FD58-843FC356BFFF</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
 <existingIndex>FC5E75B8-3859-78AF-D852-6CE02CDCEB7B</existingIndex>
-<indexSegment>6F801E23-031C-D4F9-0F73-2DFAB7AB8151</indexSegment>
+<indexSegment>CA1B6EDE-57BB-7C47-FD58-843FC356BFFF</indexSegment>
 <indexSort>SORTED</indexSort>
 <usingIndex>BY INDEX NAME</usingIndex>
 </PrimaryKey>
@@ -88,12 +88,12 @@
 <uniqueKeys>
 <UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="TABLE1_UK1" id="21C26932-A683-A6BC-A4D3-E988998F927C">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
-<segment>6F801E23-031C-D4F9-0F73-2DFAB7AB8151</segment>
-<tableSpace>13AD68C2-E636-B5E8-3825-23AEA6D1EEEB</tableSpace>
+<segment>CA1B6EDE-57BB-7C47-FD58-843FC356BFFF</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
 <existingIndex>EC122CA6-DD28-9A6C-1A9C-C43C639119E5</existingIndex>
-<indexSegment>6F801E23-031C-D4F9-0F73-2DFAB7AB8151</indexSegment>
+<indexSegment>CA1B6EDE-57BB-7C47-FD58-843FC356BFFF</indexSegment>
 <indexSort>SORTED</indexSort>
 <usingIndex>BY INDEX NAME</usingIndex>
 </UniqueKey>

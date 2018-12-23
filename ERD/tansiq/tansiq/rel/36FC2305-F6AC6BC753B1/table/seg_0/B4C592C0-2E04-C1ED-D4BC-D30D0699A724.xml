@@ -39,7 +39,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="3470BC2F-4879-FBD4-09A8-2A718874C20E" referredColumn="B0E31B5F-0B99-9D65-5D0B-158580D857E3"/>
+<colAssociation fkAssociation="7364B3E2-858F-14FB-2EE4-E2C32683AD09" referredColumn="7C2A1265-B758-7A9A-6055-ABA1041D3887"/>
 </associations>
 </Column>
 </columns>
@@ -54,9 +54,9 @@
 <colUsage columnID="5C994B23-7401-02A9-2118-3B9863A9424F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0B550D84-F253-50C9-06A7-3D4EBFFAFC7D" name="ADMIN_EDU_YEAR_FK2">
+<ind_PK_UK id="3BFC6D7C-0C44-DBFC-5192-3DD6585F96F2" name="ADMIN_EDU_YEAR_FK2">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:11:06 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>

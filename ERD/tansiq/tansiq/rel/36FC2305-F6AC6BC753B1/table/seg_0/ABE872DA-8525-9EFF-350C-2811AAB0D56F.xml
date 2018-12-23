@@ -39,7 +39,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="03EDEBEB-6E45-52DE-8046-82389531EAD4" referredColumn="B0E31B5F-0B99-9D65-5D0B-158580D857E3"/>
+<colAssociation fkAssociation="CF406D33-3156-DF59-AA3F-C1FF2F5FF65B" referredColumn="7C2A1265-B758-7A9A-6055-ABA1041D3887"/>
 </associations>
 </Column>
 <Column name="TOTAL_MARK" id="BB8864A2-0D24-4A2B-0391-6BD9F7F9368D">
@@ -95,9 +95,9 @@
 <colUsage columnID="979B1592-37D3-59B8-3BE5-802250ED9FB7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="303607F6-5DDB-BF57-9137-B88C1B40E6B8" name="STUDENT_FK2">
+<ind_PK_UK id="86531FBF-B4EB-7B1A-8A22-7856769A5A79" name="STUDENT_FK2">
 <createdBy>abdullah</createdBy>
-<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<createdTime>2018-12-23 17:11:06 UTC</createdTime>
 <ownerDesignName>tansiq</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
