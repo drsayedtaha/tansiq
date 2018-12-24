@@ -20,14 +20,14 @@ public class DAL {
        private  String USER_NAME ;
        private  String password ;
        private List<Student> students = new ArrayList<Student>();
-       public static final int SUBJECTS =0;
-       public static final int REQUESTS =0;
-       DAL(String URL ,String USER_NAME ,String password){
+       
+       private Integer edu_level; 
+       DAL(String URL ,String USER_NAME ,String password,Integer edu_level){
                 this.URL = URL;
                 this.USER_NAME =USER_NAME;
                 this.password = password;
                 //creating students list
-               String query = "SELECT DISTINCT STUDENT_SUBJECT.STUDENT_ID, STUDENT.TOTAL_MARK FROM STUDENT_SUBJECT FULL OUTER JOIN STUDENT ON STUDENT.USER_ID = STUDENT_SUBJECT.STUDENT_ID ORDER BY TOTAL_MARK Desc;";
+               String query = "SELECT DISTINCT * FROM STUDENT_SUBJECT FULL OUTER JOIN STUDENT ON STUDENT.USER_ID=STUDENT_SUBJECT.STUDENT WHERE STUDENT.EDU_LEVEL"+edu_level.toString()+"ORDER BY STUDENT.TOTAL_MARK";
                try(Connection con = DriverManager.getConnection(URL, USER_NAME,password);
                   Statement stmnt = con.createStatement();
                   ResultSet res = stmnt.executeQuery(query);){
@@ -40,8 +40,8 @@ public class DAL {
                catch(SQLException ex){
                   ex.printStackTrace();
                   }
-               setResultsToStudets(students);
-               setRequestsForStudets(students);
+               setResultsToStudets();
+               setRequestsForStudets();
            }
 
     public void setStudents(List<Student> students) {
@@ -52,7 +52,7 @@ public class DAL {
         return students;
     }
 
-    public void setResultsToStudets(List<Student> list){
+    public void setResultsToStudets(){
            
            for(int i = 0 ; i<students.size() ; i++){
                 String query = "SELECT SUBJECT_ID , \"MARK\" FROM STUDENT_SUBJECT WHERE STUDENT_ID="+students.get(i).getID();
@@ -81,7 +81,7 @@ public class DAL {
          
            }
     
-    public void setRequestsForStudets(List<Student> list){
+    public void setRequestsForStudets(){
            
            for(int i = 0 ; i<students.size() ; i++){
                 String query = "SELECT DEP_ID , \"ORDER\" FROM STUDENTS_REQUESTS WHERE STUDENT_ID="+students.get(i).getID();
