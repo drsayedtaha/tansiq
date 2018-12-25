@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SegmentOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SegmentOraclev10g" name="Storage24" directorySegmentName="seg_0" id="C47F313E-4E0D-EAD2-2227-C2CFE7BB92E2">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:11:06 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</SegmentOraclev10g>

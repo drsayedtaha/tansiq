@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ROLES" directorySegmentName="seg_0" id="842FBED4-4B88-E0DE-73EA-D06703DCC1A8">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<schemaObject>EC692DA2-F555-B93C-37C6-999D4AF7016E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>498D8997-3A1C-D6FB-3ECF-780BEE1E9C67</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ROLE_ID" id="091E439B-D959-C030-EE33-C7A8E1D0021A">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ROLES" id="34784581-CB92-20B0-C1A4-3ACD4C87264D">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="USER_ID" id="F28A6D82-8618-2F11-139A-9C0C8051765C">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ROLES_PK" id="AEA30545-48DF-0489-C0AD-DDF48F3D820A">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<schemaObject>EC692DA2-F555-B93C-37C6-999D4AF7016E</schemaObject>
+<segment>CA1B6EDE-57BB-7C47-FD58-843FC356BFFF</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ROLES_FK1" id="C1DC4730-6066-1693-5934-71730EEBC501">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ROLES_PK" id="604C06B6-74A7-EEA3-1CD5-297712BC8DB9">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:10:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<segment>CA1B6EDE-57BB-7C47-FD58-843FC356BFFF</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+<existingIndex>AEA30545-48DF-0489-C0AD-DDF48F3D820A</existingIndex>
+<indexSegment>CA1B6EDE-57BB-7C47-FD58-843FC356BFFF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

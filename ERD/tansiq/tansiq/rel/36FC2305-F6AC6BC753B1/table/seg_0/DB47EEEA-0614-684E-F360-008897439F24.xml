@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB47EEEA-0614-684E-F360-008897439F24" schemaObject="EC692DA2-F555-B93C-37C6-999D4AF7016E" name="EDU_LEVEL">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EDU_LEVEL</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:09:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7C2A1265-B758-7A9A-6055-ABA1041D3887">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>EDU_LEVEL</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:09:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT" id="CC8CCD21-1EDC-FCB8-8F09-0192BE7B0AD3">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>EDU_LEVEL</sourceObjSchema>
+<sourceObjName>DEPARTMENT</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:32:21 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>B1560970-F214-D40E-1DDE-B702A2E7C40C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FACULTY" id="955F8023-DE16-CAFE-B890-1A23B3C2A7CF">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>EDU_LEVEL</sourceObjSchema>
+<sourceObjName>FACULTY</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:09:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YEAR" id="8DB44E23-A505-4A47-FBD8-2C5B66D49296">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>EDU_LEVEL</sourceObjSchema>
+<sourceObjName>YEAR</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:09:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FD46302-2E0D-6228-E7A3-9E8880999BB2" referredColumn="287D9E65-C5CB-B6E3-B00B-6289DE220BA5"/>
+</associations>
+</Column>
+<Column name="DEPARTMENT_ID" id="5C0B6021-19A4-17BF-E02C-3938F9BB7D65">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>EDU_LEVEL</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:09:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06719065-AEAA-162F-A083-3661F344A5AF" referredColumn="A019CABB-28DF-CBED-8016-E8CCFC92A9B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9ECAA8C2-D1C6-80C3-9942-135C0D8F47C7" name="EDU_LEVEL_PK">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EDU_LEVEL_PK</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:09:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C2A1265-B758-7A9A-6055-ABA1041D3887"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E84294A6-B5D7-54D5-CC6E-FB88405B7E46" schemaObject="EC692DA2-F555-B93C-37C6-999D4AF7016E" name="EDU_LEVEL_PK">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EDU_LEVEL_PK</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:09:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C2A1265-B758-7A9A-6055-ABA1041D3887"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1F6D081-5890-E1EE-CBA9-4119607A1F7C" name="EDU_LEVEL_FK1">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:09:55 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DB44E23-A505-4A47-FBD8-2C5B66D49296"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A03A3B1-B9B6-4A81-7C71-CEBE650FA369" name="EDU_LEVEL_FK2">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 17:32:21 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C0B6021-19A4-17BF-E02C-3938F9BB7D65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

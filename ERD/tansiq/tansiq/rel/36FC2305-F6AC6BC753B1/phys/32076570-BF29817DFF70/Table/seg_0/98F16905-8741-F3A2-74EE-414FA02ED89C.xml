@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SUBJECT" directorySegmentName="seg_0" id="98F16905-8741-F3A2-74EE-414FA02ED89C">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<schemaObject>6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B4618EDD-12EA-2BAC-0D8D-1ABF2F18574A</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="428D1082-C733-35DE-E444-9B4FAF694142">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="48CA0226-D73F-93CA-5B3A-5E6B6E2A12B3">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EDU_LEVEL_ID" id="83851FAD-A23C-2F8D-BAD8-F32DD32050DF">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EDU_LEVEL_ID1" id="D7F131D5-54D3-E751-15A2-46A99DFAE556">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SUBJECT_PK" id="88CC40BC-12F1-ACB9-7251-A88C39E14FE4">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<schemaObject>6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4</schemaObject>
+<segment>36BBF2D9-65CA-E9B1-7E11-0CBBE9061769</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SUBJECT_EDU_LEVEL_FK" id="AD5CB161-4126-9BDE-57EF-B40D4C394FB1">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SUBJECT_PK" id="B1FC7955-1EA5-E42D-A6F3-04739EEED1CE">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<segment>36BBF2D9-65CA-E9B1-7E11-0CBBE9061769</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+<existingIndex>88CC40BC-12F1-ACB9-7251-A88C39E14FE4</existingIndex>
+<indexSegment>36BBF2D9-65CA-E9B1-7E11-0CBBE9061769</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

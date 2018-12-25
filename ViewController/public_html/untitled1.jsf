@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" 
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:p="http://primefaces.org/ui">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+        <h:outputStylesheet library="css" name="style.css"/>
+        </h:head>
+        <h:body style="background-color: #1A1423;color: #1A1423">
+            <h:form>
+           <p:messages id="messages" showDetail="true" closable="true">
+        <p:autoUpdate />
+    </p:messages>
+    
+    <div style="margin-top:180px">
+
+        <div style="position: relative;margin: auto;background-color: #eee;width: 500px; height: 300px;box-shadow: 0px 4px 5px black;text-align: center ">
+              <div style="font-size: 20px;padding-top: 10px">Sign-in</div>
+              <div style="font-size: 15px;margin-top:30px ">Username</div>
+                <p:inputText value="#{loginBean.userName}"/> <br/>
+                <div style="font-size: 15px;margin-top:30px ">Password</div>
+                <p:inputText value="#{loginBean.password}"/> <br/>
+                <br/>
+    <p:commandButton value="Submit" action="#{loginBean.login()}" />
+    
+           </div>
+    </div>
+            </h:form>
+        </h:body>
+    </html>
+</f:view>

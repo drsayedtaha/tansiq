@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E011C59-1631-E0B0-7D76-AA8B6F1C6EF7" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="STUDENT">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>STUDENT</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>87FDDF84-C528-84E5-9FE1-B47A1F9774B2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="D167BD7A-4DDF-A49C-7AB7-1CC5AA48E564">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>E8986537-0C9D-F9C8-1F0E-C165E4F93BC6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3D8907C-FE61-0076-8A45-11FB3C2119C4" referredColumn="3B69A824-7269-A364-9A90-998C2AAC83C8"/>
+</associations>
+</Column>
+<Column name="EDU_LEVEL" id="46F8E6B7-CC06-FEBE-1E73-4C45AA8507F7">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>EDU_LEVEL</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>0EFB19B8-6937-A5DA-3F6B-A9EC428A32EC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80AB6EC0-6375-8B07-4EEC-C026DEE2F2E1" referredColumn="91D19A3C-3232-2394-C8A5-902F6863BD23"/>
+</associations>
+</Column>
+<Column name="TOTAL_MARK" id="3463F0FB-E802-E40D-7EEE-E8D59C014A96">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>TOTAL_MARK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>E3B5731D-F64E-A583-A3D6-39A79CC3FB96</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="780E6FAD-4DED-0B33-8D5F-0B6F0345DDF2" name="STUDENT_PK">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>STUDENT_PK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>22DE83A9-A8ED-522F-D27B-6E4589C2F81B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D167BD7A-4DDF-A49C-7AB7-1CC5AA48E564"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA18CF9D-2EF2-C3DF-5A6D-2664DFB7DE59" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="STUDENT_PK">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>STUDENT_PK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>38714592-0CFD-1032-70B1-99BC3685A2AA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D167BD7A-4DDF-A49C-7AB7-1CC5AA48E564"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37D65528-257F-5FE1-8F85-2E4646898444" name="STUDENT_FK1">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D167BD7A-4DDF-A49C-7AB7-1CC5AA48E564"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E70DD43-641F-C90A-5695-16DA77AD925A" name="STUDENT_FK2">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46F8E6B7-CC06-FEBE-1E73-4C45AA8507F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

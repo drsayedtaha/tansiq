@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDDF5EBB-EEBD-881B-0CB5-3319FC9E13C8" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="USERS">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>USERS</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>BF5A2FAE-8B20-AF98-BF7B-DE4EC12B737B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3B69A824-7269-A364-9A90-998C2AAC83C8">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>66DE9EF8-DC6C-37B5-D684-859593A0C37C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_NAME" id="47E4CC02-D05A-D36A-CC9E-DDA3A5CFF610">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>USER_NAME</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>F22F610C-742C-906B-E31C-9918F5ACD1F8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD" id="DE4EA88F-18A4-448D-542B-5ABDDB3D0012">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>PASSWORD</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>87FF03B8-CB4E-5E86-34C9-568180FDDABC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="FEFBCC1D-660E-8D7A-9A6D-32D1CC1D59FF">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>9E6A0977-EA1C-A6AA-5CDF-50D180614B8D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLE" id="50A4BC01-B2A5-F0C8-8E34-99448FF300B7">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>ROLE</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>4ACCD6F8-A69C-7BDE-818F-354C25F64BF6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="71A7DE93-28BA-A98F-39D3-D98DDEE952F3">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>FIRST_NAME</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>ABD1BF79-2468-C83A-7EAE-781A932B7E10</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIDDLE_NAME" id="E11062DD-C09D-2FBA-1BA2-F67F71A59E55">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>MIDDLE_NAME</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>37619EE1-503C-13C8-1C56-A52EC0594BA5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="C788F36E-03BF-5C61-B56D-5C025D48FE51">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>LAST_NAME</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>05D586D0-20F3-1E0A-125B-CEBE6B4B15AF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47D59486-8C1F-875C-D47F-83CFCAF9F14B" name="TABLE1_PK">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>TABLE1_PK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>1184E8EF-0C48-C85E-315A-25CA17C338BB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B69A824-7269-A364-9A90-998C2AAC83C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9B56978-5EF9-7ABF-33CE-FFB4192D5635" name="TABLE1_UK1">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>TABLE1_UK1</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>011F3210-BE7A-BB6E-AF35-48606CFA9EC4</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47E4CC02-D05A-D36A-CC9E-DDA3A5CFF610"/>
+<colUsage columnID="FEFBCC1D-660E-8D7A-9A6D-32D1CC1D59FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA0EA480-BEA3-E7D6-1913-89A3CE3ECE84" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="TABLE1_PK">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>TABLE1_PK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>34678B82-987B-7A8F-B179-EAF872DE334E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B69A824-7269-A364-9A90-998C2AAC83C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABB5E0A4-6B09-BFB3-BAFA-465185614FA5" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="TABLE1_UK1">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>TABLE1_UK1</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>13DD31ED-76D8-150E-9DA7-FB5CA16848DA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47E4CC02-D05A-D36A-CC9E-DDA3A5CFF610"/>
+<colUsage columnID="FEFBCC1D-660E-8D7A-9A6D-32D1CC1D59FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

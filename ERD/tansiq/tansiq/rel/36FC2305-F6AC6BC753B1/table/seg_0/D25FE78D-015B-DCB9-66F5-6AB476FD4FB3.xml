@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D25FE78D-015B-DCB9-66F5-6AB476FD4FB3" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="DEPARTMENT">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>DEPARTMENT</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>A10AAB27-5B15-D03D-3318-E072340FB451</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2F2632EA-8ACE-2321-387A-536160F927AC">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>DEPARTMENT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>CC540943-E9E9-5FA8-43FB-4F4B76C1FB44</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="55C42197-09DA-C114-A910-FF218E81283A">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>DEPARTMENT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>D32AB060-AE8F-4D75-6D13-C57F8D6DB3D6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIN_CAP" id="D3BBA69C-8535-E648-24B6-72A40F2FB548">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>DEPARTMENT</sourceObjSchema>
+<sourceObjName>MIN_CAP</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>5A830543-5A92-5D67-783F-8F5BC47790B2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_CAP" id="A1BE0750-680D-1DAF-A24A-2FC777F0AAA6">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>DEPARTMENT</sourceObjSchema>
+<sourceObjName>MAX_CAP</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>53764F34-9303-905C-FB5E-100295BCBE4F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C852F94B-25E8-E81E-FFA4-4B43CF04723D" name="DEPARTMENT_PK">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>DEPARTMENT_PK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>F78CFBF7-25E4-FF81-C70F-5468DC457747</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F2632EA-8ACE-2321-387A-536160F927AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EB9DEAA-7F77-8347-D9B1-45E22AC70EF5" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="DEPARTMENT_PK">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>DEPARTMENT_PK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>80903EC0-2A3C-E5B0-F7D7-67A51E9E193B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F2632EA-8ACE-2321-387A-536160F927AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

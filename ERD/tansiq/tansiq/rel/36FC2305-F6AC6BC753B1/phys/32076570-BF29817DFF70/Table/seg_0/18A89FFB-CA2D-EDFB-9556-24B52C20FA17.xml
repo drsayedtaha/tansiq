@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="STUDENT_SUBJECT" directorySegmentName="seg_0" id="18A89FFB-CA2D-EDFB-9556-24B52C20FA17">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<schemaObject>6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B4618EDD-12EA-2BAC-0D8D-1ABF2F18574A</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MARK" id="5285807E-DB9A-BEFD-DDC2-036DC8F2B579">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STUDENT" id="95BACB20-925D-B34B-DB89-E7F6BFD53648">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBJECT" id="B6E1571A-7A57-F76C-78F4-B0471F03E108">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STUDENT_SUBJECT_FK1" id="06E5ADF9-4163-E499-9C8B-CD6416855A51">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STUDENT_SUBJECT_FK2" id="21D8C5BF-D7D7-B998-0F9E-5449F0995CE3">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

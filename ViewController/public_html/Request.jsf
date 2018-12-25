@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    
+        <h:head>
+                   <title>Edit Request</title>
+                   <link rel="stylesheet" href="../style/style.css"/>
+
+        </h:head>
+        
+        <h:body style="padding: 0px;margin: 0px;background-color: rgb(251,251,251);   direction: ltr;">
+            <h:form class="container" style="direction: ltr">
+            <h:outputLabel style="font-size:100%; background-color:white; padding:5px; color:black;
+            border:none;">Departments</h:outputLabel>
+    <h:selectOneMenu class="submitbutton" value="#{requestBean.department}" style="background: white ;color:#000">
+               <!-- In Case I Didn't Use HashMap In ManagedBean       -->
+               
+               
+                  <!--      <f:selectItem itemLabel="Electrical Engineering-Computer Science Engineering"   
+                                      itemValue="Electrical Engineering-Computer Science Engineering"/>
+                        <f:selectItem itemLabel="Electrical Engineering-Electronics And Communication"
+                                      itemValue="Electrical Engineering-Electronics And Communication"/>
+                        <f:selectItem itemLabel="Electrical Engineering-Power Engineering"
+                                      itemValue="Electrical Engineering-Power Engineering"/>
+                        <f:selectItem itemLabel="Civil Engineering" itemValue="Civil Engineering"/>
+                        <f:selectItem itemLabel="Architectural Engineering" itemValue="Architectural Engineering"/>
+                        <f:selectItem itemLabel="Mechanical Engineering" itemValue="MechanicalEngineering"/> -->
+               
+                      <f:selectItems value="#{requestBean.items}"> </f:selectItems>    
+                       </h:selectOneMenu>
+                <br/>
+                <h:commandButton class="submitbutton" value="Submit"/>
+                
+                <br/>
+
+                <h:outputLabel>Organize Departments : </h:outputLabel>
+                <br/>
+                
+                
+                <h:panelGroup class="msg_line" style="display: inline-block">
+                <h:commandButton value="Up"></h:commandButton>
+                <h:commandButton value="Down"></h:commandButton>
+                <br/>
+                <h:outputText value="Department 1"></h:outputText>
+                
+                
+                </h:panelGroup> 
+                <br/> 
+                
+                 <h:panelGroup class="msg_line" style="display: inline-block">
+                <h:commandButton value="Up"> </h:commandButton>
+                <h:commandButton value="Down"></h:commandButton>
+                <br/>
+                <h:outputText value="Department 2"></h:outputText>
+                </h:panelGroup>
+                
+                <br/>
+                
+                
+                <h:panelGroup class="msg_line" style="display: inline-block">
+                <h:commandButton value="Up"> </h:commandButton>
+                <h:commandButton value="Down"></h:commandButton>
+                <br/>
+                <h:outputText value="Department 3"></h:outputText>
+                </h:panelGroup>
+                
+                <br/>
+                
+                
+                <h:panelGroup class="msg_line" style="display: inline-block">
+                <h:commandButton value="Up"> </h:commandButton>
+                <h:commandButton value="Down"></h:commandButton>
+                <br/>
+                <h:outputText value="Department 4"></h:outputText>
+                </h:panelGroup>
+    
+                     <br/>
+                
+            </h:form>
+        </h:body>
+    </html>
+</f:view>

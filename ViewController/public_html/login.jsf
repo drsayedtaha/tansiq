@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <title>login</title>
+        </h:head>
+        <h:body>
+        <!--expration language #{}-->
+            <h:dataTable binding="#{login.dataTable1}" id="dataTable1">
+                <h:column/>
+                <h:column/>
+                <h:column/>
+                <h:column/>
+                <h:column/>
+                <h:column/>
+                <h:column/>
+                <h:column/>
+                <h:column/>
+            </h:dataTable>
+        </h:body>
+    </html>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:login-->
+</f:view>

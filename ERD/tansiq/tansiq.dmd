@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="tansiq" id="C5B7C4D0-803A-3D7B-9101-6BD000618186" version="3.5">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 12:38:52 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C5B7C4D0-803A-3D7B-9101-6BD000618186</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="1A8AB40B-DF5D-AE31-454A-A91BBB003B83">
+<designStoragePath>C:\Users\abdullah\Desktop\tansiq\ERD\tansiq</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="D35E87A4-86D1-0DA1-A552-C65E735EEAE9">
+<designStoragePath>C:\Users\abdullah\Desktop\tansiq\ERD\tansiq</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A25F41A6-953D-5308-15E3-EBEA40C3BB81">
+<designStoragePath>C:\Users\abdullah\Desktop\tansiq\ERD\tansiq</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="6A1E58FD-411F-9ADD-43FF-335AE1353D6C">
+<designStoragePath>G:\2nd_electric\computer\project\tansiq\ERD\tansiq</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

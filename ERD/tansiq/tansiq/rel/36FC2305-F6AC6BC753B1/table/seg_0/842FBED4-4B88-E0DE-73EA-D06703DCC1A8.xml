@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="842FBED4-4B88-E0DE-73EA-D06703DCC1A8" schemaObject="EC692DA2-F555-B93C-37C6-999D4AF7016E" name="ROLES">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>ROLES</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="F28A6D82-8618-2F11-139A-9C0C8051765C">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>ROLES</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D47BF20-79EA-3A3E-3F05-D4ADC4DBF2C9" referredColumn="3F3A2313-0229-2A5D-A93B-50534AD05C31"/>
+</associations>
+</Column>
+<Column name="ROLE_ID" id="091E439B-D959-C030-EE33-C7A8E1D0021A">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>ROLES</sourceObjSchema>
+<sourceObjName>ROLE_ID</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLES" id="34784581-CB92-20B0-C1A4-3ACD4C87264D">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>ROLES</sourceObjSchema>
+<sourceObjName>ROLES</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<commentInRDBMS>0 IS STUDENT</commentInRDBMS>
+<ownerDesignName>tansiq</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="604C06B6-74A7-EEA3-1CD5-297712BC8DB9" name="ROLES_PK">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>ROLES_PK</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="091E439B-D959-C030-EE33-C7A8E1D0021A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEA30545-48DF-0489-C0AD-DDF48F3D820A" schemaObject="EC692DA2-F555-B93C-37C6-999D4AF7016E" name="ROLES_PK">
+<sourceConnName>tansiq</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>ROLES_PK</sourceObjName>
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="091E439B-D959-C030-EE33-C7A8E1D0021A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1DC4730-6066-1693-5934-71730EEBC501" name="ROLES_FK1">
+<createdBy>abdullah</createdBy>
+<createdTime>2018-12-23 12:41:46 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F28A6D82-8618-2F11-139A-9C0C8051765C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

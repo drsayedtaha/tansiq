@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DEPARTMENT" directorySegmentName="seg_0" id="D25FE78D-015B-DCB9-66F5-6AB476FD4FB3">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<schemaObject>6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>19ADC60C-2137-E149-0B62-523D32D17602</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="2F2632EA-8ACE-2321-387A-536160F927AC">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="55C42197-09DA-C114-A910-FF218E81283A">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MAX_CAP" id="A1BE0750-680D-1DAF-A24A-2FC777F0AAA6">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MIN_CAP" id="D3BBA69C-8535-E648-24B6-72A40F2FB548">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPARTMENT_PK" id="7EB9DEAA-7F77-8347-D9B1-45E22AC70EF5">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<schemaObject>6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4</schemaObject>
+<segment>6E8505C0-FF51-5882-85FA-7167DA3B168A</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPARTMENT_PK" id="C852F94B-25E8-E81E-FFA4-4B43CF04723D">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:06:58 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<segment>6E8505C0-FF51-5882-85FA-7167DA3B168A</segment>
+<tableSpace>51F28DE4-8125-1832-16CC-5844ED836B83</tableSpace>
+<existingIndex>7EB9DEAA-7F77-8347-D9B1-45E22AC70EF5</existingIndex>
+<indexSegment>6E8505C0-FF51-5882-85FA-7167DA3B168A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

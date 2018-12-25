@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E9CD563-073E-B471-58F3-917DDA87872E" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="USER_WEBSITE">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>USER_WEBSITE</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>60E31D2C-2153-2989-E8D3-085BE53B9140</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ROLE" id="6438FC44-AE03-8877-4774-24AE5B61C6CD">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USER_WEBSITE</sourceObjSchema>
+<sourceObjName>ROLE</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>CA1F89A6-0E04-E3F8-D06D-5850EBF6909D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4939C844-8D95-D4A7-868A-9C8B34C1A7D0" referredColumn="E74FFB0A-8233-82E3-F9C4-63BF036C7962"/>
+</associations>
+</Column>
+<Column name="WEBSITE" id="22100D6A-51F0-15E2-E26B-7D5A1A7BA43B">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>USER_WEBSITE</sourceObjSchema>
+<sourceObjName>WEBSITE</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>44CCF745-D29E-F641-2813-C338F413E106</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="764C61C3-F91B-447F-6CFE-0E06C6F187D3" name="USER_WEBSITE_FK1">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6438FC44-AE03-8877-4774-24AE5B61C6CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10F00B78-11AB-9A09-C1B2-4142F31E02AA" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="DEP_PREREQ">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>DEP_PREREQ</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>BCBA4049-1709-835A-4B70-A0B0A0CFD140</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEP_ID" id="17DA6A7C-4214-F3AF-74AF-BB5CD2E517C5">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>DEP_PREREQ</sourceObjSchema>
+<sourceObjName>DEP_ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>A7670B95-0247-03B4-3B85-B1A1783268DF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72C8CD2A-9D1A-C922-62CF-0D5B7E133059" referredColumn="2F2632EA-8ACE-2321-387A-536160F927AC"/>
+</associations>
+</Column>
+<Column name="PREREQ_ID" id="F1B0B6C5-833E-2266-C332-FF16F86E99D0">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>DEP_PREREQ</sourceObjSchema>
+<sourceObjName>PREREQ_ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>8A0F231E-5B1D-F0B5-DA65-C93F63122E8E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA3C8934-0463-E522-E8DE-2F6DEE097446" referredColumn="A79A1FBB-FCA1-8CE6-E0E3-22223DD59A58"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA3F3956-D774-33D2-2A0C-F7FD0C87CF16" name="DEP_PREREQ_FK1">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17DA6A7C-4214-F3AF-74AF-BB5CD2E517C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE108246-E39B-C2AB-4C1E-AF87ECD1AC67" name="DEP_PREREQ_FK2">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1B0B6C5-833E-2266-C332-FF16F86E99D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
