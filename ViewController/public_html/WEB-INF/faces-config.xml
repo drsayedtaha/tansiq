@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <faces-config version="2.1" xmlns="http://java.sun.com/xml/ns/javaee">
-    
+  <navigation-rule>
+    <from-view-id>/untitled1.jsf</from-view-id>
+    <navigation-case>
+      <from-outcome>success</from-outcome>
+      <to-view-id>/GM/admininfo.xhtml</to-view-id>
+    </navigation-case>
+  </navigation-rule>
+  <navigation-rule>
+    <from-view-id>/GM/admininfo.xhtml</from-view-id>
+    <navigation-case>
+      <from-outcome>view_data</from-outcome>
+      <to-view-id>/GM/add_admin.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>success</from-outcome>
+      <to-view-id>/GM/view_data.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>case1</from-outcome>
+      <to-view-id>/GM/view_data.xhtml</to-view-id>
+    </navigation-case>
+  </navigation-rule>
+  <navigation-rule>
+    <from-view-id>/GM/add_admin.xhtml</from-view-id>
+    <navigation-case>
+      <from-outcome>success</from-outcome>
+      <to-view-id>/GM/view_data.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>case1</from-outcome>
+      <to-view-id>/GM/admininfo.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>case2</from-outcome>
+      <to-view-id>/GM/view_data.xhtml</to-view-id>
+    </navigation-case>
+  </navigation-rule>
 </faces-config>

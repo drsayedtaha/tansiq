@@ -1,0 +1,70 @@
+S<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+ <h:head>
+    
+
+    <title>Edit Departments</title>
+    <a rel="stylesheet" href="../style/style.css"/>
+</h:head>
+
+<h:body style="padding: 0px;margin: 0px;background-color: rgb(251,251,251);">
+    <div class="sitebar" style="padding: 0px;margin: 0px">
+        <h:dataTable style="width: 100%;height: 
+        60px;background-image:linear-gradient(to top,rgba(245,245,245,1),rgba(255,255,255,1));
+        padding: 0px;margin: 0px ">
+            <th style="width: 60px;">
+               <h:graphicImage library="images/" name="logo.png" height="432" width="394"/>
+            </th>
+            <th style="text-align: right">
+                <h:outputLabel style="background-color: #3B94D9;color: white ;
+                padding-left: 30px;padding-right: 30px; padding-top: 4px;padding-bottom: 4px ; 
+                border-radius: 50px;font-family: arabic;margin-right: 7px"> Edit Departments</h:outputLabel>
+            </th>
+        </h:dataTable>
+        <h:dataTable style="width: 100%;background-image:linear-gradient(to bottom,rgba(230,230,230,1),rgba(0,0,0,0))">
+            <th>
+        <!--         <pre style="font-size: 7px ">  </pre>     -->
+            </th>
+        </h:dataTable>
+    </div>
+    
+    <span class="navbar" style="margin-top: 60px"/>
+        <div>
+           <h:link value= "dashboard.html">                   
+                <h:graphicImage library="images/" name="HOME_UNSELECTED.PNG" height="869" width="1920"
+                style="padding-right: 5px; padding-top: 15px"/>
+          </h:link>
+        </div>
+
+       <div>
+            <iframe style="width: 100%;height: 700px;display: block;border: none"
+             src="Request.jsf">
+            </iframe>
+               <h:graphicImage library="images/" name="priority_selected.PNG" height="819" width="1853"
+                style="padding-right: 5px; padding-top: 20px"/>
+        
+        </div>
+	<div>
+         <h:link value="feedback.html">
+                <h:graphicImage  library="images/" name="notifications_unselected.svg" width="50px" 
+                style="padding-right: 5px; padding-top: 20px"/>
+            </h:link>  
+        </div>
+    
+    <div id="title" style="padding-left: 100px ;padding-right:100px;padding-top: 70px;"></div>
+    <div id="title" style="padding-left: 100px"></div>
+   
+
+    <h:link value ="login.html"/> 
+        <div class="fab" style="margin: 20px ;text-align: center">
+            <h:graphicImage library="../style/images" name = "signout.svg" 
+            style="margin-top: 13px;margin-left: 5px" width="35px" height="35px"/>
+        </div>
+     
+</h:body>
+
+</html>
+
+</f:view>

@@ -1,0 +1,2 @@
+select PREREQUISITE.id from PREREQUISITE where PREREQUISITE.id=1
+;

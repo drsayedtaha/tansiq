@@ -15,4 +15,7 @@
     <param-name>javax.faces.FACELETS_VIEW_MAPPINGS</param-name>
     <param-value>*.jsf;*.xhtml</param-value>
   </context-param>
+  <welcome-file-list>
+    <welcome-file>/untitled1.jsf</welcome-file>
+  </welcome-file-list>
 </web-app>

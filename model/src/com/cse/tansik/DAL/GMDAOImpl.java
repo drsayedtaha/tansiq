@@ -10,6 +10,8 @@ import com.cse.tansik.DTO.Request;
 import com.cse.tansik.DTO.Student;
 import com.cse.tansik.DTO.User;
 
+import com.cse.tansik.util.getconrction;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -22,9 +24,11 @@ import java.util.List;
 
 public class GMDAOImpl implements GMDAO {
 
-    public static String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
-    public static String username = "TANSIQ";
-    public static String password = "TANSIQ";
+
+    
+    public static String url = getconrction.url;
+    public static String username = getconrction.username;
+    public static String password = getconrction.password;
 
     private String user_query =
         "select * from users u  " + "inner join student s " + "on u.id = s.user_id " 

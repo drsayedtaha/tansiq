@@ -3,14 +3,133 @@
    <OverallProperties
       id="OverallProperties1"/>
    <Page
-      id="Page2">
+      id="Page3">
       <property
-         name="jspName">/login.jsf</property>
+         name="jspName">/untitled1.jsf</property>
       <property
-         name="x">303.0</property>
+         name="x">318.161</property>
       <property
-         name="y">168.44238</property>
+         name="start">true</property>
+      <property
+         name="y">213.78558</property>
       <property
          name="wildcard">false</property>
    </Page>
+   <Page
+      id="Page8">
+      <property
+         name="jspName">/GM/admininfo.xhtml</property>
+      <property
+         name="x">312.0166</property>
+      <property
+         name="y">429.44824</property>
+      <property
+         name="wildcard">false</property>
+   </Page>
+   <Page
+      id="Page10">
+      <property
+         name="jspName">/GM/add_admin.xhtml</property>
+      <property
+         name="x">51.69043</property>
+      <property
+         name="y">376.74707</property>
+      <property
+         name="wildcard">false</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase12"
+      from="Page8"
+      to="Page10">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">view_data</property>
+      <property
+         name="sdm:polyPoints">L38,271.0166,418.59766,93.575264,372.89648,R46</property>
+   </NavigationCase>
+   <Page
+      id="Page13">
+      <property
+         name="jspName">/GM/view_data.xhtml</property>
+      <property
+         name="x">52.018555</property>
+      <property
+         name="y">517.7471</property>
+      <property
+         name="wildcard">false</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase14"
+      from="Page8"
+      to="Page13">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">success</property>
+      <property
+         name="sdm:polyPoints">L54,269.49368,432.59766,93.018555,513.8965,R46</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase15"
+      from="Page10"
+      to="Page13">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">success</property>
+      <property
+         name="sdm:polyPoints">B44,48.19043,430.43127,48.518555,463.39648,T44</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase16"
+      from="Page10"
+      to="Page8">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">case1</property>
+      <property
+         name="sdm:polyPoints">R54,92.69043,379.89648,270.13388,425.59766,L46</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase17"
+      from="Page8"
+      to="Page13">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">case1</property>
+      <property
+         name="sdm:polyPoints">L62,271.0166,439.59766,94.54745,520.8965,R54</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase18"
+      from="Page10"
+      to="Page13">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">case2</property>
+      <property
+         name="sdm:polyPoints">B56,55.19043,430.39648,55.518555,463.36166,T56</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase19"
+      from="Page3"
+      to="Page8">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">success</property>
+      <property
+         name="sdm:polyPoints">B50,318.161,267.78558,312.0166,375.09766,T50</property>
+   </NavigationCase>
 </SDM>

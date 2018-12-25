@@ -9,7 +9,7 @@ sidebar colors pallet
 #EACDC2 
 #F76175
 */
-@charset "utf-8";
+/*@charset "utf-8";*/
 @font-face{
     font-family: "arabic";
     src:url(fonts/arabic.otf);

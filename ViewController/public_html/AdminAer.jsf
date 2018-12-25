@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+        <h:outputStylesheet library="css" value="AdminAer.css"/>
+        </h:head>
+        <h:body>
+           <h:form styleClass="container">
+               <h:panelGrid width="50%" columns="2">
+                    
+                    <h:outputLabel value="User ID:"/>
+                    <h:inputText value="#{adminaer.userID}"/>
+                    
+                    <h:outputLabel value=""/>
+                    <h:commandButton action="#{adminaer.delete}" value="Delete"/>
+                    
+                    <h:outputLabel value="User name:"/>
+                    <h:inputText value="#{adminaer.userName}"/>
+                    
+                    <h:outputLabel value="Password:"/>
+                    <h:inputSecret value="#{adminaer.password}"/>
+                    
+                    <h:outputLabel value="First Name:"/>
+                    <h:inputText value="#{adminaer.firstName}"/>
+                    
+                    <h:outputLabel value="Second Name:"/>
+                    <h:inputText value="#{adminaer.secondName}"/>
+                    
+                    <h:outputLabel value="Last Name:"/>
+                    <h:inputText value="#{adminaer.lastName}"/>
+                    
+                    <h:outputLabel value="Email:"/>
+                    <h:inputText value="#{adminaer.email}"/>
+                    
+                    <h:outputLabel value="University:"/>
+                    <h:inputText value="#{adminaer.university}"/>
+                    
+                    <h:outputLabel value="Faculty:"/>
+                    <h:inputText value="#{adminaer.faculty}"/>
+                    
+                    <h:outputLabel value="Department:"/>
+                    <h:inputText value="#{adminaer.department}"/>
+                    
+                    <h:outputLabel value="Department ID :"/>
+                    <h:inputText value="#{adminaer.departmentId}"/>
+                    
+                    <h:outputLabel value="Year:"/>
+                    <h:inputText value="#{adminaer.year}"/>
+                    
+                    
+                    
+                    <h:outputLabel value=""/>
+                    <h:commandButton action="#{adminaer.save}" value="Done"/>
+               </h:panelGrid>
+               
+                
+            </h:form>
+     
+        </h:body>
+    </html>
+</f:view>
