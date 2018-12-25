@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51F7DD44-7D52-A679-32B8-615A5B528B9B" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="MESSAGES">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>MESSAGES</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>EA637942-7B25-2E5D-7DF4-E8937943C332</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FROM_USER_ID" id="16C08707-A482-E295-6D6C-5B7E8990FDE2">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>FROM_USER_ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>A7AA7326-87FE-AAD7-E740-770CB56257B4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="546B23AD-D1D9-65EF-67C3-101CE7B80E4F" referredColumn="3B69A824-7269-A364-9A90-998C2AAC83C8"/>
+</associations>
+</Column>
+<Column name="REPORT" id="64B682C0-6314-E537-A067-BAAD64C68E57">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>REPORT</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>7339484F-0E39-6246-E47E-1D481A95317F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TO_USER_ID" id="83B51F7C-69B4-C00B-711E-C0DA05B6726D">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>TO_USER_ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>6A7DE637-6F81-841C-EB6F-097500F7415A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0AB1FF27-8E55-D19B-35A0-968254723A7B" referredColumn="3B69A824-7269-A364-9A90-998C2AAC83C8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EBC7A00A-EE72-5B9C-E2D3-4F2574FB9815" name="MESSAGES_FK1">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83B51F7C-69B4-C00B-711E-C0DA05B6726D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="690C08D5-141E-F8C4-0BB9-84FCE3AE1870" name="REPORTS_FK1V1">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16C08707-A482-E295-6D6C-5B7E8990FDE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3FDD4AFD-91BD-F4DA-CDA4-C138BD0332B1" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="ROLES">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>ROLES</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>66D10164-8042-C1E6-3803-CA15B029C149</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="F12BEB3F-C246-48CD-E4E1-951315A0DEF9">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>ROLES</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>D6177315-CC7B-EFEB-A68C-06D5C4894720</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97FD9A80-3B2A-1D2C-AC20-C1037ED1C4BC" referredColumn="3B69A824-7269-A364-9A90-998C2AAC83C8"/>
+</associations>
+</Column>
+<Column name="ROLE_ID" id="E74FFB0A-8233-82E3-F9C4-63BF036C7962">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>ROLES</sourceObjSchema>
+<sourceObjName>ROLE_ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>44FDD693-72DE-C00D-0792-D796CD9320E8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>ROLES_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>ROLES_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="ROLES" id="2032B153-F4DF-09BB-812A-92BEED385C99">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>ROLES</sourceObjSchema>
+<sourceObjName>ROLES</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<commentInRDBMS>0 IS STUDENT</commentInRDBMS>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>0C5BDAC9-200A-33BA-D7D7-971D4D33AE8A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0F5A7F34-FB5F-CE6A-7156-91AB2294914D" name="ROLES_PK">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>ROLES_PK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>F20699C6-A0B4-BC26-648B-9053A51908F2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E74FFB0A-8233-82E3-F9C4-63BF036C7962"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E40FD89A-CEC9-397A-B66A-F059ACBF55F6" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="ROLES_PK">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>ROLES_PK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>87D96499-BBFD-03AC-9816-39B0626123E3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E74FFB0A-8233-82E3-F9C4-63BF036C7962"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F93D207B-B77F-59F4-970B-EB3A5B7C1504" name="ROLES_FK1">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F12BEB3F-C246-48CD-E4E1-951315A0DEF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

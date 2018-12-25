@@ -15,5 +15,8 @@
 <designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A25F41A6-953D-5308-15E3-EBEA40C3BB81">
 <designStoragePath>C:\Users\abdullah\Desktop\tansiq\ERD\tansiq</designStoragePath>
 </designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="6A1E58FD-411F-9ADD-43FF-335AE1353D6C">
+<designStoragePath>G:\2nd_electric\computer\project\tansiq\ERD\tansiq</designStoragePath>
+</designDescr>
 </usedDesignStorageDescriptors>
 </OSDM_Design>

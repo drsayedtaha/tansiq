@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18A89FFB-CA2D-EDFB-9556-24B52C20FA17" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="STUDENT_SUBJECT">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>STUDENT_SUBJECT</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>C88E28E9-03B6-07EA-4FD2-956C5A1109BE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STUDENT" id="95BACB20-925D-B34B-DB89-E7F6BFD53648">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>STUDENT_SUBJECT</sourceObjSchema>
+<sourceObjName>STUDENT</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>392D55DD-9D30-FAC5-83A1-CE6EB64B83C0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16C628B6-8CC1-49C0-7022-6410201884B0" referredColumn="D167BD7A-4DDF-A49C-7AB7-1CC5AA48E564"/>
+</associations>
+</Column>
+<Column name="SUBJECT" id="B6E1571A-7A57-F76C-78F4-B0471F03E108">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>STUDENT_SUBJECT</sourceObjSchema>
+<sourceObjName>SUBJECT</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>59FD32DE-38B6-1D5F-1FC1-937A893B3093</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB88B136-CE29-99AD-86FB-97B6E8F723AE" referredColumn="428D1082-C733-35DE-E444-9B4FAF694142"/>
+</associations>
+</Column>
+<Column name="MARK" id="5285807E-DB9A-BEFD-DDC2-036DC8F2B579">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>STUDENT_SUBJECT</sourceObjSchema>
+<sourceObjName>MARK</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>5B253228-A3AA-84BB-B6B8-89C4D807A2E3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06E5ADF9-4163-E499-9C8B-CD6416855A51" name="STUDENT_SUBJECT_FK1">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95BACB20-925D-B34B-DB89-E7F6BFD53648"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21D8C5BF-D7D7-B998-0F9E-5449F0995CE3" name="STUDENT_SUBJECT_FK2">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6E1571A-7A57-F76C-78F4-B0471F03E108"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

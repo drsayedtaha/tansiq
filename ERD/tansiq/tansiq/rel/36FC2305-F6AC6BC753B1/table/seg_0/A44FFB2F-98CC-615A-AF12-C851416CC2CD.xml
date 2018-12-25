@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A44FFB2F-98CC-615A-AF12-C851416CC2CD" schemaObject="6DB844A6-CBCE-44F0-6EC4-C622CBCD7FA4" name="TIMELINE">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TANSIQ</sourceObjSchema>
+<sourceObjName>TIMELINE</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>925C1120-16CB-C3F5-A6C9-441DF2714874</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EDU_LEVEL_ID" id="BEEF37EB-AA02-7355-41D1-E093E28AA156">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TIMELINE</sourceObjSchema>
+<sourceObjName>EDU_LEVEL_ID</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>19FB15EC-1921-E635-5864-0178AD2A00CA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22092B26-2106-E206-BE3A-701CCF48B986" referredColumn="91D19A3C-3232-2394-C8A5-902F6863BD23"/>
+</associations>
+</Column>
+<Column name="START_DATE" id="D0ADBA06-673A-D6CB-8392-511E5A2974F2">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TIMELINE</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>D27B132F-CF29-BC34-03A7-0548026874A0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="D595FCF6-DE86-4B3D-370D-7007913F0BDF">
+<sourceConnName>tansik_01</sourceConnName>
+<sourceObjSchema>TIMELINE</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<importedID>B61FD8B0-338A-F33B-5B20-EBBEE7224B13</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDA856BC-59A1-56B0-2FC7-CA75CD672BE3" name="TIMELINE_FK1">
+<createdBy>abdo</createdBy>
+<createdTime>2018-12-24 13:07:09 UTC</createdTime>
+<ownerDesignName>tansiq</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEEF37EB-AA02-7355-41D1-E093E28AA156"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
