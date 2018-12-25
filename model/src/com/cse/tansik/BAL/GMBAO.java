@@ -51,6 +51,12 @@ public interface GMBAO    {
      * if the DataBase is found and the view will update its pages (the page that will have the result) 
      * according to that list  
      *
+     *
+     *    
+     *put role =  -1 for no user filter 
+     * no year filter  year = -1
+     * no department filter department.isempty == true
+     *
      * @param void no need for params
      * @return List<Users> 
      *        

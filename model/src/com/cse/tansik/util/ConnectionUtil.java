@@ -25,7 +25,7 @@ public class ConnectionUtil {
 
         try {
             if (conn == null) {
-                conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:test", "hr", "123");
+                conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL", "TANSIQ", "TANSIQ");
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -8,7 +8,12 @@ import com.cse.tansik.DTO.Student;
 import java.sql.Date;
 import java.util.List;
 
-public interface AdminDAO extends UserDAO  { 
+public interface AdminDAO extends UserDAO  {
+    //osama --24-12
+    public void addstudentsDataBase(String path , int eduLevelid);
+
+    
+    
     boolean isExist (Student student);
     boolean addStudent(Student student);
     boolean deleteStudent(Student student);

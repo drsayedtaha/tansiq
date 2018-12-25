@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+/*Created By AbdAlla-AboElMagd*/
+@font-face
+{
+font-family:arabicimport;
+src:url("arabic.otf");
+}
+
+header, main, footer {
+display: block;
+}
+
+html , body , main, h1 , p , button {
+
+}
+
+
+body{
+font-family:arabicimport;
+
+
+
+text-align: right;
+}
+
+input{
+	    background-color: #EFF7FA;
+    border: 2px solid #6e7d8c;
+    color: black ;
+	padding: 5px;
+    
+    text-align: right;
+}
+
+.submitbutton{
+    background-color: #3B94D9;
+    border: 2px solid #EFF7FA;
+    color: white ;
+	padding: 10px;
+	float:left;
+    margin-top: 20px
+}

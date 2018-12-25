@@ -124,10 +124,14 @@ public class GMBAOImpl implements GMBAO {
     }
 
     @Override
-    //put -1 for no user filter
+    
+    /**
+     *put role =  -1 for no user filter 
+     * no year filter  year = -1
+     * no department filter department.isempty == true
+     */
     public ArrayList<User> getUsers(Integer role,EduYear eduyear) {
          gmDAO.resetFilter();
-         
         if(role>=0)
             gmDAO.setUsersFilter(role);
         gmDAO.setUsersFilter(eduyear);
@@ -137,7 +141,11 @@ public class GMBAOImpl implements GMBAO {
         //TODO handle exeptions        
  }
     
-    
+    /**
+     *put role =  -1 for no user filter 
+     * no year filter  year = -1
+     * no department filter department.isempty == true
+     */
     public ArrayList<User> getUsers(Integer role,EduYear eduyear,int id) {
          gmDAO.resetFilter();
          

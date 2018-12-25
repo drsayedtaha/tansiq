@@ -1,52 +1,65 @@
+/**
+ * Edited By : AbdAlla - AboElMagd
+ * 
+ */
 package com.cse.tansik.DTO;
 
 import java.util.Date;
-import java.util.List;
 
 public class EduYear {
-    int id;
+    int id, departmentId;
     int year;
+    Date startDate;
+    Date endDate;
+    String department, faculty, university;
 
-    // public void setDepartment(String Department) {
-    //     this.Department = Department;
-    // }
+    public Date getStartDate() {
+        return startDate;
+    }
 
-    // public String getDepartment() {
-    //     return Department;
-    // }
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
 
-    // public void setStartDate(Date startDate) {
-    //     this.startDate = startDate;
-    // }
+    public Date getEndDate() {
+        return endDate;
+    }
 
-    // public Date getStartDate() {
-    //     return startDate;
-    // }
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
 
-    // public void setEndDate(Date endDate) {
-    //     this.endDate = endDate;
-    // }
+    public String getUniversity() {
+        return university;
+    }
 
-    // public Date getEndDate() {
-    //     return endDate;
-    // }
-    // abdo ragab 4/12
-    // neded to save data from database and re print it
-    String faculty;
+    public void setUniversity(String university) {
+        this.university = university;
+    }
 
-    // String Department;
+    public int getDepartmentId() {
+        return departmentId;
+    }
 
-    public void setFaculty(String faculty) {
-        this.faculty = faculty;
+    public void setDepartmentId(int departmentId) {
+        this.departmentId = departmentId;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
     public String getFaculty() {
         return faculty;
     }
 
-    Date startDate;
-    Date endDate;
-    
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
 
     public void setId(int id) {
         this.id = id;

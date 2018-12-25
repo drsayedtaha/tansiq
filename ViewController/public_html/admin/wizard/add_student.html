@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<!-- id الرغبة الأولى = name1 -->
+
+<!-- id الرغبة الثانية = name2 -->
+
+<!-- id الرغبة الثالثة = name3 -->
+
+<!-- id الرغبة الرابعة = name4 -->
+
+<!-- id الرغبة الخامسة = name5 -->
+
+<!-- id الرغبة السادسة = name6 -->
+
+<head>
+
+    <title>ترتيب الرغبات</title>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../../style/style.css" />
+
+</head>
+<!--table>th*2+td*6>(div>button+button)+div>(div>span)-->
+<body>
+    <!--TODO input is ssn only-->
+
+   <div class="container">
+          <div style="margin: 20px">
+          <h style="margin: 20px">اسم</h>
+          <input type="text" class="myinput">
+        </div>
+         <div style="margin: 20px">
+          <h>رقم جلوس</h>
+          <input type="text" class="myinput">
+          </div>
+      </div>
+    
+    <form class="container">
+        
+      
+      <div class="container" style=" text-align: right">
+        <table style="font-size:20px ">
+            <th style="margin: 10px"></th>
+            <th style="margin: 10px"></th>
+            <tr>
+                <td id="studname">اسم الطالب</td>
+            </tr>
+
+            <tr>
+                <td id="studbnumber">رقم الجلوس</td><br>
+            </tr>
+		<tr>
+                <td id="studpid"> الرقم القومي</td>
+            </tr>
+		<tr>
+                <td id="studcol">الكلية</td>
+            </tr>
+		<tr>
+                <td id="studyear">السنة الدراسية</td>
+            </tr>
+           
+        </table>
+	<table>
+	<tr>        
+        	<th>النتيجة</th>
+            </tr>
+		<table>	
+		<tr><td>
+		<div>
+                <span id="m1">ماده</span>
+                <span id="md1" type="text"style="margin:0 20px 20px 50px ">65</span>
+            </div></td>
+	<td>
+		<div>
+                <span id="m2">ماده</span>
+                <span id="md2" type="text"style="margin:0 20px 20px 50px ">65</span>
+            </div></td>
+	<td>
+		<div>
+                <span id="m3">ماده</span>
+                <span id="md3" type="text"style="margin:0 20px 20px 50px ">65</span>
+            </div></td>
+	</tr>
+
+        </table>
+
+    </div>
+
+      <div class="container">
+      
+      <div >
+       <label dir="rtl" style="font-size:100%; background-color:white; padding:5px; color:black; border:none;"
+                        id="name1"> الاقسام </label> 
+
+       <select name="القسم" class="submitbutton" style="background: white ;color:#000">
+
+                        <option value=" "></option>
+
+                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الحاسبات والنظم</option>
+
+                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة القوي والآلات الكهربية</option>
+
+                        <option value=" الهندسة الكهربائية ">الهندسة الكهربية _ شعبة الإلكترونيات والإتصالات الكهربية</option>
+
+                        <option value="الهندسة المدنية">الهندسة المدنية</option>
+
+                        <option value="الهندسة المعمارية">الهندسة المعمارية</option>
+
+                        <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
+
+                    </select>
+        <br>
+        <button class="submitbutton" style="margin: 10 50% " >اضافه</button>
+        </div>
+      <table>
+          <th>ترتيب</th>
+          <th>رغبات</th>
+          <tr>
+          <td class="msg_line">
+              <div style="display: inline-block"><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div  style="display: inline-block"><span>قسم كذا كذا</span></div>
+              </div>
+          </td>
+          </tr>
+<tr>
+          <td class="msg_line">
+                            <div><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div><span>قسم كذا كذا</span></div>
+              </div>
+          </td>
+		</tr>
+		<tr>
+          <td class="msg_line">
+                            <div><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div><span>قسم كذا كذا</span></div>
+              </div>
+          </td>
+			</tr>
+			<tr>
+          <td class="msg_line">
+                            <div><button class="submitbutton">up</button><button class="submitbutton">down</button></div>
+              <div>
+                  <div><span>قسم كذا كذا</span></div>
+              </div>
+               </td>
+               </tr>
+         
+      </table>
+        </div>
+        </div>
+        </form>
+    </body>
+</html>

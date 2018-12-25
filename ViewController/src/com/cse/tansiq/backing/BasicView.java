@@ -1,6 +1,7 @@
 package com.cse.tansiq.backing;
 
-
+//TODO get edu_level data from database
+//TODO use edu level to filter 1
 
 import com.cse.tansik.BAL.BAOfactory;
 import com.cse.tansik.BAL.GMBAO;
@@ -34,26 +35,35 @@ public class BasicView {
     private Integer slectedUserOption ;
     private Integer slectedFacultyOption;
     private Integer slectedYearOption;
+    private Integer slectedDepartmentOption;
+    
     private EduYear slectedEduYear =new EduYear() ;
 
-    private void setSlectedEduYear(){
-        // TODO inverse map
-        
-        Map<Integer,String> facultyMapinv = new HashMap<>();
-        for (String key : facultyMap.keySet()){
-            facultyMapinv.put(facultyMap.get(key), key);
+    private Map<Integer,String>  reverse(Map <String,Integer> map){
+        Map<Integer,String> mapinv = new HashMap<>();
+
+        for (String key : map.keySet()){
+            mapinv.put(facultyMap.get(key), key);
         }
- 
-//        // TODO set faculty & year &department
-//        
-//        
-//        
-//        //TODO solve null pointer exeption from map
+        
+        return mapinv ;
+    }
+
+    private void setSlectedEduYear(){
+        //add deparment
+        
+        
+        Map<Integer,String> facultyMapinv = reverse(facultyMap);
+                
+        //done solve null pointer exeption from map
         System.out.println(facultyMap);
         System.out.println(facultyMapinv);
         
         if(slectedYearOption != null) 
-            slectedEduYear.setYear(slectedYearOption);
+            slectedEduYear.setYear(slectedYearOption);    
+        else 
+            slectedEduYear.setYear(-1);
+        
         slectedEduYear.setFaculty(facultyMapinv.get(slectedFacultyOption));
         System.out.println(slectedEduYear);
 
@@ -63,7 +73,8 @@ public class BasicView {
     private GMBAO gm = BAOfactory.createGMBAO();
     private Map<String, Integer> userMap; 
     private Map<String, Integer> facultyMap; 
-    private Map<String, Integer> yearMap; 
+    private Map<Integer, Integer> yearMap; 
+    private Map<String, Integer> deparmentMap; 
     
     @PostConstruct
     public void init() {
@@ -75,7 +86,7 @@ public class BasicView {
         userMap.put("Admin", GMBAO.admin_role);
         
         //TODO map for faculty sould be dynamic get edu year first
-        List<User> user;
+        
 
         facultyMap = new HashMap<>();
         facultyMap.put("engi",1);
@@ -83,23 +94,58 @@ public class BasicView {
         facultyMap.put("computer",3);
 
         yearMap = new HashMap<>();
-        yearMap.put("e3dady",1);
-        yearMap.put("three electric",2);
-        yearMap.put("three mechanics",3);
+        yearMap.put(1,1);
+        yearMap.put(2,2);
+        yearMap.put(3,3);
+        
+        deparmentMap = new HashMap<>();
+        deparmentMap.put("e3dady",1);
+        deparmentMap.put("three electric",2);
+        deparmentMap.put("three mechanics",3);
+
     }
     
     public String search(){
     //use data layer
-        System.out.println(slectedUserOption+"  -  "+slectedFacultyOption+"  -  "+slectedYearOption);
-//        System.out.println(facultyMap.get(slectedFacultyOption).toString());
-//         
+        System.out.println(slectedUserOption+"  -  fac: "+slectedFacultyOption+"  -  year: "+slectedYearOption+"   -  "+slectedDepartmentOption);
+      
+//    if role null => -1
+//    if dep null => ""
+//    if year null => -1
+//    if faculty null => ""
+//      if (slectedUserOption == null)
+          
+        
+        
+    //select only user 
+        //get by role
+    //select faculty only 
+        //role -1
+        //set eduyear to 
+        //faculty -> selected
+        //year to -1
+        //department -> ""
+    //select both
+        //set eduyear to 
+        //faculty -> selected
+        //year to -1
+        //department -> ""
+    //select departmen
+
+
         if (slectedUserOption==null && slectedFacultyOption==null)
             users = gm.getUsers();     
         else if (slectedUserOption!=null && slectedFacultyOption==null)
             users = gm.getUsers(slectedUserOption);
-//        else if (slectedUserOption!=null && slectedFacultyOption!=null)
-//            users = gm.getUsers(slectedUserOption,);            
+        //dep =""     emty true
+        //year -1     -1 no year filter
+//        else if (slectedUserOption!=null && slectedFacultyOption!=null){
+//            gm.getUsers(slectedUserOption, slectedEduYear);
+//        }
+//        else if(slectedUserOption==null && slectedFacultyOption==null)
+////            users = gm.getUsers(slectedUserOption,);            
         return null;
+//    
     }
         
         
@@ -111,28 +157,6 @@ public class BasicView {
         return users;
     }
     
-//        private String selectedUser;
-//
-//    public void setSelectedUser(String selectedUser) {
-//        this.selectedUser = selectedUser;
-//    }
-//
-//    public String getSelectedUser() {
-//        return selectedUser;
-//    }
-
-
-    //    private List<String> users_list;
-//    public void OrderListBean() { 
-//        users_list = new ArrayList<String>();
-//        users_list.add("all");
-//        users_list.add("all");
-//        users_list.add("student");
-//        users_list.add("admin");
-//
-//        //more players 
-//        }
-
      
 
 //    @ManagedProperty("#{GMBAO}") 
@@ -181,13 +205,36 @@ public class BasicView {
         return facultyMap;
     }
 
-    public void setYearMap(Map<String, Integer> yearMap) {
+    public void setSlectedDepartmentOption(Integer slectedDepartmentOption) {
+        this.slectedDepartmentOption = slectedDepartmentOption;
+    }
+
+    public Integer getSlectedDepartmentOption() {
+        return slectedDepartmentOption;
+    }
+
+    public void setSlectedEduYear(EduYear slectedEduYear) {
+        this.slectedEduYear = slectedEduYear;
+    }
+
+    public EduYear getSlectedEduYear() {
+        return slectedEduYear;
+    }
+
+    public void setYearMap(Map<Integer, Integer> yearMap) {
         this.yearMap = yearMap;
     }
 
-    public Map<String, Integer> getYearMap() {
+    public Map<Integer, Integer> getYearMap() {
         return yearMap;
     }
 
-    
+    public void setDeparmentMap(Map<String, Integer> deparmentMap) {
+        this.deparmentMap = deparmentMap;
+    }
+
+    public Map<String, Integer> getDeparmentMap() {
+        return deparmentMap;
+    }
+
 }

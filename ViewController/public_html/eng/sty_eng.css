@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*Created By AbdAlla-AboElMagd*/
+@font-face
+{
+font-family:tahoma;
+
+}
+header, main, footer {
+display: block;
+}
+
+html , body , header, main, footer , h1 , h2 , p {
+padding: 4px;
+margin: 0px ;
+}
+
+
+body{
+font-family:tahoma;
+background-color : white ;
+margin-left:auto;
+margin-right:auto;
+font-size:30px;
+width: 1000px;
+
+}
+
+header{
+background-color :white ;
+color : white ;
+margin-left:auto;
+margin-right:auto;
+font-size:30px;
+width:100px;
+height:100px;
+text-align:center;
+}
+
+main{
+font-family:tahoma;
+background-color : lightgray ;
+margin-left:auto;
+margin-right:auto;
+font-size:30px;
+height: 550px;
+width: 50%;
+border-radius:50px;
+text-align:center;
+}
+
+
+
+.button {
+font-family:tahoma;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+	background-color: #3B94D9;
+    border: 2px solid #EFF7FA;
+    color: white ;
+	font-size:20px;
+	float :right;
+	position:relative;
+	top:90px;
+
+	
+}
+input{
+font-family:tahoma;
+	width:300px;
+	height:30px;
+	border: none;
+        background-color: #EFF7FA;
+    border: 2px solid #6e7d8c;
+    color: black ;
+	font-size:20px;
+	text-align:left;
+}
+
+table{
+	width:100%;
+	height:300px;
+	margin-left:auto;
+	padding:20px;
+    
+}
+th{
+	text-align: left;
+}

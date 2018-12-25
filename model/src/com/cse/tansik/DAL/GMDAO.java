@@ -29,8 +29,35 @@ public interface GMDAO extends AdminDAO {
      * @return
      */
   public ArrayList<User> getUsers();
+    
+    /**
+     *set filter by role
+     * @param role
+     */
   public void setUsersFilter(int role);
+  /**
+     *author: abdelrhman ragab
+     * date : 24-12
+     * 
+     * function for adding edu year filter to query
+     * if edu year faculty cannot be empty
+     * for edu year _year use -1 to for no year filter
+     * edu year _departmet string represent current user deparement
+     * will apply no filter if it is empty
+     * 
+     * 
+     * no year filter  year = -1
+     * no department filter department.isempty == true
+     * 
+     * 
+     * @param edu_year
+     */
   public  void setUsersFilter(EduYear edu_year);
+  
+  /**
+     *set filter for user by its id
+     * @param user
+     */
   public  void setUsersFilter(User user);
   public void resetFilter();
 

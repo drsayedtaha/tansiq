@@ -74,6 +74,9 @@
       <value n="ejbVersion" v="3.0"/>
       <value n="ejbVersionMinor" v="0.1"/>
    </hash>
+   <hash n="oracle.ide.model.DependencyConfiguration">
+      <list n="dependencyList"/>
+   </hash>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="Database"/>

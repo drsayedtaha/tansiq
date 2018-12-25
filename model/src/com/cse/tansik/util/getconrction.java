@@ -12,10 +12,11 @@ import javax.sql.rowset.RowSetProvider;
 
 public class getconrction {
 
-    private String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
-    private String username = "hr";
-    private String password = "hr";
-
+    public static String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
+    public static String username = "TANSIQ";
+    public static String password = "TANSIQ";
+    
+    
     public void connect() {
 
         //        try (Connection myConn = DriverManager.getConnection(url, "hr", "hr");

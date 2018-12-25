@@ -22,9 +22,9 @@ import java.util.List;
 
 public class GMDAOImpl implements GMDAO {
 
-    private static String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
-    private static String username = "hr";
-    private static String password = "hr";
+    public static String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
+    public static String username = "TANSIQ";
+    public static String password = "TANSIQ";
 
     private String user_query =
         "select * from users u  " + "inner join student s " + "on u.id = s.user_id " 
@@ -72,8 +72,10 @@ public class GMDAOImpl implements GMDAO {
     }
     
     
-
+    //if role =-1 do notthing
     public void setUsersFilter(int role) {
+        if(role<0)
+            return;
         if (!filtered)
             user_query += " where u.role = "+role;    
         else
@@ -83,20 +85,30 @@ public class GMDAOImpl implements GMDAO {
                 
     }
     
+    
+    
+    //nothin if faculty empty
+    //no year filter if year<0
+    //no dep filter if depempty true
     public void setUsersFilter(EduYear edu_year){
+        if(edu_year.getFaculty().isEmpty())
+            return;
         if (!filtered)
             user_query += " where e.FACULTY = '" + edu_year.getFaculty()+"' ";
         else
             user_query += " and e.FACULTY = '" + edu_year.getFaculty()+"' ";
              
-        if(edu_year.getYear()>0)
+        if(edu_year.getYear()>=0)
             user_query += " and e.YEAR = " + edu_year.getYear();
-            
+        if(!edu_year.getDepartment().isEmpty())            
+            user_query += " and e.DEPARTMENT";
         filtered = true;
         }
     
     public void setUsersFilter(User user){
-        if (!filtered)
+        if (user.getId()<0)
+            return;
+            if (!filtered)
             user_query += " where u.id = " + user.getId();
         else
             user_query += " and u.id = " + user.getId();
@@ -132,7 +144,7 @@ public class GMDAOImpl implements GMDAO {
         
     ArrayList<User> users = new ArrayList<User>();
 
-    try (Connection myConn = DriverManager.getConnection(url, "hr", "hr");
+    try (Connection myConn = DriverManager.getConnection(url, username, password);
          Statement myStmt = myConn.createStatement();
          ResultSet myRes = myStmt.executeQuery(user_query)) {
 
@@ -151,7 +163,7 @@ public class GMDAOImpl implements GMDAO {
      
     ArrayList<EduYear> eduyears = new ArrayList<>();
 
-    try (Connection myConn = DriverManager.getConnection(url, "hr", "hr");
+    try (Connection myConn = DriverManager.getConnection(url, username, password);
          Statement myStmt = myConn.createStatement();
          ResultSet myRes = myStmt.executeQuery(eduyear_query)) {
 
@@ -393,10 +405,12 @@ private ArrayList<User> extract_users_from_Rs(ResultSet myRes) throws SQLExcepti
         // TODO Implement this method
         return Collections.emptyList();
     }
-    
-    
-   
+
 
     
-    
+    @Override
+    public void addstudentsDataBase(String path, int eduLevelid) {
+        // TODO Implement this method
+
+    }
 }

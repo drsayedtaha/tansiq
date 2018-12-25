@@ -10,6 +10,15 @@ import com.cse.tansik.util.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import java.sql.*;
 
@@ -27,6 +36,13 @@ import java.util.logging.Logger;
  *
  */
 public class AdminDAOImpl implements AdminDAO {
+  
+
+    private static String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
+    private static String username = "TANSIQ";
+    private static String password = "TANSIQ";
+
+  
   
     Student student = new Student();
     private static boolean isTest = true;
@@ -56,23 +72,32 @@ public class AdminDAOImpl implements AdminDAO {
      * @param student
      * @return
      */
-    @Override
-    public void addDataBase(String path) {
+    
+    public void addstudentsDataBase(String path,int eduLevelid) {
         //read file as string 
+        
         String text = readFile(path, null);
 
         String[] lines = text.split("\n");
-        String []subjectName = lines[1].split(";");
+        String []subjectName = lines[0].split(";");
         //insert into subject table
-        for (int s = 6;subjectName.length >=s ;s++ ){
-            ConnectionUtil.excuteNoneQuery("insert into subject (name,edu_level1) values ("+subjectName[s]+","+ student.getYear()+")");
-        }
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,edu_level1) values ("+subjectName[6]+","+ student.getYear()+")");
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,edu_level1) values ("+subjectName[7]+","+ student.getYear()+")");
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,edu_level1) values ("+subjectName[8]+","+ student.getYear()+")");
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,edu_level1) values ("+subjectName[9]+","+ student.getYear()+")");
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,edu_level1) values ("+subjectName[10]+","+ student.getYear()+")");
-                
+//        for (int s = 6;subjectName.length >=s ;s++ ){
+//            ConnectionUtil.excuteNoneQuery("insert into subject (name,edu_level1) values ("+subjectName[s]+","+ student.getYear()+")");
+//        }
+        
+        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[6]+","+ student.getYear()+")");
+        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[7]+","+ student.getYear()+")");
+        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[8]+","+ student.getYear()+")");
+        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[9]+","+ student.getYear()+")");
+        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[10]+","+ student.getYear()+")");
+
+        
+        
+        
+        
+
+     
+        
         for (int x = 1; x < lines.length; x++) {
 
             String[] cols = lines[x].split(";");
@@ -99,7 +124,7 @@ public class AdminDAOImpl implements AdminDAO {
                 e.printStackTrace();
                 
             }
-        }
+    }
 
     }
 
@@ -118,29 +143,29 @@ public class AdminDAOImpl implements AdminDAO {
         return null;
     }
 
-    @Override
-    public boolean addStudent(Student student) {
-        ConnectionUtil.getConnection();
-        //insert into  users table
-        ConnectionUtil.excuteNoneQuery("insert into users (USER_NAME,PASSWORD,EMAIL,ROLE,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NATIONAL_ID) values('" + student.getUserName() + "','" + student.getPassword() + "','" + student.getEmail() + "',0,'" + student.getFirstName() + "','" + student.getSecondName() + "','" + student.getLastName() + "')");
-        ResultSet res = ConnectionUtil.excuteQuery("select max(ID) from users");
-        try {
-            if (res.next()) {
-                int id = res.getInt("ID");
-                //insert into  student table
-                ConnectionUtil.excuteNoneQuery("insert into student (USER_ID,EDU_LEVEL) values(" + id + "," + student.getYear() + ")");
-                //insert into student_subject table
-                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[0].getId() + "," + student.getSubjects()[0].getDegree() + ")");
-                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[1].getId() + "," + student.getSubjects()[1].getDegree() + ")");
-                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[2].getId() + "," + student.getSubjects()[2].getDegree() + ")");
-                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[3].getId() + "," + student.getSubjects()[3].getDegree() + ")");
-                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[4].getId() + "," + student.getSubjects()[4].getDegree() + ")");
-            }
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-        return false;
-    }
+//    @Override
+//    public boolean addStudent(Student student) {
+//        ConnectionUtil.getConnection();
+//        //insert into  users table
+//        ConnectionUtil.excuteNoneQuery("insert into users (USER_NAME,PASSWORD,EMAIL,ROLE,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NATIONAL_ID) values('" + student.getUserName() + "','" + student.getPassword() + "','" + student.getEmail() + "',0,'" + student.getFirstName() + "','" + student.getSecondName() + "','" + student.getLastName() + "')");
+//        ResultSet res = ConnectionUtil.excuteQuery("select max(ID) from users");
+//        try {
+//            if (res.next()) {
+//                int id = res.getInt("ID");
+//                //insert into  student table
+//                ConnectionUtil.excuteNoneQuery("insert into student (USER_ID,EDU_LEVEL) values(" + id + "," + student.getYear() + ")");
+//                //insert into student_subject table
+//                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[0].getId() + "," + student.getSubjects()[0].getDegree() + ")");
+//                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[1].getId() + "," + student.getSubjects()[1].getDegree() + ")");
+//                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[2].getId() + "," + student.getSubjects()[2].getDegree() + ")");
+//                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[3].getId() + "," + student.getSubjects()[3].getDegree() + ")");
+//                ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT_ID,SUBJECT_ID,MARK) values(" + id + "," + student.getSubjects()[4].getId() + "," + student.getSubjects()[4].getDegree() + ")");
+//            }
+//        } catch (SQLException ex) {
+//            ex.printStackTrace();
+//        }
+//        return false;
+//    }
 
     /**
      * implemented by osama this method delete the information of the student
@@ -261,4 +286,9 @@ public class AdminDAOImpl implements AdminDAO {
     }
 
 
+    @Override
+    public boolean addStudent(Student student) {
+        // TODO Implement this method
+        return false;
+    }
 }
