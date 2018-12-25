@@ -29,7 +29,7 @@ public class User {
     }
 
     private int role;
-    private int id;
+    private Integer id;
 
     private String Password;
 
@@ -84,11 +84,11 @@ public class User {
         return role;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
