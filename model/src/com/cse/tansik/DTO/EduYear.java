@@ -89,7 +89,7 @@ public class EduYear {
 
     @Override
     public String toString() {
-        return this.id + " " + this.getYear()+ " "+this.faculty;
+        return this.id +" fac"+this.faculty+ " -yer" + this.getYear()+"  -dep"+department;
     }
 
 }

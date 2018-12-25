@@ -52,20 +52,35 @@ public class BasicView {
     private void setSlectedEduYear(){
         //add deparment
         
+        if(slectedFacultyOption != null){
         
         Map<Integer,String> facultyMapinv = reverse(facultyMap);
                 
         //done solve null pointer exeption from map
-        System.out.println(facultyMap);
-        System.out.println(facultyMapinv);
-        
+//      //  System.out.println(facultyMap);
+//      //  System.out.println(facultyMapinv);
+//        
         if(slectedYearOption != null) 
             slectedEduYear.setYear(slectedYearOption);    
         else 
             slectedEduYear.setYear(-1);
+        if(slectedDepartmentOption != null){
+            Map<Integer,String> departmentMapinv = reverse(deparmentMap);
+            //inverse
+            //get dep
+            slectedEduYear.setFaculty(departmentMapinv.get(slectedDepartmentOption));
+
+        }
+        else{
+            slectedEduYear.setDepartment("");
+        }
+            
         
+            
         slectedEduYear.setFaculty(facultyMapinv.get(slectedFacultyOption));
         System.out.println(slectedEduYear);
+        
+        }
 
     }
     
@@ -89,8 +104,8 @@ public class BasicView {
         
 
         facultyMap = new HashMap<>();
-        facultyMap.put("engi",1);
-        facultyMap.put("scince",2);
+        facultyMap.put("engineering",1);
+        facultyMap.put("accounting",2);
         facultyMap.put("computer",3);
 
         yearMap = new HashMap<>();
@@ -113,9 +128,23 @@ public class BasicView {
 //    if dep null => ""
 //    if year null => -1
 //    if faculty null => ""
-//      if (slectedUserOption == null)
-          
+        Integer UserOption ;
+        if (slectedUserOption == null){
+                UserOption =-1;                     
+            }
+        else{UserOption = slectedUserOption;}
         
+        
+        
+        if (slectedFacultyOption == null){
+            if(slectedYearOption != null || slectedDepartmentOption != null){
+                //error
+            }
+            users = gm.getUsers(UserOption);     
+        }
+        else{
+            users = gm.getUsers(UserOption, slectedEduYear);
+        }
         
     //select only user 
         //get by role
@@ -132,11 +161,11 @@ public class BasicView {
         //department -> ""
     //select departmen
 
-
-        if (slectedUserOption==null && slectedFacultyOption==null)
-            users = gm.getUsers();     
-        else if (slectedUserOption!=null && slectedFacultyOption==null)
-            users = gm.getUsers(slectedUserOption);
+//
+//        if (slectedUserOption==null && slectedFacultyOption==null)
+//            users = gm.getUsers();     
+//        else if (slectedUserOption!=null && slectedFacultyOption==null)
+//            users = gm.getUsers(slectedUserOption);
         //dep =""     emty true
         //year -1     -1 no year filter
 //        else if (slectedUserOption!=null && slectedFacultyOption!=null){
@@ -207,10 +236,13 @@ public class BasicView {
 
     public void setSlectedDepartmentOption(Integer slectedDepartmentOption) {
         this.slectedDepartmentOption = slectedDepartmentOption;
+        setSlectedEduYear();
     }
 
     public Integer getSlectedDepartmentOption() {
+        
         return slectedDepartmentOption;
+        
     }
 
     public void setSlectedEduYear(EduYear slectedEduYear) {
