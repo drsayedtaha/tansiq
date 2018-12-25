@@ -148,9 +148,9 @@ public class AdminAerDAOImp implements AdminAerDAO {
 	@Override
 	public Boolean delete(Integer id) {
 		
-		String dmlState1="SELECT EDU_LEVEL WHERE USER_ID = ?" ;
+		String dmlState1="SELECT EDU_LEVEL FROM ADMIN_EDU_YEAR WHERE USER_ID = ?" ;
 		
-		String dmlState2 = "DELETE FROM ADMIN WHERE ID = ?" ;
+		String dmlState2 = "DELETE FROM USERS WHERE ID = ?" ;
 		String dmlState3 = "DELETE FROM EDU_LEVEL WHERE USER_ID = ?" ;
 		String dmlState4 = "DELETE FROM ADMIN_EDU_YEAR WHERE ID = ?" ;
 		
@@ -171,6 +171,7 @@ public class AdminAerDAOImp implements AdminAerDAO {
             stmt1.setInt(1, admin.getId());
             stmt2.setInt(2, admin.getId());
             stmt3.setInt(3, eduLevel.getId());
+            stmt4.setInt(4, eduLevel.getId());
             // execute the delete statement
             stmt1.executeUpdate ();
             stmt2.executeUpdate ();

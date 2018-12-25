@@ -37,12 +37,6 @@ import java.util.logging.Logger;
  */
 public class AdminDAOImpl implements AdminDAO {
   
-
-    private static String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
-    private static String username = "TANSIQ";
-    private static String password = "TANSIQ";
-
-  
   
     Student student = new Student();
     private static boolean isTest = true;
@@ -59,7 +53,7 @@ public class AdminDAOImpl implements AdminDAO {
         return false;
     }
 
-    @Override
+     @Override
     public boolean isExist(Department department) {
         // TODO Implement this method
         return false;
@@ -75,29 +69,11 @@ public class AdminDAOImpl implements AdminDAO {
     
     public void addstudentsDataBase(String path,int eduLevelid) {
         //read file as string 
-        
+        int y = eduLevelid;
         String text = readFile(path, null);
 
         String[] lines = text.split("\n");
-        String []subjectName = lines[0].split(";");
-        //insert into subject table
-//        for (int s = 6;subjectName.length >=s ;s++ ){
-//            ConnectionUtil.excuteNoneQuery("insert into subject (name,edu_level1) values ("+subjectName[s]+","+ student.getYear()+")");
-//        }
-        
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[6]+","+ student.getYear()+")");
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[7]+","+ student.getYear()+")");
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[8]+","+ student.getYear()+")");
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[9]+","+ student.getYear()+")");
-        ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[10]+","+ student.getYear()+")");
-
-        
-        
-        
-        
-
-     
-        
+    
         for (int x = 1; x < lines.length; x++) {
 
             String[] cols = lines[x].split(";");
@@ -109,7 +85,7 @@ public class AdminDAOImpl implements AdminDAO {
                 if (rs.next()) {
                     int id = rs.getInt("ID");
                     //insert into  student table
-                    ConnectionUtil.excuteNoneQuery("insert into student (USER_ID,EDU_LEVEL) values(" + id + "," + student.getYear() + ")");
+                    ConnectionUtil.excuteNoneQuery("insert into student (USER_ID,EDU_LEVEL) values(" + id + "," + y + ")");
 
                     //insert into student_subject table
                     ConnectionUtil.excuteNoneQuery("insert into student_subject (STUDENT,SUBJECT,MARK) values(" + id + "," + 1 + "," + cols[6] + ")");
@@ -125,15 +101,25 @@ public class AdminDAOImpl implements AdminDAO {
                 
             }
     }
+        String []subjectName = lines[0].split(";");
+        //insert into subject table
+        for (int s = 6;subjectName.length >=s ;s++ ){
+            ConnectionUtil.excuteNoneQuery("insert into subject (name,EDU_LEVEL_ID1) values ("+subjectName[6]+","+y+")");
+        }
 
     }
 
     static String readFile(String path, Charset encoding) {
 
         if (isTest) {
-            return "firstname;middalname;lastname;username;password;email;edulevel;subject1;subject2;subject3;subject4;subject5\n" + 
-            "osama;mohamed;ali;osama123;123;os@g.c;1;60;50;90;30;20\n";
-        }
+            return "firstname;middalname;lastname;username;password;email;subject1;subject2;subject3;subject4;subject5\n" + 
+            "osama;mohamed;ali;osama123;123;os1@g.c;60;50;90;30;20\n" + 
+            "ahmed;miofgs;taha;osa111;;os2@g.c;60;50;90;30;20\n" + 
+            "ali;yeye;hod;idjfrg123;;os3@g.c;60;50;90;30;20\n" + 
+            "fady;ngah;roby;ydud123;;os4@g.c;60;50;90;30;20\n" + 
+            "mesi;ali;mohamed;osama1234;;os5@g.c;60;50;90;30;20\n" + 
+            "syd;ali;ahmed;gg123;;os6@g.c;60;50;90;30;20\n";
+         }
         try {
             byte[] encoded = Files.readAllBytes(Paths.get(path));
             return new String(encoded, encoding);

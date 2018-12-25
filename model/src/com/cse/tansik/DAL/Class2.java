@@ -4,10 +4,11 @@
 //import java.security.acl.Group;
 //
 //import java.util.Scanner;
+//import java.util.concurrent.CompletionStage;
 //
 //
 //public class Class2 {
-//    public void start(Stage stage) {
+//    public void start(CompletionStage stage) {
 //     
 //            
 //            Label label = new Label("subjects");
