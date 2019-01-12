@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <title>Dashboard</title>
+        </h:head>
+        <h:body>
+            <h:form>
+            Student info<br/>
+            <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel value="first Name"/>
+            <h:outputLabel value="#{homepageStudentBean.firstName}"/>
+            <h:outputLabel value="Middle Name"/>
+            <h:outputLabel value="#{homepageStudentBean.middleName}"/>
+            <h:outputLabel value="Last Name"/>
+            <h:outputLabel value="#{homepageStudentBean.lastName}"/>
+            <h:outputLabel value="Total Mark"/>
+            <h:outputLabel value="#{homepageStudentBean.totalMark}"/>
+            </h:panelGrid>
+            </h:form>
+        </h:body>
+    </html>
+</f:view>

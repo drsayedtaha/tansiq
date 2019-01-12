@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" 
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:p="http://primefaces.org/ui">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head></h:head>
+        <h:body>
+        <p:messages id="messages" showDetail="true" closable="true">
+        <p:autoUpdate />
+    </p:messages>
+            <h:form>
+            <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel value="username"/>
+            <p:inputText id="username" value="#{loginBean.username}" required="true" requiredMessage="Username field cannot be empty"/>
+            <h:outputLabel value="password"/>
+            <p:password id="password" value="#{loginBean.password}" required="true" requiredMessage="Password field cannot be empty"/>
+            </h:panelGrid>
+                <p:commandButton value="Submit" action="#{loginBean.login()}" />
+            </h:form>
+        </h:body>
+    </html>
+</f:view>
